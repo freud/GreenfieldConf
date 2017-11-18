@@ -87,3 +87,50 @@ html, body{
     margin-top: 7rem;
   }
 }
+
+/* FOOTER
+-------------------------------------------------- */
+footer hr {
+    margin: 0.2rem 1rem;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+footer nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#footer-2 {
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+
+
+#footer-2 .copyright-text {
+    margin-left: 1rem;
+}
+
+#footer-2 ul {
+    list-style-type: none;
+    list-style-position: outside;
+    display: flex;
+}
+
+#footer-2 ul > li {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+}
+
+#footer-2 a,
+#footer-2 a:active,
+#footer-2 a:visited {
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+#footer-2 a:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
