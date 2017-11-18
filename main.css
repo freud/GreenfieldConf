@@ -76,7 +76,7 @@ header .navbar.shrink {
   min-height: 100%;
 }
 
-.carousel-item .first-slide {
+.carousel-item.first-slide {
   background-image: url("res/front-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,14 +141,14 @@ header .navbar.shrink {
 /* FOOTER
 -------------------------------------------------- */
 footer hr {
-    margin: 0.2rem 1rem;
+    margin: 0.2vw 1vw;
     border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 footer nav li {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 #footer-2 {
@@ -169,8 +169,8 @@ footer nav li {
 }
 
 #footer-2 ul > li {
-    margin-left: 1.5rem;
-    margin-right: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 #footer-2 a,
