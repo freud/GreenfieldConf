@@ -76,6 +76,14 @@ header .navbar.shrink {
   min-height: 100%;
 }
 
+.carousel-item .first-slide {
+  background-image: url("res/front-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+
 /* Speakers, agenda
 -------------------------------------------------- */
 
