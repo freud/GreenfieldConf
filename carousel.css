@@ -34,18 +34,18 @@ html, body{
   min-width: 100%;
 }
 
-/* Speakers
+/* Speakers, agenda
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.speakers .col-lg-3 {
+.main-page-block .col-lg-3 {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.speakers h1 {
+.main-page-block h1 {
   font-weight: 400;
 }
-.speakers .col-lg-3 p {
+.main-page-block .col-lg-3 p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
