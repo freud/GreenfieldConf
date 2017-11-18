@@ -4,6 +4,27 @@ html, body{
   height: 100%;
 }
 
+/* Main menu
+-------------------------------------------------- */
+header .navbar {
+  background: rgba(0, 0, 0, 0);
+  font-size: 1.5rem;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    background-color:rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color:rgba(0, 0, 0, 0.7);
+  }
+}
+
+header .navbar.shrink {
+  animation: fadeInFromNone 0.2s ease-in;
+  background-color:rgba(0, 0, 0, 0.7);
+}
+
 /* Full screen banners
 -------------------------------------------------- */
 .full-page {
