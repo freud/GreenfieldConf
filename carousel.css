@@ -2,16 +2,20 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
+html, body{
   height: 100%;
 }
 
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+.full-page {
+  height: 100%;
+}
 
-/* Carousel base class */
-.carousel, .carousel .inner {
+.carousel, 
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
   height: 100%;
 }
 
@@ -26,7 +30,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 100%;
   background-color: #777;
 }
 .carousel-item > img {
@@ -34,7 +38,6 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
 }
 
 
