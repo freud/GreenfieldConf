@@ -10,28 +10,40 @@ header .navbar {
   background: rgba(0, 0, 0, 0);
   font-size: 1.5rem;
 }
+
+@media (max-width: 920px) {
+  header .navbar {
+    font-size: 1.3rem;
+  }
+}
+
 header .navbar img {
   width: 100%;
 }
-header nav ul{
+
+header nav ul {
   list-style: none;
   margin: 0 2px;
   padding: 0;
   display: flex;
   justify-content: space-around;
 }
+header .nav-item{
+  text-align:center;
+}
+
 @keyframes fadeInFromNone {
   0% {
     background-color:rgba(0, 0, 0, 0);
   }
   100% {
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(0, 0, 0, 1);
   }
 }
 
 header .navbar.shrink {
   animation: fadeInFromNone 0.2s ease-in;
-  background-color:rgba(0, 0, 0, 0.7);
+  background-color:rgba(0, 0, 0, 1);
 }
 
 /* Full screen banners
