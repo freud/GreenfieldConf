@@ -1,4 +1,2 @@
-<Directory .git>
-    order allow,deny
-    deny from all
-</Directory>
+RewriteEngine on
+RewriteRule .*\.git/.* - [F]
