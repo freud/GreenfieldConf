@@ -10,7 +10,16 @@ header .navbar {
   background: rgba(0, 0, 0, 0);
   font-size: 1.5rem;
 }
-
+header .navbar img {
+  width: 100%;
+}
+header nav ul{
+  list-style: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
 @keyframes fadeInFromNone {
   0% {
     background-color:rgba(0, 0, 0, 0);
