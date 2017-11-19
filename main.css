@@ -4,6 +4,12 @@ html, body{
   height: 100%;
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #259707;
+  border-color: #259707;
+}
+
 /* Main menu
 -------------------------------------------------- */
 header .navbar {
