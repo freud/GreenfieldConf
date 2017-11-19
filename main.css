@@ -7,7 +7,7 @@ html, body{
 /* Main menu
 -------------------------------------------------- */
 header .navbar {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(20, 20, 20, 0);
   font-size: 1.4rem;
 }
 
@@ -37,16 +37,16 @@ header .navbar-dark .navbar-nav .nav-link {
 
 @keyframes fadeInFromNone {
   0% {
-    background-color:rgba(0, 0, 0, 0);
+    background-color:rgba(20, 20, 20, 0);
   }
   100% {
-    background-color:rgba(0, 0, 0, 1);
+    background-color:rgba(20, 20, 20, 0.95);
   }
 }
 
 header .navbar.shrink {
   animation: fadeInFromNone 0.2s ease-in;
-  background-color:rgba(0, 0, 0, 1);
+  background-color:rgba(20, 20, 20, 0.95);
 }
 
 /* Full screen banners
