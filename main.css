@@ -9,7 +9,6 @@ html, body{
 header .navbar {
   background: rgba(0, 0, 0, 0);
   font-size: 1.4rem;
-  text-transform: uppercase;
 }
 
 @media (max-width: 920px) {
@@ -29,8 +28,11 @@ header nav ul {
   display: flex;
   justify-content: space-around;
 }
-header .nav-item{
+header .nav-item {
   text-align:center;
+}
+header .navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
 
 @keyframes fadeInFromNone {
