@@ -73,6 +73,8 @@ header .navbar.shrink {
 
 .carousel-caption h1 {
   font-size: 5rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
 }
 
 .carousel-item {
