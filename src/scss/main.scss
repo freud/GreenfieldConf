@@ -1,3 +1,7 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html, body{
@@ -95,7 +99,7 @@ header .navbar.shrink {
 }
 
 .carousel-item.first-slide {
-  background-image: url("res/front-background.jpg");
+  background-image: url("/images/front-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
