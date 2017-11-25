@@ -1,15 +1,21 @@
 @import "variables.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=cyrillic,cyrillic-ext,latin-ext');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html, body{
   height: 100%;
+  font-family: Roboto;
 }
 
-.btn-primary {
-  color: #fff;
+.btn-border {
+  border: 1px solid black;
+}
+
+.btn:hover.btn-border, .btn-border {
+  border: 1px solid black;
 }
 
 /* Main menu
@@ -61,7 +67,7 @@ header .navbar.shrink {
 -------------------------------------------------- */
 .full-page {
   height: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .carousel, 
@@ -105,19 +111,29 @@ header .navbar.shrink {
 /* Speakers, agenda
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
-.main-page-block .col-lg-3 {
+.main-page-block h1 {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.main-page-block .speaker-block {
   margin-bottom: 1.5rem;
   text-align: center;
 }
-.main-page-block h1 {
-  font-weight: 400;
+.main-page-block a,
+.main-page-block a:hover {
+  color: Black;
+  text-decoration: none;
 }
-.main-page-block .col-lg-3 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+.main-page-block .speaker-name {
+  font-weight: 300;
+  font-size: 1.9rem;
+  margin: 0;
+  display: block;
 }
-
+.main-page-block .speaker-actions {
+  font-size: 1.4rem;
+}
 
 /* Featurettes
 ------------------------- */
