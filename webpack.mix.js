@@ -10,7 +10,10 @@ let mix = require('laravel-mix');
  | file for your application, as well as bundling up your JS files.
  |
  */
+
 mix.setPublicPath('public/');
+mix.config.fileLoaderDirs.images = 'res/';
+mix.config.fileLoaderDirs.fonts = 'res/';
 mix.js([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/popper.js/dist/popper.js',
@@ -18,5 +21,5 @@ mix.js([
         'src/js/main.js'
     ], 'main.js');
 mix.sass('src/scss/main.scss', 'main.css');
-mix.copyDirectory('src/res/', 'res/');
+mix.copyDirectory('src/res/', 'public/res/');
 
