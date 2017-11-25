@@ -120,14 +120,16 @@ header .navbar.shrink {
   margin-bottom: 1.5rem;
   text-align: center;
 }
+.main-page-block a,
+.main-page-block a:hover {
+  color: Black;
+  text-decoration: none;
+}
 .main-page-block .speaker-name {
   font-weight: 300;
   font-size: 1.9rem;
   margin: 0;
-}
-.main-page-block .speaker-block p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  display: block;
 }
 .main-page-block .speaker-actions {
   font-size: 1.4rem;
