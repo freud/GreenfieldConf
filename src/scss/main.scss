@@ -51,8 +51,10 @@ $navbar-margin-small: 0.2rem;
 
 header {
   .navbar {
-    background: rgba(20, 20, 20, 0);
     font-size: 1.4rem;
+    background: rgba(20, 20, 20, 0);
+    padding-bottom: $navbar-margin;
+    padding-top: $navbar-margin;
     
     img {
       width: 100%;
