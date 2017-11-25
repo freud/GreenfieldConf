@@ -1,7 +1,7 @@
 @import "variables.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -20,35 +20,6 @@ html, body{
 
 /* Main menu
 -------------------------------------------------- */
-header .navbar {
-  background: rgba(20, 20, 20, 0);
-  font-size: 1.4rem;
-}
-
-@media (max-width: 920px) {
-  header .navbar {
-    font-size: 1.3rem;
-  }
-}
-
-header .navbar img {
-  width: 100%;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0 2px;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-header .nav-item {
-  text-align:center;
-}
-header .navbar-dark .navbar-nav .nav-link {
-  color: white;
-}
-
 $navbar-margin: 1.5rem;
 $navbar-margin-small: 0.2rem;
 
@@ -64,6 +35,7 @@ $navbar-margin-small: 0.2rem;
     padding-top: $navbar-margin-small;
   }
 }
+
 @keyframes fadeOutFromVisible {
   0% {
     background-color:rgba(20, 20, 20, 0.95);
@@ -77,17 +49,52 @@ $navbar-margin-small: 0.2rem;
   }
 }
 
-header .navbar.shrink {
-  animation: fadeInFromNone 0.2s ease-in;
-  background-color:rgba(20, 20, 20, 0.95);
-  padding-bottom: $navbar-margin-small;
-  padding-top: $navbar-margin-small;
+header {
+  .navbar {
+    font-size: 1.4rem;
+    background: rgba(20, 20, 20, 0);
+    padding-bottom: $navbar-margin;
+    padding-top: $navbar-margin;
+    
+    img {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 2px;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .nav-item {
+      text-align:center;
+
+      .nav-link {
+        color: white;
+      }
+    }
+
+    &.shrink {
+      animation: fadeInFromNone 0.2s ease-in;
+      background-color:rgba(20, 20, 20, 0.95);
+      padding-bottom: $navbar-margin-small;
+      padding-top: $navbar-margin-small;
+    }
+    &.top {
+      animation: fadeOutFromVisible 0.2s ease-out;
+      background-color:rgba(20, 20, 20, 0);
+      padding-bottom: $navbar-margin;
+      padding-top: $navbar-margin;
+    }
+  }
 }
-header .navbar.top {
-  animation: fadeOutFromVisible 0.2s ease-out;
-  background-color:rgba(20, 20, 20, 0);
-  padding-bottom: $navbar-margin;
-  padding-top: $navbar-margin;
+
+@media (max-width: 920px) {
+  header .navbar {
+    font-size: 1.3rem;
+  }
 }
 
 /* Full screen banners
@@ -95,44 +102,37 @@ header .navbar.top {
 .full-page {
   height: 100%;
   margin-bottom: 2.5rem;
-}
 
-.carousel, 
-.carousel-inner,
-.carousel-item,
-.carousel-item.active {
-  height: 100%;
-}
+  .carousel, 
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 100%;
+  }
 
-.carousel-caption {
-  top: 30%;
-  text-align: center;
-  z-index: 10;
-}
+  .carousel-caption {
+    top: 30%;
+    text-align: center;
+    z-index: 10;
 
-.carousel-caption h1 {
-  font-size: 5rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-}
+    h1 {
+      font-size: 5rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+  }
 
-.carousel-item {
-  background-color: #777;
-}
+  .carousel-item {
+    background-color: #777;
 
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-}
-
-.carousel-item.first-slide {
-  background-image: url("res/front-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-attachment: fixed;
+    &.first-slide {
+      background-image: url("res/front-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-attachment: fixed;
+    }
+  }
 }
 
 /* Speakers, agenda
