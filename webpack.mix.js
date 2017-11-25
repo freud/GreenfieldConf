@@ -15,12 +15,12 @@ mix.setPublicPath('public/');
 mix.config.fileLoaderDirs.images = 'res/';
 mix.config.fileLoaderDirs.fonts = 'res/';
 mix.js([
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/popper.js/dist/popper.js',
-        'node_modules/bootstrap/dist/js/bootstrap.js',
+        'node_modules/jquery/dist/jquery.slim.js',
         'src/js/main.js'
     ], 'main.js');
 mix.sass('src/scss/main.scss', 'main.css')
     .options({processCssUrls: false});
 mix.copyDirectory('src/res/', 'public/res/');
-
+mix.autoload({
+   jquery: ['$', 'window.jQuery']
+});
