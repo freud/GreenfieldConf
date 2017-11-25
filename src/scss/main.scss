@@ -70,18 +70,45 @@ header .navbar-dark .navbar-nav .nav-link {
   color: white;
 }
 
+$navbar-margin: 1.5rem;
+$navbar-margin-small: 0.2rem;
+
 @keyframes fadeInFromNone {
   0% {
     background-color:rgba(20, 20, 20, 0);
+    padding-bottom: $navbar-margin;
+    padding-top: $navbar-margin;
   }
   100% {
     background-color:rgba(20, 20, 20, 0.95);
+    padding-bottom: $navbar-margin-small;
+    padding-top: $navbar-margin-small;
+  }
+}
+@keyframes fadeOutFromVisible {
+  0% {
+    background-color:rgba(20, 20, 20, 0.95);
+    padding-bottom: $navbar-margin-small;
+    padding-top: $navbar-margin-small;
+  }
+  100% {
+    background-color:rgba(20, 20, 20, 0);
+    padding-bottom: $navbar-margin;
+    padding-top: $navbar-margin;
   }
 }
 
 header .navbar.shrink {
   animation: fadeInFromNone 0.2s ease-in;
   background-color:rgba(20, 20, 20, 0.95);
+  padding-bottom: $navbar-margin-small;
+  padding-top: $navbar-margin-small;
+}
+header .navbar.top {
+  animation: fadeOutFromVisible 0.2s ease-out;
+  background-color:rgba(20, 20, 20, 0);
+  padding-bottom: $navbar-margin;
+  padding-top: $navbar-margin;
 }
 
 /* Full screen banners
