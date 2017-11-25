@@ -97,6 +97,37 @@ header {
   }
 }
 
+/* About the conf
+-------------------------------------------------- */
+.about-us {
+  p {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
+}
+/* Conf numbers
+-------------------------------------------------- */
+.conf-numbers {
+  color: White;
+  text-align: center;
+  background: url("res/paths-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+
+  .conf-numbers-inner {
+    padding: 2rem;
+    background-color: rgba(0,0,0, 0.6);
+  }
+
+  span {
+    font-size: 4rem;
+  }
+  small {
+    display: block;
+  }
+}
 /* Full screen banners
 -------------------------------------------------- */
 .full-page {
