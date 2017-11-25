@@ -11,6 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.disableNotifications();
 mix.setPublicPath('public/');
 mix.config.fileLoaderDirs.images = 'res/';
 mix.config.fileLoaderDirs.fonts = 'res/';
