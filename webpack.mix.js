@@ -20,6 +20,7 @@ mix.js([
         'node_modules/bootstrap/dist/js/bootstrap.js',
         'src/js/main.js'
     ], 'main.js');
-mix.sass('src/scss/main.scss', 'main.css');
+mix.sass('src/scss/main.scss', 'main.css')
+    .options({processCssUrls: false});
 mix.copyDirectory('src/res/', 'public/res/');
 
