@@ -1,3 +1,4 @@
+@import "variables.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
@@ -9,8 +10,6 @@ html, body{
 
 .btn-primary {
   color: #fff;
-  background-color: #259707;
-  border-color: #259707;
 }
 
 /* Main menu
