@@ -20,35 +20,6 @@ html, body{
 
 /* Main menu
 -------------------------------------------------- */
-header .navbar {
-  background: rgba(20, 20, 20, 0);
-  font-size: 1.4rem;
-}
-
-@media (max-width: 920px) {
-  header .navbar {
-    font-size: 1.3rem;
-  }
-}
-
-header .navbar img {
-  width: 100%;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0 2px;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
-}
-header .nav-item {
-  text-align:center;
-}
-header .navbar-dark .navbar-nav .nav-link {
-  color: white;
-}
-
 $navbar-margin: 1.5rem;
 $navbar-margin-small: 0.2rem;
 
@@ -64,6 +35,7 @@ $navbar-margin-small: 0.2rem;
     padding-top: $navbar-margin-small;
   }
 }
+
 @keyframes fadeOutFromVisible {
   0% {
     background-color:rgba(20, 20, 20, 0.95);
@@ -77,17 +49,50 @@ $navbar-margin-small: 0.2rem;
   }
 }
 
-header .navbar.shrink {
-  animation: fadeInFromNone 0.2s ease-in;
-  background-color:rgba(20, 20, 20, 0.95);
-  padding-bottom: $navbar-margin-small;
-  padding-top: $navbar-margin-small;
+header {
+  .navbar {
+    background: rgba(20, 20, 20, 0);
+    font-size: 1.4rem;
+    
+    img {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 2px;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .nav-item {
+      text-align:center;
+
+      .nav-link {
+        color: white;
+      }
+    }
+
+    &.shrink {
+      animation: fadeInFromNone 0.2s ease-in;
+      background-color:rgba(20, 20, 20, 0.95);
+      padding-bottom: $navbar-margin-small;
+      padding-top: $navbar-margin-small;
+    }
+    &.top {
+      animation: fadeOutFromVisible 0.2s ease-out;
+      background-color:rgba(20, 20, 20, 0);
+      padding-bottom: $navbar-margin;
+      padding-top: $navbar-margin;
+    }
+  }
 }
-header .navbar.top {
-  animation: fadeOutFromVisible 0.2s ease-out;
-  background-color:rgba(20, 20, 20, 0);
-  padding-bottom: $navbar-margin;
-  padding-top: $navbar-margin;
+
+@media (max-width: 920px) {
+  header .navbar {
+    font-size: 1.3rem;
+  }
 }
 
 /* Full screen banners
