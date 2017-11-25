@@ -24,6 +24,7 @@ mix.js([
 mix.sass('src/scss/main.scss', 'main.css')
     .options({processCssUrls: false});
 mix.copyDirectory('src/res/', 'public/res/');
+mix.copyDirectory('node_modules/font-awesome/fonts', 'public/res/fonts/');
 mix.autoload({
     jquery: ['$', 'window.jQuery'],
     'popper.js/dist/umd/popper.js': ['Popper']
