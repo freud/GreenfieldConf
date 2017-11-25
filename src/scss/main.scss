@@ -217,50 +217,62 @@ header .navbar.shrink {
     margin-top: 7rem;
   }
 }
-
 /* FOOTER
 -------------------------------------------------- */
-footer hr {
-    margin: 0.2vw 1vw;
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.7);
+footer {
+  color: #f0f0f0;
+  padding: 50px 0 0 0;
+  
+  a { 
+    color:#a0a3a4;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  h6 {
+    color: white;
+  }
+
+  i { 
+    margin-right: 0.5rem;
+
+    &.contact-icon {
+      background-color: darken($dark, 3%);
+      padding: 1rem;
+    }
+  }
+  .footer-left {
+    .logo { 
+      margin-bottom: 2rem;
+    }
+  }
+  .footer-right
+  {
+    ul { 
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+      }
+    }
+  }
+
+  .row > div {
+    padding-bottom: 1.5rem;
+  }
 }
 
-footer nav li {
-    margin-left: 1vw;
-    margin-right: 1vw;
+.copyright { 
+  min-height: 40px;
+  background-color: #000000;
 }
-
-#footer-2 {
-    font-size: 0.8rem;
-    color: #ffffff;
-}
-
-
-
-#footer-2 .copyright-text {
-    margin-left: 1rem;
-}
-
-#footer-2 ul {
-    list-style-type: none;
-    list-style-position: outside;
-    display: flex;
-}
-
-#footer-2 ul > li {
-    margin-left: 1vw;
-    margin-right: 1vw;
-}
-
-#footer-2 a,
-#footer-2 a:active,
-#footer-2 a:visited {
-    color: rgba(255, 255, 255, 0.5);
-
-}
-
-#footer-2 a:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
+.copyright p { 
+  text-align: left;
+  color: #FFF;
+  padding: 10px;
+  margin: 0;
 }
