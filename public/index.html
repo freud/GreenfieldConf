@@ -7,8 +7,6 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
     <title>Carousel Template for Bootstrap</title>
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
   </head>
   <body>
@@ -16,7 +14,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-dark py-4 fixed-top">
         <a class="navbar-brand" href="#">
-          <img src="res\logo.png" />
+          <img src="res/logo.png" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -217,22 +215,6 @@
       </footer>
 
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
-        crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="lib/bootstrap/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="lib/bootstrap/assets/js/vendor/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-      $(window).scroll(function(){
-        if($(this).scrollTop() == 0){
-          $('nav').removeClass('shrink',1000);
-        }
-        else {          
-          $('nav').addClass('shrink',1000, "easeOutSine");
-        }
-      });
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
