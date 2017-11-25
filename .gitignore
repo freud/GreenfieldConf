@@ -3,3 +3,5 @@ node_modules
 public/res
 public/main.css
 public/main.js
+public/mix-manifest.json
+mix-manifest.json
