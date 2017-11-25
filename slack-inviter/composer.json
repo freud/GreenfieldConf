@@ -1,0 +1,23 @@
+{
+    "name": "fateyan/slack-inviter",
+    "description": "Slack Inviter By PHP",
+    "require": {
+        "vlucas/phpdotenv": "^2.0",
+        "google/recaptcha": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "fateyan",
+            "email": "fateyan.tw@gmail.com"
+        },
+        {
+            "name": "BinotaLiu",
+            "email": "binota@binota.org"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+		    "Slack\\": "src/"
+		}
+	}
+}
