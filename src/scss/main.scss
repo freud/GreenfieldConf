@@ -57,17 +57,32 @@ header {
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
 
-    @include media-breakpoint-between(xs, sm) {
-      .navbar-brand {
-        width: 70%;
-      }
-    }
+    // Responsive main menu adjustments
     @include media-breakpoint-only(md) {
       .navbar-brand {
         padding-right: 1rem;
       }
     }
+    @include media-breakpoint-between(xs, sm) {
+      padding: 0;
+      .navbar-brand {
+        width: 70%;
+        // g p d l
+        margin: 1rem 0rem 1rem 0.5rem;
+      }
+      .navbar-toggler {
+        margin: 1rem 0.5rem 1rem 0rem;
+      }
+      .navbar-collapse {
+        background-color:rgba(20, 20, 20, 0.95);
+        
+        .navbar-nav {
+          padding: 0.5rem;
+        }
+      }
+    }
 
+    // The rest of main menu styles
     ul {
       list-style: none;
       margin: 0 2px;
