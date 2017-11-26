@@ -49,15 +49,23 @@ $navbar-margin-small: 0.2rem;
   }
 }
 
+
 header {
   .navbar {
     font-size: 1.4rem;
     background: rgba(20, 20, 20, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
-    
-    img {
-      width: 100%;
+
+    @include media-breakpoint-between(xs, sm) {
+      .navbar-brand {
+        width: 70%;
+      }
+    }
+    @include media-breakpoint-only(md) {
+      .navbar-brand {
+        padding-right: 1rem;
+      }
     }
 
     ul {
