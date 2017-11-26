@@ -320,6 +320,18 @@ footer {
   .row > div {
     padding-bottom: 1.5rem;
   }
+  
+  @include media-breakpoint-between(xs, sm) {
+    text-align: center;
+    .footer-right
+    {
+      text-align: left;
+      display: inline;
+      width: auto;
+      margin: 0 auto;     
+    }
+  }
+
 }
 
 .copyright { 
