@@ -49,17 +49,40 @@ $navbar-margin-small: 0.2rem;
   }
 }
 
+
 header {
   .navbar {
     font-size: 1.4rem;
     background: rgba(20, 20, 20, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
-    
-    img {
-      width: 100%;
+
+    // Responsive main menu adjustments
+    @include media-breakpoint-only(md) {
+      .navbar-brand {
+        padding-right: 1rem;
+      }
+    }
+    @include media-breakpoint-between(xs, sm) {
+      padding: 0;
+      .navbar-brand {
+        width: 70%;
+        // g p d l
+        margin: 1rem 0rem 1rem 0.5rem;
+      }
+      .navbar-toggler {
+        margin: 1rem 0.5rem 1rem 0rem;
+      }
+      .navbar-collapse {
+        background-color:rgba(20, 20, 20, 0.95);
+        
+        .navbar-nav {
+          padding: 0.5rem;
+        }
+      }
     }
 
+    // The rest of main menu styles
     ul {
       list-style: none;
       margin: 0 2px;
@@ -97,6 +120,18 @@ header {
   }
 }
 
+/* Main page blocks
+-------------------------------------------------- */
+.main-page-block {
+  margin-bottom: 2.5rem;
+
+  h1 {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+}
+
 /* About the conf
 -------------------------------------------------- */
 .about-us {
@@ -105,6 +140,7 @@ header {
     font-weight: 100;
   }
 }
+
 /* Conf numbers
 -------------------------------------------------- */
 .conf-numbers {
@@ -169,35 +205,28 @@ header {
 /* Speakers, agenda
 -------------------------------------------------- */
 .main-page-block {
-  margin-bottom: 2.5rem;
+  .speaker-block {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    a, a:hover {
+      color: Black;
+      text-decoration: none;
+    }
+    .speaker-name {
+      font-weight: 300;
+      font-size: 1.9rem;
+      margin: 0;
+      display: block;
+    }
+    .speaker-actions {
+      font-size: 1.4rem;
+    }
+  }
 }
 
-.main-page-block h1 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-.main-page-block .speaker-block {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.main-page-block .speaker-block a,
-.main-page-block .speaker-block a:hover {
-  color: Black;
-  text-decoration: none;
-}
-.main-page-block .speaker-name {
-  font-weight: 300;
-  font-size: 1.9rem;
-  margin: 0;
-  display: block;
-}
-.main-page-block .speaker-actions {
-  font-size: 1.4rem;
-}
-
-/* Paths block
-*/
+/* Agenda, paths block
+-------------------------------------------------- */
 .two-paths-block {
   text-align: center;
   background: url("res/paths-background.jpg");
@@ -205,31 +234,38 @@ header {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
-}
-.two-paths-block .jumbotron
-{
-  background-color: rgba(0,0,0, 0.6);
-  color: White;
-}
 
-.two-paths-block .see-schedule {
-  background-color: transparent;
-  border-color: white;
-  color: white;
-  text-decoration: none;
-  margin: 1rem;
-  display: block;
-}
-.two-paths-block .btn.btn-xl {
-  font-size: 2rem;
-  background-color: transparent;
-  border-color: greenyellow;
-
-  &:hover {
-    border-color: white;
-    background-color: rgba(0,0,0, 0.5);
+  @include media-breakpoint-between(xs, sm) {
+    h1 {
+      font-size: 3rem;
+    }
   }
-}
+
+  .jumbotron {
+    background-color: rgba(0,0,0, 0.6);
+    color: White;
+  }
+
+  .see-schedule {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    display: block;
+  }
+
+  .btn.btn-xl {
+    font-size: 2rem;
+    background-color: transparent;
+    border-color: greenyellow;
+
+    &:hover {
+      border-color: white;
+      background-color: rgba(0,0,0, 0.5);
+    }
+  }
+} 
 
 /* Google map
 -------------------------------------------------- */
@@ -284,6 +320,18 @@ footer {
   .row > div {
     padding-bottom: 1.5rem;
   }
+  
+  @include media-breakpoint-between(xs, sm) {
+    text-align: center;
+    .footer-right
+    {
+      text-align: left;
+      display: inline;
+      width: auto;
+      margin: 0 auto;     
+    }
+  }
+
 }
 
 .copyright { 
