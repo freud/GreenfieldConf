@@ -120,6 +120,18 @@ header {
   }
 }
 
+/* Main page blocks
+-------------------------------------------------- */
+.main-page-block {
+  margin-bottom: 2.5rem;
+
+  h1 {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+}
+
 /* About the conf
 -------------------------------------------------- */
 .about-us {
@@ -128,6 +140,7 @@ header {
     font-weight: 100;
   }
 }
+
 /* Conf numbers
 -------------------------------------------------- */
 .conf-numbers {
@@ -192,35 +205,28 @@ header {
 /* Speakers, agenda
 -------------------------------------------------- */
 .main-page-block {
-  margin-bottom: 2.5rem;
+  .speaker-block {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    a, a:hover {
+      color: Black;
+      text-decoration: none;
+    }
+    .speaker-name {
+      font-weight: 300;
+      font-size: 1.9rem;
+      margin: 0;
+      display: block;
+    }
+    .speaker-actions {
+      font-size: 1.4rem;
+    }
+  }
 }
 
-.main-page-block h1 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-.main-page-block .speaker-block {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.main-page-block .speaker-block a,
-.main-page-block .speaker-block a:hover {
-  color: Black;
-  text-decoration: none;
-}
-.main-page-block .speaker-name {
-  font-weight: 300;
-  font-size: 1.9rem;
-  margin: 0;
-  display: block;
-}
-.main-page-block .speaker-actions {
-  font-size: 1.4rem;
-}
-
-/* Paths block
-*/
+/* Agenda, paths block
+-------------------------------------------------- */
 .two-paths-block {
   text-align: center;
   background: url("res/paths-background.jpg");
@@ -228,31 +234,32 @@ header {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
-}
-.two-paths-block .jumbotron
-{
-  background-color: rgba(0,0,0, 0.6);
-  color: White;
-}
 
-.two-paths-block .see-schedule {
-  background-color: transparent;
-  border-color: white;
-  color: white;
-  text-decoration: none;
-  margin: 1rem;
-  display: block;
-}
-.two-paths-block .btn.btn-xl {
-  font-size: 2rem;
-  background-color: transparent;
-  border-color: greenyellow;
-
-  &:hover {
-    border-color: white;
-    background-color: rgba(0,0,0, 0.5);
+  .jumbotron {
+    background-color: rgba(0,0,0, 0.6);
+    color: White;
   }
-}
+  
+  .see-schedule {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    display: block;
+  }
+
+  .btn.btn-xl {
+    font-size: 2rem;
+    background-color: transparent;
+    border-color: greenyellow;
+
+    &:hover {
+      border-color: white;
+      background-color: rgba(0,0,0, 0.5);
+    }
+  }
+} 
 
 /* Google map
 -------------------------------------------------- */
