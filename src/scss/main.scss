@@ -235,11 +235,17 @@ header {
   background-position: 50% 50%;
   background-attachment: fixed;
 
+  @include media-breakpoint-between(xs, sm) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
   .jumbotron {
     background-color: rgba(0,0,0, 0.6);
     color: White;
   }
-  
+
   .see-schedule {
     background-color: transparent;
     border-color: white;
