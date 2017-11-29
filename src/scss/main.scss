@@ -7,7 +7,7 @@
 -------------------------------------------------- */
 html, body{
   height: 100%;
-  font-family: Roboto;
+  font-family: Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 .btn-border {
@@ -267,11 +267,58 @@ header {
   }
 } 
 
-/* Google map
+/* GOOGLE MAP
 -------------------------------------------------- */
 #location-map {
-  height: 400px;
+  min-height: 400px;
 }
+
+
+.location-wrapper {
+  position: relative;
+
+  .location-box-on-map {
+    position: static;
+
+    .location-box {
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      background-color: #ffffff;
+      z-index: 100;
+      padding: 40px 70px;
+
+      a, a:visited, a:active {
+        color: #505354;
+      }
+      
+      a:hover {
+        text-decoration: none;
+        color: #000;
+      }
+      .fa {
+        color: #259707;
+      }
+
+      @include media-breakpoint-between(xs,sm) {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+        position: static;
+        padding: 15px 15px 0;
+      }
+    }
+  }
+}
+
+
+
 
 /* FOOTER
 -------------------------------------------------- */
