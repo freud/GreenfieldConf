@@ -6,5 +6,5 @@ $(window).scroll(function(){
     else {
         $('header nav').addClass('shrink',1000, "easeOutSine");
         $('header nav').removeClass('top',1000);
-    }
+    } 
 });

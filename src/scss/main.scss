@@ -49,6 +49,7 @@ $navbar-margin-small: 0.2rem;
   }
 }
 
+$header-navbar-backgound: rgba(20, 20, 20, 0.95);
 
 header {
   .navbar {
@@ -64,7 +65,6 @@ header {
       }
     }
     @include media-breakpoint-between(xs, sm) {
-      padding: 0;
       .navbar-brand {
         width: 70%;
         // g p d l
@@ -74,7 +74,7 @@ header {
         margin: 1rem 0.5rem 1rem 0rem;
       }
       .navbar-collapse {
-        background-color:rgba(20, 20, 20, 0.95);
+        background-color:$header-navbar-backgound;
         
         .navbar-nav {
           padding: 0.5rem;
@@ -101,7 +101,7 @@ header {
 
     &.shrink {
       animation: fadeInFromNone 0.2s ease-in;
-      background-color:rgba(20, 20, 20, 0.95);
+      background-color:$header-navbar-backgound;
       padding-bottom: $navbar-margin-small;
       padding-top: $navbar-margin-small;
     }
@@ -275,7 +275,6 @@ $header-margin: 2.5rem;
   min-height: 400px;
 }
 
-
 .location-wrapper {
   position: relative;
 
@@ -380,7 +379,6 @@ footer {
       margin: 0 auto;     
     }
   }
-
 }
 
 .copyright { 
@@ -396,15 +394,56 @@ footer {
 
 /* sub-pages */
 .sub-page {
-  header {
-    background-image: url("res/front-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-attachment: fixed;
-    padding-top: 100px;
-  }
   .main-page-block {
-    padding-top: $header-margin;
-  }  
+    margin-top: 7.5rem;
+
+    h1 {
+      padding-top: $header-margin;
+    }
+  }
+
+  header nav {
+    background-color: $header-navbar-backgound;
+  }
+
+  header {
+    @keyframes fadeInFromNone {
+      0% {
+        padding-bottom: $navbar-margin;
+        padding-top: $navbar-margin;
+      }
+      100% {
+        padding-bottom: $navbar-margin-small;
+        padding-top: $navbar-margin-small;
+      }
+    }
+    
+    @keyframes fadeOutFromVisible {
+      0% {
+        padding-bottom: $navbar-margin-small;
+        padding-top: $navbar-margin-small;
+      }
+      100% {
+        padding-bottom: $navbar-margin;
+        padding-top: $navbar-margin;
+      }
+    }
+    
+    .navbar {
+      background: $header-navbar-backgound;
+  
+      &.shrink {
+        animation: fadeInFromNone 0.2s ease-in;
+        background-color:$header-navbar-backgound;
+        padding-bottom: $navbar-margin-small;
+        padding-top: $navbar-margin-small;
+      }
+      &.top {
+        animation: fadeOutFromVisible 0.2s ease-out;
+        background-color:$header-navbar-backgound;
+        padding-bottom: $navbar-margin;
+        padding-top: $navbar-margin;
+      }
+    }
+  }
 }
