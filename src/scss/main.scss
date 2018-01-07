@@ -271,8 +271,12 @@ $header-margin: 2.5rem;
 
 /* GOOGLE MAP
 -------------------------------------------------- */
-#location-map {
+.location-map {
   min-height: 400px;
+
+  &.bigger-map {
+    min-height: 600px;    
+  }
 }
 
 .location-wrapper {
@@ -318,8 +322,18 @@ $header-margin: 2.5rem;
   }
 }
 
-
-
+/* Localization
+-------------------------------------------------- */
+.main-page-block.location {
+  .fa {
+    margin-right: 1rem;
+    display: inline-block;
+  }
+  .fa-map-marker {
+    font-size: 4rem;
+    float: left;
+  }
+}
 
 /* FOOTER
 -------------------------------------------------- */
