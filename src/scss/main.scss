@@ -335,7 +335,7 @@ $header-margin: 2.5rem;
   }
 }
 
-/* Schedule
+/* Schedule page
 -------------------------------------------------- */
 .schedule-table {
 
@@ -363,6 +363,21 @@ $header-margin: 2.5rem;
     .speaker-name {
       font-size: 1rem;
 
+    }
+  }
+}
+
+/* Speakers page
+-------------------------------------------------- */
+.main-page-block.speakers {
+  .speaker-block {
+    padding: 2rem;
+    .desc {
+      text-align: justify;
+    }
+    .schedule-entry {      
+      display: inline-block;
+      text-align:left;
     }
   }
 }
