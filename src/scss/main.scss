@@ -382,6 +382,24 @@ $header-margin: 2.5rem;
   }
 }
 
+/* Schedule entry
+-------------------------------------------------- */
+.schedule-entry-block {
+  .speaker-block {
+    padding: 2rem;
+    .desc {
+      text-align: justify;
+    }
+  }
+  a.schedule-entry, a.schedule-entry:visited, a.schedule-entry:active {
+    color: #505354;
+  }
+  a.schedule-entry:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
 /* FOOTER
 -------------------------------------------------- */
 footer {
