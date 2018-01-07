@@ -335,6 +335,38 @@ $header-margin: 2.5rem;
   }
 }
 
+/* Schedule
+-------------------------------------------------- */
+.schedule-table {
+
+  font-weight: 300;
+
+  // time
+  tr > td:first-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+    span {
+      font-size: 0.9rem;
+    }  
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .speaker-block {
+    float: left;
+    margin-right: 1rem;
+
+    .speaker-name {
+      font-size: 1rem;
+
+    }
+  }
+}
+
 /* FOOTER
 -------------------------------------------------- */
 footer {
