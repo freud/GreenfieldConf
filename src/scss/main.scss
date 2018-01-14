@@ -139,6 +139,34 @@ $header-margin: 2.5rem;
     text-align: center;
     margin-bottom: $header-margin;
   }
+
+  &.news-block {
+    h2 {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    small {
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .header-image {
+      margin: auto;
+      margin-bottom: 2rem;
+      display: block;
+      max-height: 300px;
+    }
+
+    .col-md-6 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
 }
 
 /* About
@@ -524,6 +552,13 @@ footer {
 
     h1, h2 {
       padding-top: $header-margin;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 2rem;
+      padding-top: 0;
     }
   }
 
