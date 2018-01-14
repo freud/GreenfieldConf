@@ -49,27 +49,48 @@
     <main role="main">
 
       <!-- News -->
-      <div class="container main-page-block">
-        <h1>AKTUALNOŚCI</h1>
-        <p class="news-console">$ git pull aktualności/na/temat/konferencji</p>
+      <div class="container main-page-block schedule-entry-block">
         <div class="row">
-          <div class="col-md-12">
-            <h2>Nowy partner konferencji</h2>
-            <small>12.01.2018</small>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          </div>
-          <div class="col-md-12">
-              <h2>Nowy prelegent</h2>
-              <small>12.01.2018</small>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          </div>
-          <div class="col-md-12">
-              <h2>Rozszerzamy agendę</h2>
-              <small>12.01.2018</small>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          </div>
+          <div class="col-md-8 conf-subject">
+            <h1>BlockChain to nie tylko kryptowaluty!</h1>
+            
+            <p>Tematem przewodnim jest zobrazowanie oraz wytłumaczenie działania łańcucha blokowego. Poczynając od rysu historycznego oraz pierwotnych zastosowań przedstawiona zostanie ewolucja oraz jak bardzo zdecntralizowana oraz rozproszona baza danych w sieciach o architekturze P2P doprowadza do rewolucji.</p>
+            <p>Głównym materiałem do rozmów będzie użycie blockchain w kryptowalutach oraz uświadomienie odbiorców, iż łancuch to nie kryptowaluta. Niestety przez obecne popularyzowanie walut wirtualnych wielokrotnie spotkać możemy się ze stwierdzeniem, iż blockchain to wcześniej wspomniane kryptowaluty. Po wyjaśnieniu różnic przejdziemy do przykładów zastosowania blockchain w różnych dziedzinach życia: 
+              
+              <ol>
+                <li>Nieruchomości</li>
+                <li>Edukacja</li>
+                <li>Branża motoryzacyjna</li>
+                <li>Księgowość</li>
+                <li>Medycyna</li>
+                <li>Finanse</li>
+              </ol>
+            </p>
+
+            <p>Jako wynikiem poprzednich rozważań zostanie przedstawiony przykład implementacji blockChain z uzyciem JavaScript, w celu zobrazowania rzeczywistego działania. Przykład blockchain zrealizowany by był na podstawie krótkiego schematu blokowego, który w kolejnym etapie po zobrazowaniu problemu przedstawiony byłby za pomocą działającego kodu bazującego na crypto-js instalowanego przy użyciu nodeJs. Całość implementacji ma za zadanie być maksymalnie prosta oraz ma umożliwić zrozumienie odbiorcom bezpieczeństwa takiego rozwiązania na podstawie stworzonego łańcucha oraz hash-kodów.</p>
+            
+            <p>Po skończonej prezentacji zostanie podjęta dyskusja czy na podstawie blockchain jestesmy w stanie stworzyć niezalezny system informacyjny, finansowy czy inny dowolny w którym to chronologia danych i zalezności są głównym kluczem do stabilności i łatwego rozwoju.</p>
+
+            <a class="btn btn-light schedule-entry" onclick="history.back()" title="Powrót"><i class="fa fa-clock-o" aria-hidden="true"></i> powrót</a>
+          </div>  
+          <div class="col-md-4">
+            <div class="speaker-block">
+              <a><img class="rounded-circle" src="res/speakers/dominik_stawicki.jpg" alt="Dominik Stawicki" width="140" height="140"></a>
+              <a class="speaker-name">Dominik Stawicki</a>
+              <p class="desc">
+                  Absolwent Politechniki Łódzkiej na kierunku Elektrotechniki i Telekomunikacji ze specjalnością mikroprocesorową. Z programowaniem związany od 10 lat, zdobywając w tym czasie doświadczenie w firmach takich jak Fujitsu czy Vistex, aby ostatecznie odnaleźć swoje miejsce w Transition Technologies PSC. W przeszłości związany z technologiami backendowymi, aktualnie zaangażowany w projekty frontendowe z użyciem Angulara we wszystkich odsłonach.<br /><br />
+                  
+                  Na co dzień dba o nieustanny rozwój, stale poszerzając swoją wiedzę o nowe technologie i języki programowania. Prywatnie zainteresowany nowoczesnymi rozwiązaniami z branży automotive, z naciskiem na inteligentne systemy nawigacyjne dla aut elektrycznych.</p>
+              <p class="speaker-actions">
+                <a class="btn btn-light btn-sm" href="https://twitter.com/j_palka" role="button" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-sm" href="https://web.facebook.com/jaroslaw.palka" role="button" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-sm" href="https://www.linkedin.com/in/jpalka/" role="button" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </p>
+            </div>
+          </div>          
         </div>
       </div>
+    </main>
       
       <footer class="bg-dark">
         <div class="container">

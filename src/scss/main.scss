@@ -380,7 +380,7 @@ $header-margin: 2.5rem;
   .speaker-block {
     float: left;
     margin-right: 1rem;
-
+    width: 100px;
     .speaker-name {
       font-size: 1rem;
 
@@ -418,6 +418,12 @@ $header-margin: 2.5rem;
   a.schedule-entry:hover {
     text-decoration: none;
     color: #000;
+  }
+  .conf-subject {
+    p {
+      text-align: justify;
+      text-indent: 5rem;
+    }
   }
 }
 
