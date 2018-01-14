@@ -271,8 +271,12 @@ $header-margin: 2.5rem;
 
 /* GOOGLE MAP
 -------------------------------------------------- */
-#location-map {
+.location-map {
   min-height: 400px;
+
+  &.bigger-map {
+    min-height: 600px;    
+  }
 }
 
 .location-wrapper {
@@ -318,8 +322,101 @@ $header-margin: 2.5rem;
   }
 }
 
+/* Localization
+-------------------------------------------------- */
+.main-page-block.location {
+  .fa {
+    margin-right: 1rem;
+    display: inline-block;
+  }
+  .fa-map-marker {
+    font-size: 4rem;
+    float: left;
+  }
+}
 
+/* Schedule page
+-------------------------------------------------- */
+.schedule-table {
 
+  font-weight: 300;
+
+  // time
+  tr > td:first-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+    span {
+      font-size: 0.9rem;
+    }  
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+
+  .speaker-block {
+    float: left;
+    margin-right: 1rem;
+
+    .speaker-name {
+      font-size: 1rem;
+
+    }
+  }
+}
+
+/* Speakers page
+-------------------------------------------------- */
+.main-page-block.speakers {
+  .speaker-block {
+    padding: 2rem;
+    .desc {
+      text-align: justify;
+    }
+    .schedule-entry {      
+      display: inline-block;
+      text-align:left;
+    }
+  }
+}
+
+/* Schedule entry
+-------------------------------------------------- */
+.schedule-entry-block {
+  .speaker-block {
+    padding: 2rem;
+    .desc {
+      text-align: justify;
+    }
+  }
+  a.schedule-entry, a.schedule-entry:visited, a.schedule-entry:active {
+    color: #505354;
+  }
+  a.schedule-entry:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+/* BILETY
+-------------------------------------------------- */
+@import 'main-trickets';
+
+/* Contact page
+-------------------------------------------------- */
+.contact-page-block {
+  a {
+    text-decoration: none;
+    color: black;
+
+    i {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+}
 
 /* FOOTER
 -------------------------------------------------- */
