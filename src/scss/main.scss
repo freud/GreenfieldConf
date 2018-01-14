@@ -404,6 +404,20 @@ $header-margin: 2.5rem;
 -------------------------------------------------- */
 @import 'main-trickets';
 
+/* Contact page
+-------------------------------------------------- */
+.contact-page-block {
+  a {
+    text-decoration: none;
+    color: black;
+
+    i {
+      display: inline-block;
+      padding: 5px;
+    }
+  }
+}
+
 /* FOOTER
 -------------------------------------------------- */
 footer {
