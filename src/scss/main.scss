@@ -403,7 +403,11 @@ $header-margin: 2.5rem;
   h3 {
     font-size: 1.4rem;
     font-weight: 300;
+    margin-bottom: 0rem;
+  }
+  .schedule-categories {
     margin-bottom: 1rem;
+    display: block;
   }
 
   .speaker-block {
