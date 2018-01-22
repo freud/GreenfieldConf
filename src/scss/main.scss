@@ -117,6 +117,7 @@ header {
 @media (max-width: 920px) {
   header .navbar {
     font-size: 1.3rem;
+
   }
 }
 
@@ -132,15 +133,57 @@ $header-margin: 2.5rem;
     text-align: center;
     margin-bottom: $header-margin;
   }
+
+  h2 {
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: $header-margin;
+  }
+
+  &.news-block {
+    h2 {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    small {
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .header-image {
+      margin: auto;
+      margin-bottom: 2rem;
+      display: block;
+      max-height: 300px;
+    }
+
+    .col-md-6 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
 }
 
-/* About the conf
+/* About
 -------------------------------------------------- */
-.about-us {
+.about {
   p {
     font-size: 1.5rem;
     font-weight: 100;
   }
+}
+
+/* News
+-------------------------------------------------- */
+.news-console {
+    font-size: 1.2rem;
+    font-family: monospace;
+    text-align: center;
 }
 
 /* Conf numbers
@@ -223,6 +266,12 @@ $header-margin: 2.5rem;
     }
     .speaker-actions {
       font-size: 1.4rem;
+    }
+
+    .fa-question {
+      font-size: 8rem;
+      display: block;
+      height: 140px;
     }
   }
 }
@@ -328,6 +377,7 @@ $header-margin: 2.5rem;
   .fa {
     margin-right: 1rem;
     display: inline-block;
+    width: 20px;
   }
   .fa-map-marker {
     font-size: 4rem;
@@ -353,13 +403,17 @@ $header-margin: 2.5rem;
   h3 {
     font-size: 1.4rem;
     font-weight: 300;
+    margin-bottom: 0rem;
+  }
+  .schedule-categories {
     margin-bottom: 1rem;
+    display: block;
   }
 
   .speaker-block {
     float: left;
     margin-right: 1rem;
-
+    width: 100px;
     .speaker-name {
       font-size: 1rem;
 
@@ -382,6 +436,23 @@ $header-margin: 2.5rem;
   }
 }
 
+/* About us
+-------------------------------------------------- */
+.main-page-block.aboutus {
+  .speaker-block {
+    padding: 1rem;
+    .desc {
+      text-align: center;
+    }
+
+    .fa.fa-user-circle {
+      font-size: 8rem;
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
 /* Schedule entry
 -------------------------------------------------- */
 .schedule-entry-block {
@@ -397,6 +468,12 @@ $header-margin: 2.5rem;
   a.schedule-entry:hover {
     text-decoration: none;
     color: #000;
+  }
+  .conf-subject {
+    p {
+      text-align: justify;
+      text-indent: 5rem;
+    }
   }
 }
 
@@ -496,6 +573,13 @@ footer {
 
     h1, h2 {
       padding-top: $header-margin;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 0;
+      margin-top: 2rem;
+      padding-top: 0;
     }
   }
 
