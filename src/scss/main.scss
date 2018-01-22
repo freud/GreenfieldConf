@@ -436,6 +436,23 @@ $header-margin: 2.5rem;
   }
 }
 
+/* About us
+-------------------------------------------------- */
+.main-page-block.aboutus {
+  .speaker-block {
+    padding: 1rem;
+    .desc {
+      text-align: center;
+    }
+
+    .fa.fa-user-circle {
+      font-size: 8rem;
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
 /* Schedule entry
 -------------------------------------------------- */
 .schedule-entry-block {
