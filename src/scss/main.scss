@@ -430,8 +430,15 @@ $header-margin: 2.5rem;
       text-align: justify;
     }
     .schedule-entry {      
-      display: inline-block;
-      text-align:left;
+      display: block;
+      text-align: left;
+      @extend .rounded;
+      background-color: #f8f8f8;
+      background-image: url('res/favicons/favicon-32x32.png');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      padding: 10px;
+      padding-left: 50px;
     }
   }
 }
