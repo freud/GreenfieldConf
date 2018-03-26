@@ -1,0 +1,160 @@
+﻿<!doctype html>
+<html lang="pl-PL">
+  <head>
+    <title>Greenfield Conference - Jakub Marchwicki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="res/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="res/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="res/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="res/favicons/favicon-16x16.png">
+    <link href="main.css" rel="stylesheet">
+
+    <meta property="og:url" content="http://GreenfieldConf.pl/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Greenfield Conference" />
+    <meta property="og:description" content="Pierwsza tak duża konferencja dla programistów w woj. lubuskim!" />
+    <meta property="og:image" content="/res/fb_preview.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Greenfield_Conf">
+    <meta name="twitter:title" content="Jakub Marchwicki - prelegent Greenfield Conference">
+    <meta name="twitter:description" content="Pierwsza tak duża konferencja dla programistów w woj. lubuskim!">
+    <meta name="twitter:creator" content="@Greenfield_Conf">
+    <meta name="twitter:image" content="http://GreenfieldConf.pl/res/speakers/agenda_jakub_marchwicki.jpg">
+  </head>
+  <body class="sub-page">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+          <img src="res/logo_small_white.png" class="img-fluid" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="speakers.html">Prelegenci</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="partners.html">Partnerzy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Lokalizacja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">Aktualności</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cfp.html">CFP</a>
+            </li>
+            <li class="nav-item">
+              <a href="buy-ticket.html" class="btn btn-primary" style="position: relative; top: 4px; left: 5px">Kup bilet</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+
+      <!-- News -->
+      <div class="container main-page-block schedule-entry-block">
+        <div class="row">
+          <div class="col-md-8 conf-subject">
+            <h1>Architektura mikro usług metodą naukową</h1>
+            <p>W każdym projekcie, tym bardzo daleko, ale też tych zupełnie blisko (w sumie nawet w tych w pokoju obok) ktoś próbuje rozproszyć istniejący system informatyczny… albo napisać nowy – już rozproszony. Przybiera to wiele różnych nazw, wiele postaci: mikroserwisy, współdzielona baza danych, rozproszona baza danych, asynchroniczne kolejki.</p>
+
+            <p>Ok. Decyzja jak decyzja, spróbujmy na początek jej nie oceniać, ale przeanalizujmy jej skutki. Co zyskamy? Co tracimy? Co może się nie udać? Czy powinniśmy się spodziewać nieoczekiwanych problemów? Czy możemy im zapobiec? I czy te problemy naprawdę są takie nieoczekiwane?</p>
+                      
+            <p>Nie są! Ale nie dostrzegamy ich dopóki nie zejdziemy z naszej wieży z kości słoniowej i spojrzymy na system nie z wysokości 30 tysięcy stóp, ale przyjrzymy się pojedynczym śrubkom i nitom, gdzieś blisko metalu. Okazuje się że jest wiele reguł i praw które regulują jak nasz system będzie się zachowywał. Przyglądnijmy się co to może być:
+            <ol>
+              <li>Czy latencja jest problematyczna? Zacznijmy od prostych rzeczy</li>
+              <li>Jeżeli to jest problem, to czy zawsze powinienem się odwoływać do najbliższego węzła? Jak to zrobić? Czy są jakieś reguły – może, skoro CDNy jakoś działają</li>
+              <li>A skoro już rozproszyliśmy nasz system, to jaka liczba węzłów to „wystarczająco”? Z punktu widzenia dostępności? Z punktu widzenia spójności danych? Czy to w ogóle powinno mieć znaczenia?</li>
+            </ol>
+            </p>
+
+            <p>Na każde z tak stawianych pytań bardzo łatwo jest znaleźć odpowiedź w google. 3, 7, 42 – jest wiele odpowiedzi, ale spróbujemy pójść poziom głębiej. Bo za każda wartością podaną na stackoveflow powinna stać metoda naukowa, eksperyment, czasem wręcz wzór matematyczny – i takich właśnie odpowiedzi będziemy poszukiwać podczas tej sesji.</p>
+
+            <a class="btn btn-light schedule-entry" onclick="history.back()" title="Powrót"><i class="fa fa-clock-o" aria-hidden="true"></i> powrót</a>
+          </div>
+          <div class="col-md-4">
+            <div class="speaker-block">
+              <a><img class="rounded-circle" src="res/speakers/jakub_marchwicki.jpg" alt="Kuba Marchwicki" width="140" height="140"></a>
+              <a class="speaker-name">Jakub Marchwicki</a>
+              <p class="speaker-actions">
+                <a class="btn btn-light btn-sm" href="https://twitter.com/kubem" role="button" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-sm" href="https://web.facebook.com/kuba.marchwicki" role="button" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a class="btn btn-light btn-sm" href="https://www.linkedin.com/in/kubamarchwicki/" role="button" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+              </p>
+              <p class="desc">Programista od kilkunastu lat, architekt od kilku, analityk czasami, konsultant jak trzeba, manager z wyboru, trener z zamiłowania, wannabe entrepreneur z marzeń, lider Java User Group w Gdańsku. Jest spora szansa, że nic z tego nie robię dobrze, ale próbuję… i wyciągam wnioski z porażek. Złośliwi mówią, że nie umie programować, ale miewa niezłe pomysły.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <footer class="bg-dark">
+        <div class="container">
+          <div class="row">
+            <!-- left -->
+            <div class="col-md-4 footer-left">
+              <div class="logo"><img src="res/logo_small_white.png" /></div>
+              <p>Zielona Góra, 19 maja 2018</p>
+              <p>Pierwsza konferencja dla programistów w woj. lubuskim.</p>
+            </div>
+            <div class="col-md-5">
+              <h6 class="heading7">KONTAKT</h6>
+              <p><i class="fa fa-map-marker"></i> Zielona Góra, Uniwersytet Zielonogórski, ul.&nbsp;Prof.&nbsp;Z.&nbsp;Szafrana&nbsp;2, Budynek&nbsp;A2</p>
+              <p>
+                <a href="https://twitter.com/Greenfield_Conf" title="@GreenfieldConf"><i class="fa fa-twitter contact-icon"></i></a>
+                <a href="#" title="FB:GreenfieldConf"><i class="fa fa-facebook-official  contact-icon"></i></a>
+                <a href="mailto:contact@greenfieldconf.pl" title="contact@greenfieldconf.pl"><i class="fa fa-envelope contact-icon"></i></a>
+              </p>
+            </div>
+            <!-- center -->
+            <div class="col-md-3 footer-right">
+              <h6 class="heading7">INFORMACJE</h6>
+              <ul>
+                <li><i class="fa fa-code"></i><a href="buy-ticket.html">Kup bilet</a></li>
+                <li><i class="fa fa-code"></i><a href="schedule.html">Agenda</a></li>
+                <li><i class="fa fa-code"></i><a href="speakers.html">Prelegenci</a></li>
+                <li><i class="fa fa-code"></i><a href="news.html">Aktualności</a></li>
+                <li><i class="fa fa-code"></i><a href="cfp.html">CFP</a></li>
+                <li><i class="fa fa-code"></i><a href="aboutus.html">Organizatorzy</a></li>
+                <li><i class="fa fa-code"></i><a href="partners.html">Partnerzy</a></li>
+                <li><i class="fa fa-code"></i><a href="contact.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="copyright">
+        <div class="container">
+          <div class="col-md-6">
+            <p>© 2018 - Greenfield Conference - konferencja dla programistów</p>
+          </div>
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112832593-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112832593-1');
+    </script>
+  </body>
+</html>
