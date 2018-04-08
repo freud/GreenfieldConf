@@ -244,6 +244,25 @@ $header-margin: 2.5rem;
       background-position: 50% 50%;
       background-attachment: fixed;
     }
+
+    &.partner-slide {
+      @extend .first-slide;
+
+      .carousel-caption {
+        top: 15%;
+      }
+      .partner-content {
+        .big-plus {
+          font-weight: bold;
+          font-size: 5rem;
+        }
+        .partner-more-info {
+          margin-top: 1rem;
+          background: rgb(255, 255, 255);
+          color: black;
+        }
+      }
+    }
   }
 }
 
