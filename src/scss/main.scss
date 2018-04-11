@@ -249,17 +249,45 @@ $header-margin: 2.5rem;
       @extend .first-slide;
 
       .carousel-caption {
-        top: 15%;
+        top: 10%;
       }
       .partner-content {
         .big-plus {
           font-weight: bold;
-          font-size: 5rem;
+          font-size: 4rem;
         }
-        .partner-more-info {
-          margin-top: 1rem;
-          background: rgb(255, 255, 255);
-          color: black;
+        .partner-description {
+          background: rgb(243, 111, 57);
+          padding: 1rem;
+          text-align: left;
+
+          .btn-light {
+            background-color: White;
+          }
+        }
+
+        &.metapack {
+          .partner-description {
+            background: #005395;
+          }
+        }
+        &.ttpsc {
+          .partner-description {
+            background: #7a2d85;
+          }
+          .logo {
+            display: block;
+            margin: 15px;
+          }
+        }
+        &.cinkciarz {
+          .partner-description {
+            background: black;
+          }
+          .logo {
+            display: block;
+            margin: 15px;
+          }
         }
       }
     }
