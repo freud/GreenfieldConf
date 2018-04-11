@@ -404,6 +404,13 @@ $header-margin: 2.5rem;
     > td:nth-child(3) {
       width: 45%;
     }
+
+    td {
+      div.row > div
+      {
+        padding-bottom: 1rem;
+      }
+    }
   }
 
   h3 {
