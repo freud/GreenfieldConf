@@ -393,11 +393,16 @@ $header-margin: 2.5rem;
   font-weight: 300;
 
   // time
-  tr > td:first-child {
-    font-size: 1.5rem;
-    font-weight: 300;
-    span {
-      font-size: 0.9rem;
+  tr {
+    > td:first-child {
+      font-size: 1.5rem;
+      font-weight: 300;
+      span {
+        font-size: 0.9rem;
+      }
+    }
+    > td:nth-child(3) {
+      width: 45%;
     }
   }
 
