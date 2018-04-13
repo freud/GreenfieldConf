@@ -393,11 +393,23 @@ $header-margin: 2.5rem;
   font-weight: 300;
 
   // time
-  tr > td:first-child {
-    font-size: 1.5rem;
-    font-weight: 300;
-    span {
-      font-size: 0.9rem;
+  tr {
+    > td:first-child {
+      font-size: 1.5rem;
+      font-weight: 300;
+      span {
+        font-size: 0.9rem;
+      }
+    }
+    > td:nth-child(3) {
+      width: 45%;
+    }
+
+    td {
+      div.row > div
+      {
+        padding-bottom: 1rem;
+      }
     }
   }
 
@@ -411,6 +423,14 @@ $header-margin: 2.5rem;
     display: block;
   }
 
+  .dinner {
+    text-align: center;
+    i {
+      font-size: 2em;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+  }
   .speaker-block {
     float: left;
     margin-right: 1rem;
