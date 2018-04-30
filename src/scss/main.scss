@@ -247,14 +247,28 @@ $header-margin: 2.5rem;
 
     &.partner-slide {
       @extend .first-slide;
+      
+      @include media-breakpoint-down(md) {
+          font-size: 0.8rem;
+      }
+      
+      .banner-logo {
+        margin-bottom: 2em;
+      }
 
       .carousel-caption {
         top: 10%;
       }
       .partner-content {
+        @include media-breakpoint-down(md) {
+          margin-top: 3rem;
+       }
+        
         .big-plus {
           font-weight: bold;
           font-size: 4rem;
+          margin: 0;
+          padding: 0;
         }
         .partner-description {
           background: rgb(243, 111, 57);
