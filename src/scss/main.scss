@@ -282,11 +282,21 @@ $header-margin: 2.5rem;
         }
         &.cinkciarz {
           .partner-description {
-            background: black;
+            color: black;
+            background: white;
+          }
+          .cinkciarz-slogan {
+            font-weight: bold;
+            font-size: 1.1em;
+            line-height: 1em;
+            padding: 10px;
+          }
+          .bottom-panel {
+            margin-top: 1em;
           }
           .logo {
             display: block;
-            margin: 15px;
+            margin: 10px;
           }
         }
       }
