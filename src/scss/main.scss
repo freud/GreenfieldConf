@@ -2,6 +2,7 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -243,6 +244,82 @@ $header-margin: 2.5rem;
       background-repeat: no-repeat;
       background-position: 50% 50%;
       background-attachment: fixed;
+    }
+
+    &.partner-slide {
+      @extend .first-slide;
+      
+      @include media-breakpoint-down(md) {
+          font-size: 0.8rem;
+      }
+      
+      .banner-logo {
+        margin-bottom: 2em;
+      }
+
+      .carousel-caption {
+        top: 10%;
+      }
+      .partner-content {
+        @include media-breakpoint-down(md) {
+          margin-top: 3rem;
+        }
+
+        .btn {
+          font-stretch: extra-condensed;
+          font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        .big-plus {
+          font-weight: bold;
+          font-size: 4rem;
+          margin: 0;
+          padding: 0;
+        }
+        .partner-description {
+          background: rgb(243, 111, 57);
+          padding: 1rem;
+          text-align: left;
+
+          .btn-light {
+            background-color: White;
+          }
+        }
+
+        &.metapack {
+          .partner-description {
+            background: #005395;
+          }
+        }
+        &.ttpsc {
+          .partner-description {
+            background: #7a2d85;
+          }
+          .logo {
+            display: block;
+            margin: 15px;
+          }
+        }
+        &.cinkciarz {
+          .partner-description {
+            color: black;
+            background: white;
+          }
+          .cinkciarz-slogan {
+            font-weight: bold;
+            font-size: 1.1em;
+            line-height: 1em;
+            padding: 10px;
+          }
+          .bottom-panel {
+            margin-top: 1em;
+          }
+          .logo {
+            display: block;
+            margin: 10px;
+          }
+        }
+      }
     }
   }
 }

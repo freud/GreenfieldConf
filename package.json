@@ -26,6 +26,7 @@
     "laravel-mix": "^1.6.1"
   },
   "dependencies": {
+    "jquery.cookie": "^1.4.1",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.0.10",
     "style-loader": "^0.19.1"
