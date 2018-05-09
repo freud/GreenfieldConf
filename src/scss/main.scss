@@ -122,7 +122,8 @@ header {
   }
 }
 
-$header-margin: 2.5rem;
+$header-margin: 5.5rem;
+$header-margin-bottom: 2.5rem;
 
 /* Main page blocks
 -------------------------------------------------- */
@@ -739,7 +740,7 @@ footer {
         h2 {
             text-align: center;
             margin-top: $header-margin;
-            margin-bottom: $header-margin;
+            margin-bottom: $header-margin-bottom;
         }
 
         .row.uz {
