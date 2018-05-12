@@ -488,6 +488,19 @@ $header-margin-bottom: 2.5rem;
       {
         padding-bottom: 1rem;
       }
+      @include media-breakpoint-up(md) {
+        div.row > div:first-child
+        {
+          border-right: 3px solid #e0e0e0;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        div.row > div:first-child
+        {
+          border-bottom: 3px solid #e0e0e0;
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 
