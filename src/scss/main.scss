@@ -1,20 +1,21 @@
 @import "variables.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
 @import "node_modules/font-awesome/scss/font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html, body{
   height: 100%;
-  font-family: Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
+.btn-secondary {
+  font-weight: bold;
+}
 .btn-border {
   border: 1px solid black;
 }
-
 .btn:hover.btn-border, .btn-border {
   border: 1px solid black;
 }
@@ -55,6 +56,7 @@ $header-navbar-backgound: rgba(20, 20, 20, 0.95);
 header {
   .navbar {
     font-size: 1.4rem;
+    font-weight: bold;
     background: rgba(20, 20, 20, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
@@ -222,16 +224,27 @@ $header-margin-bottom: 2.5rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-attachment: fixed;
+  color: white;
 
   .info-page {
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     height: 100%;
     padding-top: 30%;
 
-    div:last-child {
-      text-align: left;
+    h1, h2 {
+      color: $primary;
+      font-weight: 800;
+    }
+    h1 {
+      font-size: 40pt;
+    }
+    h2 {
+      font-size: 35pt;
+      color: white;
+    }
 
+    div:last-child {
       p.strong-info {
         color: #000;
         background-color: #32E37A;
@@ -242,6 +255,7 @@ $header-margin-bottom: 2.5rem;
         font-weight: 700;
         font-size: 16px;
         letter-spacing: 3px;
+        margin-bottom: 5px;
       }
     }
   }
