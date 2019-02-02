@@ -216,110 +216,32 @@ $header-margin-bottom: 2.5rem;
 .full-page {
   height: 100%;
   margin-bottom: 2.5rem;
+  background-color: #777;
+  background-image: url("res/front-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
 
-  .carousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
-    height: 100%;
-  }
-
-  .carousel-caption {
-    top: 30%;
+  .info-page {
     text-align: center;
-    z-index: 10;
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 30%;
 
-    h1 {
-      font-size: 5rem;
-      font-weight: normal;
-      margin-bottom: 2rem;
-    }
-  }
+    div:last-child {
+      text-align: left;
 
-  .carousel-item {
-    background-color: #777;
-
-    &.first-slide {
-      background-image: url("res/front-background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-attachment: fixed;
-    }
-
-    &.partner-slide {
-      @extend .first-slide;
-      
-      @include media-breakpoint-down(md) {
-          font-size: 0.8rem;
-      }
-      
-      .banner-logo {
-        margin-bottom: 2em;
-      }
-
-      .carousel-caption {
-        top: 10%;
-      }
-      .partner-content {
-        @include media-breakpoint-down(md) {
-          margin-top: 3rem;
-        }
-
-        .btn {
-          font-stretch: extra-condensed;
-          font-family: 'Roboto Condensed', sans-serif;
-        }
-        
-        .big-plus {
-          font-weight: bold;
-          font-size: 4rem;
-          margin: 0;
-          padding: 0;
-        }
-        .partner-description {
-          background: rgb(243, 111, 57);
-          padding: 1rem;
-          text-align: left;
-
-          .btn-light {
-            background-color: White;
-          }
-        }
-
-        &.metapack {
-          .partner-description {
-            background: #005395;
-          }
-        }
-        &.ttpsc {
-          .partner-description {
-            background: #7a2d85;
-          }
-          .logo {
-            display: block;
-            margin: 15px;
-          }
-        }
-        &.cinkciarz {
-          .partner-description {
-            color: black;
-            background: white;
-          }
-          .cinkciarz-slogan {
-            font-weight: bold;
-            font-size: 1.1em;
-            line-height: 1em;
-            padding: 10px;
-          }
-          .bottom-panel {
-            margin-top: 1em;
-          }
-          .logo {
-            display: block;
-            margin: 10px;
-          }
-        }
+      p.strong-info {
+        color: #000;
+        background-color: #32E37A;
+        padding: 10px 14px;
+        display: inline-block;
+        margin-bottom: 0;
+        box-decoration-break: clone;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 3px;
       }
     }
   }
