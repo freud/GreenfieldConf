@@ -182,17 +182,7 @@ $header-margin-bottom: 2.5rem;
   }
 }
 
-/* News
--------------------------------------------------- */
-.news-console {
-    font-size: 1.2rem;
-    font-family: monospace;
-    text-align: center;
-}
-
-/* Conf numbers
--------------------------------------------------- */
-.conf-numbers {
+.dark-block {
   color: White;
   text-align: center;
   background: url("res/paths-background.jpg");
@@ -201,18 +191,20 @@ $header-margin-bottom: 2.5rem;
   background-position: 50% 50%;
   background-attachment: fixed;
 
-  .conf-numbers-inner {
+  .dark-block-inner {
     padding: 2rem;
-    background-color: rgba(0,0,0, 0.6);
   }
 
-  span {
-    font-size: 4rem;
-  }
-  small {
-    display: block;
+  &.conf-numbers {
+    span {
+      font-size: 4rem;
+    }
+    small {
+      display: block;
+    }
   }
 }
+
 /* Full screen banners
 -------------------------------------------------- */
 .full-page {
@@ -232,18 +224,29 @@ $header-margin-bottom: 2.5rem;
     height: 100%;
     padding-top: 30%;
 
-    h1, h2 {
-      color: $primary;
-      font-weight: 800;
+    // headers
+    h1, h2 { font-weight: 800; }
+    h1 { color: $primary; }
+    h2 { color: white; }
+    @include media-breakpoint-up(md) {
+      h1 { font-size: 25pt; }
+      h2 { font-size: 20pt; }
     }
-    h1 {
-      font-size: 40pt;
+    @include media-breakpoint-up(lg) {
+      h1 { font-size: 35pt; }
+      h2 { font-size: 30pt; }
     }
-    h2 {
-      font-size: 35pt;
-      color: white;
+    @include media-breakpoint-up(xl) {
+      h1 { font-size: 40pt; }
+      h2 { font-size: 35pt; }
     }
 
+    div:first-child {
+      .btn {
+        margin-bottom: 20px;
+      }
+    }
+    // right column
     div:last-child {
       p.strong-info {
         color: #000;
@@ -307,7 +310,6 @@ $header-margin-bottom: 2.5rem;
   }
 
   .jumbotron {
-    background-color: rgba(0,0,0, 0.6);
     color: White;
   }
 
