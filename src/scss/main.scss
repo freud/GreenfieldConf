@@ -307,8 +307,8 @@ $header-margin-bottom: 2.5rem;
 -------------------------------------------------- */
 .ticket-container{
   background: url('res/ticket-bcg.jpg') no-repeat fixed;
-  background-size: 100%; //propotional resize
-	padding: 100px 0;
+  background-size: 100% 100%;
+  padding-bottom: 5em;
 	color: #fff;
 	height: auto;
 	h3, h2{
