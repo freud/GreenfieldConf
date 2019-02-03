@@ -202,13 +202,13 @@ $header-margin-bottom: 2.5rem;
 }
 
 .dark-block {
-  color: #000;
+  color: White;
   text-align: center;
-//   background: url("res/paths-background.jpg");
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: 50% 50%;
-//   background-attachment: fixed;
+  background: url("res/paths-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
 
   .dark-block-inner {
     padding: 2rem;
