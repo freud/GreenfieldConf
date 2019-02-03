@@ -26,6 +26,7 @@
     "laravel-mix": "^1.6.1"
   },
   "dependencies": {
+    "countdown": "^2.6.0",
     "jquery.cookie": "^1.4.1",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.0.10",

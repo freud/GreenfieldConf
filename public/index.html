@@ -336,32 +336,13 @@
       </div>
 
     </main>
-    <script src="main.js?20180430"></script>
+    <script src="main.js?20190201"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112832593-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-112832593-1');
-	</script>
-	
-	<script>
-			const second = 1000,
-				minute = second * 60,
-				hour = minute * 60,
-				day = hour * 24;
-	
-			let countDown = new Date('Jan 18, 2019 00:00:00').getTime(),
-				x = setInterval(function() {
-	
-					let now = new Date().getTime(),
-						distance = countDown - now;
-	
-					document.getElementById('days').innerHTML = Math.floor(distance / (day)),
-						document.getElementById('hours').innerHTML = Math.floor((distance % (day)) / (hour)),
-						document.getElementById('minutes').innerHTML = Math.floor((distance % (hour)) / (minute)),
-						document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
-				}, second)
-		</script>
+    </script>
   </body>
 </html>
