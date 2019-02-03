@@ -306,7 +306,8 @@ $header-margin-bottom: 2.5rem;
 /* Temporary counter
 -------------------------------------------------- */
 .ticket-container{
-	background: url('res/ticket-bcg.jpg') no-repeat 100% 100%;
+  background: url('res/ticket-bcg.jpg') no-repeat fixed;
+  background-size: 100%; //propotional resize
 	padding: 100px 0;
 	color: #fff;
 	height: auto;
