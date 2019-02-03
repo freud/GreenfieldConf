@@ -22,7 +22,9 @@ function reoderSlides()
 {
     // slides reordering
     var slides = $(".carousel-item.partner-slide");
-    if (slides.length == 0)
+    var numberOfSlideToReorder = slides.length;
+    var lastSlideIndex = numberOfSlideToReorder - 1;
+    if (numberOfSlideToReorder == 0)
     {
         return;
     }
@@ -35,18 +37,17 @@ function reoderSlides()
     // reorder banners
     for(var i=0; i<bannersReoderingOffset; i++)
     {
-        $(slides[0]).insertAfter(slides[3]);
+        $(slides[0]).insertAfter(slides[lastSlideIndex]);
         slides = $(".carousel-item.partner-slide");
     }
 
     // SaveRaise and save new offset
     bannersReoderingOffset++;
-    if (bannersReoderingOffset > 3) {
+    if (bannersReoderingOffset > lastSlideIndex) {
         bannersReoderingOffset = 0
     }
 
     $.cookie('banners-reodering-offset', bannersReoderingOffset);
-
 }
 
 // Sponsors carousel methods & events
