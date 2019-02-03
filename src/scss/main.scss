@@ -8,10 +8,24 @@
 html, body{
   height: 100%;
   font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
+.btn-primary {
+  font-weight: bold;
+}
 .btn-secondary {
   font-weight: bold;
+}
+.btn-green {
+  @include button-variant(
+    $darker-green, $darker-green, 
+    $hover-background: darken($darker-green, 7.5%), 
+    $active-background: darken($darker-green, 10%), 
+    $active-border: darken($darker-green, 12.5%));
+
+    font-weight: bold;
+    color: darken($darker-green, 40%);
 }
 .btn-border {
   border: 1px solid black;
@@ -133,7 +147,7 @@ $header-margin-bottom: 2.5rem;
   margin-bottom: $header-margin;
 
   h1 {
-    font-weight: 300;
+    font-weight: 800;
     text-align: center;
     margin-bottom: $header-margin;
   }
@@ -143,32 +157,10 @@ $header-margin-bottom: 2.5rem;
     text-align: center;
     margin-bottom: $header-margin;
   }
-
-  &.news-block {
-    h2 {
-      text-align: left;
-      margin-bottom: 1rem;
-    }
-
-    small {
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    p {
-      text-align: justify;
-    }
-
-    .header-image {
-      margin: auto;
-      margin-bottom: 2rem;
-      display: block;
-      max-height: 300px;
-    }
-
-    .col-md-6 {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
+  &.last-year {
+    text-align: center;
+    h1 {
+      margin-bottom: 1em;
     }
   }
 }
