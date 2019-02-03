@@ -41,8 +41,12 @@ html, body{
 a.anchor {
   display: block;
   position: relative;
-  top: -100px;
   visibility: hidden;
+  top: -100px;
+
+  &.tickets {
+    top: -60px;
+  }
 }
 
 /* Main menu
