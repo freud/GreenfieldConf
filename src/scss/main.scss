@@ -190,13 +190,13 @@ $header-margin-bottom: 2.5rem;
 }
 
 .dark-block {
-  color: White;
+  color: #000;
   text-align: center;
-  background: url("res/paths-background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-attachment: fixed;
+//   background: url("res/paths-background.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: 50% 50%;
+//   background-attachment: fixed;
 
   .dark-block-inner {
     padding: 2rem;
@@ -262,6 +262,7 @@ $header-margin-bottom: 2.5rem;
 			background: none;
 			border: 1px solid #fff;
 			border-radius: 5px;
+			cursor: pointer
 		}
 		.active{
 			background: #fff;
@@ -271,7 +272,7 @@ $header-margin-bottom: 2.5rem;
 		.carousel-inner{
 			height: 200px;
 			img{
-				height: 100px;
+				height: 80px;
 				width: auto;
 			}
 		}
@@ -292,6 +293,49 @@ $header-margin-bottom: 2.5rem;
       }
     }
   }
+}
+
+/* Temporary counter
+-------------------------------------------------- */
+.ticket-container{
+	background: url('res/ticket-bcg.jpg') no-repeat 100% 100%;
+	padding: 100px 0;
+	color: #fff;
+	height: auto;
+	h3, h2{
+		font-weight: 700;
+	}
+}
+.countdown-wrapper{
+	color: $darker-green;
+	span{
+		color: #fff;
+		font-size: 2em
+	}
+	p{
+		font-weight: 700;
+	}
+}
+.ticket-item{
+	width: 100%;
+	padding: 60px 0;
+	background: #fff;
+	h3{
+		font-weight: 700;
+		font-size: 1.2em
+	}
+	p {
+		font-weight: 700;
+		font-size: 2.5em
+	}
+	.btn{
+		border-radius: 30px;
+	}
+}
+
+.disabled-ticket{
+	background: #fff;
+	color: #b9b9b9
 }
 
 /* Speakers, agenda
@@ -746,3 +790,11 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .ticket-container{
+		background-size: auto 100%;
+	}
+}
+
+

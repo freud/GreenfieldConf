@@ -69,28 +69,40 @@
 				  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 				  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
 				</ol>
-				<div class="col-12 text-center carousel-title pb-4">
-						<p>Partnerzy diamentowi</p>
-					</div>
 				<div class="carousel-inner">
 				  <div class="carousel-item active">
 					<p class="strong-info">Największa konferencja dla programistów<br />w lubuskim</p>
 					<p class="strong-info">8 - 10 CZERWCA 2019, ZIELONA GÓRA</p>
 				  </div>
 				  <div class="carousel-item">
-					<img class="d-block w-100" src="src/res/sponsors/apator-logo.svg" alt="Apator Rector">
+					<div class="col-12 text-center carousel-title py-2">
+						<p>Partner diamentowy</p>
+					</div>
+					<img class="d-block w-100" src="res/sponsors/apator-logo.svg" alt="Apator Rector">
 				  </div>
 				  <div class="carousel-item">
-					<img class="d-block w-100" src="src/res/sponsors/e-obuwie.png" alt="E-obuwie">
+						<div class="col-12 text-center carousel-title py-2">
+								<p>Partner diamentowy</p>
+							</div>
+					<img class="d-block w-100" src="res/sponsors/e-obuwie.png" alt="E-obuwie">
 				  </div>
 				  <div class="carousel-item">
-					<img class="d-block w-100" src="src/res/sponsors/globallogic.svg" alt="Global Logic">
+						<div class="col-12 text-center carousel-title py-2">
+								<p>Partner diamentowy</p>
+							</div>
+					<img class="d-block w-100" src="res/sponsors/globallogic.svg" alt="Global Logic">
 				  </div>
 				  <div class="carousel-item">
-					<img class="d-block w-100" src="src/res/sponsors/metapack.svg" alt="Meta Pack">
+						<div class="col-12 text-center carousel-title py-2">
+								<p>Partner diamentowy</p>
+							</div>
+					<img class="d-block w-100" src="res/sponsors/metapack.svg" alt="Meta Pack">
 				  </div>
 				  <div class="carousel-item">
-					<img class="d-block w-100" src="src/res/sponsors/psc.svg" alt="TTPSC">
+						<div class="col-12 text-center carousel-title pb-2">
+								<p>Partner diamentowy</p>
+							</div>
+					<img class="d-block w-100" src="res/sponsors/psc.svg" alt="TTPSC">
 				  </div>
 				</div>
 				<!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -115,6 +127,56 @@
         <a href="https://photos.app.goo.gl/9qQnfMoSEuJfBbcL7" class="btn" target="_blank"><i class="fas fa-camera-retro fa-7x"></i><br />Zobacz zdjęcia</a>
         <a href="https://www.youtube.com/c/GreenfieldConf" class="btn" target="_blank"><i class="fab fa-youtube fa-7x"></i><br />Obejrzyj wykłady</a>
       </div>
+
+		<div class="row no-gutters mx-auto ticket-container">
+			<div class="col-xl-8 col-sm-10 mx-auto">
+				<div class="col-12 text-center py-5">
+						<h2>Kup bilet na Greenfield 2019</h2>
+						<p>Fundacje charytatywne dostają pieniądze ze sprzedaży biletów, Ty zyskujesz wiedzę, którą dzielą się doświadczeni prelegenci, a nam przynosisz wielką satysfakcję - wszyscy na ty korzystamy</p>
+				</div>
+
+				<div class="row col-12 no-gutters mx-auto text-center countdown-wrapper d-flex justify-content-around">
+						<div class="col-12 mb-3">
+							<h3>Sprzedaż rusza za:</h3>
+						</div>
+
+                        <h2><span id="days"></span>
+                            <p>DNI</p>
+                        </h2>
+                        <h2><span id="hours"></span>
+                            <p>GODZIN</p>
+                        </h2>
+                        <h2><span id="minutes"></span>
+                            <p>MINUTY</p>
+                        </h2>
+                        <h2><span id="seconds"></span>
+                            <p>SEKUNDY</p>
+                        </h2>
+                    </div>
+
+				<div class="row col-12 mx-auto">
+					<div class="col-xl-3 col-lg-3 col-md-10 ticket-item text-center mx-auto my-2 mx-2 disabled-ticket">
+						<h3>Blind Bird</h3>
+						<p>30zł</p>
+						<span>Do 31 grudnia lub do <br> wyczerpania zapasów</span> <br>
+						<!-- <a href="buy-ticket.html" class="btn btn-secondary" style="position: relative; top: 4px; left: 5px">Kup bilet</a> -->
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-10 ticket-item text-center mx-auto my-2 mx-2 disabled-ticket">
+						<h3>Early Bird</h3>
+						<p>45zł</p>
+						<span>Do 31 marca lub do <br> wyczerpania zapasów</span> <br>
+						<!-- <a href="buy-ticket.html" class="btn btn-secondary" style="position: relative; top: 4px; left: 5px">Kup bilet</a> -->
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-10 ticket-item text-center mx-auto my-2 mx-2 disabled-ticket">
+						<h3>Regular Bird</h3>
+						<p>60zł</p>
+						<span>Do 5 czerwca lub do <br> wyczerpania zapasów</span> <br>
+						<!-- <a href="buy-ticket.html" class="btn btn-secondary" style="position: relative; top: 4px; left: 5px">Kup bilet</a> -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
 
       <div class="main-page-block dark-block conf-numbers">
         <div class="dark-block-inner">
@@ -280,6 +342,25 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-112832593-1');
-    </script>
+	</script>
+	
+	<script>
+			const second = 1000,
+				minute = second * 60,
+				hour = minute * 60,
+				day = hour * 24;
+	
+			let countDown = new Date('Jan 18, 2019 00:00:00').getTime(),
+				x = setInterval(function() {
+	
+					let now = new Date().getTime(),
+						distance = countDown - now;
+	
+					document.getElementById('days').innerHTML = Math.floor(distance / (day)),
+						document.getElementById('hours').innerHTML = Math.floor((distance % (day)) / (hour)),
+						document.getElementById('minutes').innerHTML = Math.floor((distance % (hour)) / (minute)),
+						document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
+				}, second)
+		</script>
   </body>
 </html>
