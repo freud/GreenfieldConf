@@ -252,7 +252,29 @@ $header-margin-bottom: 2.5rem;
       .btn {
         margin-bottom: 20px;
       }
-    }
+	}
+	// sponsors slider
+	.carousel-indicators{
+		li{
+			width: 10px;
+			height: 10px;
+			background: none;
+			border: 1px solid #fff;
+			border-radius: 5px;
+		}
+		.active{
+			background: #fff;
+		}
+	}
+	.carousel-wrapper{
+		.carousel-inner{
+			height: 200px;
+			img{
+				height: 100px;
+				width: auto;
+			}
+		}
+	}
     // right column
     div:last-child {
       p.strong-info {

@@ -48,3 +48,11 @@ function reoderSlides()
     $.cookie('banners-reodering-offset', bannersReoderingOffset);
 
 }
+
+// Sponsors carousel methods & events
+$(document).ready(function(){
+	$('.sponsors-carousel').carousel({
+		interval: 3000,
+		pause: "false"
+	})
+})
