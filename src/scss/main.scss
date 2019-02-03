@@ -37,6 +37,14 @@ html, body{
   border: 1px solid black;
 }
 
+/* It's hack! To scroll to anchor and into advantage the height of main menu. */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 /* Main menu
 -------------------------------------------------- */
 $navbar-margin: 1.5rem;
