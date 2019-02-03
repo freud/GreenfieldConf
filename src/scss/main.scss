@@ -58,12 +58,12 @@ $navbar-margin-small: 0.2rem;
 
 @keyframes fadeInFromNone {
   0% {
-    background-color:rgba(20, 20, 20, 0);
+    background-color:rgba(0, 0, 0, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
   }
   100% {
-    background-color:rgba(20, 20, 20, 0.95);
+    background-color:rgba(0, 0, 0, 0.95);
     padding-bottom: $navbar-margin-small;
     padding-top: $navbar-margin-small;
   }
@@ -71,24 +71,24 @@ $navbar-margin-small: 0.2rem;
 
 @keyframes fadeOutFromVisible {
   0% {
-    background-color:rgba(20, 20, 20, 0.95);
+    background-color:rgba(0, 0, 0, 0.95);
     padding-bottom: $navbar-margin-small;
     padding-top: $navbar-margin-small;
   }
   100% {
-    background-color:rgba(20, 20, 20, 0);
+    background-color:rgba(0, 0, 0, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
   }
 }
 
-$header-navbar-backgound: rgba(20, 20, 20, 0.95);
+$header-navbar-backgound: rgba(0, 0, 0, 0.95);
 
 header {
   .navbar {
     font-size: 1.4rem;
     font-weight: bold;
-    background: rgba(20, 20, 20, 0);
+    background: rgba(0, 0, 0, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
 
@@ -141,7 +141,7 @@ header {
     }
     &.top {
       animation: fadeOutFromVisible 0.2s ease-out;
-      background-color:rgba(20, 20, 20, 0);
+      background-color:rgba(0, 0, 0, 0);
       padding-bottom: $navbar-margin;
       padding-top: $navbar-margin;
     }
@@ -795,22 +795,20 @@ footer {
 
 /* partners page */
 .partners {
-    .main-page-block {
-        h1 {
-            text-align: center;
-            margin-top: $header-margin;
-            margin-bottom: $header-margin-bottom;
-        }
-
-        .row.uz {
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-
-        .media {
-            img {
-                margin-bottom: 10px;
-            }
-        }
+  .main-page-block {
+    h1 {
+      text-align: center;
+      margin-top: $header-margin;
+      margin-bottom: $header-margin-bottom;
     }
+    .row.uz {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .media {
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
