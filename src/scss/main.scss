@@ -13,7 +13,9 @@ html, body{
   font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
-
+h1 {
+  font-weight: 800;
+}
 .btn-primary {
   font-weight: bold;
 }
@@ -192,15 +194,6 @@ $header-margin-bottom: 2.5rem;
   }
 }
 
-/* About
--------------------------------------------------- */
-.about {
-  p {
-    font-size: 1.5rem;
-    font-weight: 100;
-  }
-}
-
 .dark-block {
   color: White;
   text-align: center;
@@ -221,6 +214,16 @@ $header-margin-bottom: 2.5rem;
     }
     small {
       display: block;
+    }
+  }
+}
+
+/* About
+-------------------------------------------------- */
+.about {
+  .main-page-block {
+    .container {
+      padding: 2em;
     }
   }
 }
@@ -728,9 +731,10 @@ footer {
 
 /* sub-pages */
 .sub-page {
-  .main-page-block {
+  .main-page-block:first-child {
     margin-top: 7.5rem;
-
+  }
+  .main-page-block {
     h1, h2 {
       padding-top: $header-margin;
     }
