@@ -1,6 +1,9 @@
 @import "variables.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "node_modules/font-awesome/scss/font-awesome";
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
 
 /* GLOBAL STYLES
@@ -157,6 +160,18 @@ $header-margin-bottom: 2.5rem;
     text-align: center;
     margin-bottom: $header-margin;
   }
+
+  &.light-background a {
+    font-weight: bold;
+    color: black;
+    &:hover {
+      color: lighten(Black, 30%)
+    }
+    .fa-youtube {
+      color: red;
+    }
+  }
+
   &.last-year {
     text-align: center;
     h1 {

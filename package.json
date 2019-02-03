@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/freud/GreenfieldConf#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.1",
     "bootstrap": "4.0.0-beta.2",
     "cross-env": "^5.0.1",
-    "font-awesome": "^4.7.0",
     "google-maps": "^3.2.1",
     "jquery": "^3.2.1",
     "laravel-mix": "^1.6.1"
