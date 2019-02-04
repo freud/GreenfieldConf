@@ -251,11 +251,11 @@ $header-margin-bottom: 2.5rem;
     h1, h2 { font-weight: 800; }
     h1 {
       color: $primary;
-      font-size: 20pt;
+      font-size: 18pt;
     }
     h2 {
       color: white;
-      font-size: 15pt;
+      font-size: 13pt;
     }
 
     @include media-breakpoint-up(md) {
