@@ -249,8 +249,15 @@ $header-margin-bottom: 2.5rem;
 
     // headers
     h1, h2 { font-weight: 800; }
-    h1 { color: $primary; }
-    h2 { color: white; }
+    h1 {
+      color: $primary;
+      font-size: 20pt;
+    }
+    h2 {
+      color: white;
+      font-size: 15pt;
+    }
+
     @include media-breakpoint-up(md) {
       h1 { font-size: 25pt; }
       h2 { font-size: 20pt; }
@@ -271,13 +278,19 @@ $header-margin-bottom: 2.5rem;
 	}
 	// sponsors slider
 	.carousel-indicators{
-		li{
-			width: 10px;
-			height: 10px;
+		li {
+
 			background: none;
 			border: 1px solid #fff;
-			border-radius: 5px;
-			cursor: pointer
+			cursor: pointer;
+            width: 15px;
+            height: 15px;
+            border-radius: 7px;
+            @include media-breakpoint-up(md) {
+              border-radius: 5px;
+              width: 10px;
+              height: 10px;
+            }
 		}
 		.active{
 			background: #fff;
