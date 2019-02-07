@@ -61,7 +61,7 @@ $(document).ready(function(){
 //Ticket counter
 $(document).ready(function() {
     countdown(
-        new Date('2019/02/11 12:00'),
+        new Date('2019/02/11 12:00 AM CET'),
         function(ts) {
             $("#days").text(ts.days);
             $("#hours").text(ts.hours);
