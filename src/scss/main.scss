@@ -1,22 +1,54 @@
 @import "variables.scss";
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "node_modules/font-awesome/scss/font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
 html, body{
   height: 100%;
-  font-family: Roboto, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
+h1 {
+  font-weight: 800;
+}
+.btn-primary {
+  font-weight: bold;
+}
+.btn-secondary {
+  font-weight: bold;
+}
+.btn-green {
+  @include button-variant(
+    $darker-green, $darker-green, 
+    $hover-background: darken($darker-green, 7.5%), 
+    $active-background: darken($darker-green, 10%), 
+    $active-border: darken($darker-green, 12.5%));
 
+    font-weight: bold;
+    color: darken($darker-green, 40%);
+}
 .btn-border {
   border: 1px solid black;
 }
-
 .btn:hover.btn-border, .btn-border {
   border: 1px solid black;
+}
+
+/* It's hack! To scroll to anchor and into advantage the height of main menu. */
+a.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top: -100px;
+
+  &.tickets {
+    top: -60px;
+  }
 }
 
 /* Main menu
@@ -26,12 +58,12 @@ $navbar-margin-small: 0.2rem;
 
 @keyframes fadeInFromNone {
   0% {
-    background-color:rgba(20, 20, 20, 0);
+    background-color:rgba(0, 0, 0, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
   }
   100% {
-    background-color:rgba(20, 20, 20, 0.95);
+    background-color:rgba(0, 0, 0, 0.95);
     padding-bottom: $navbar-margin-small;
     padding-top: $navbar-margin-small;
   }
@@ -39,23 +71,24 @@ $navbar-margin-small: 0.2rem;
 
 @keyframes fadeOutFromVisible {
   0% {
-    background-color:rgba(20, 20, 20, 0.95);
+    background-color:rgba(0, 0, 0, 0.95);
     padding-bottom: $navbar-margin-small;
     padding-top: $navbar-margin-small;
   }
   100% {
-    background-color:rgba(20, 20, 20, 0);
+    background-color:rgba(0, 0, 0, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
   }
 }
 
-$header-navbar-backgound: rgba(20, 20, 20, 0.95);
+$header-navbar-backgound: rgba(0, 0, 0, 0.95);
 
 header {
   .navbar {
     font-size: 1.4rem;
-    background: rgba(20, 20, 20, 0);
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0);
     padding-bottom: $navbar-margin;
     padding-top: $navbar-margin;
 
@@ -108,89 +141,77 @@ header {
     }
     &.top {
       animation: fadeOutFromVisible 0.2s ease-out;
-      background-color:rgba(20, 20, 20, 0);
+      background-color:rgba(0, 0, 0, 0);
       padding-bottom: $navbar-margin;
       padding-top: $navbar-margin;
     }
   }
 }
 
+
 @media (max-width: 920px) {
   header .navbar {
     font-size: 1.3rem;
 
   }
+ 
 }
 
-$header-margin: 5.5rem;
+
+
+@media (max-width: 767px) {
+
+  .buy-btn{
+    display: block;
+    width: 150px;
+    text-align: center;
+  }
+  .prev-btn{
+    display: block;
+    text-align: center;
+  }
+
+}
+$header-margin: 1.5rem;
 $header-margin-bottom: 2.5rem;
 
 /* Main page blocks
 -------------------------------------------------- */
 .main-page-block {
-  margin-bottom: $header-margin;
+  margin-bottom: $header-margin-bottom;
 
   h1 {
-    font-weight: 300;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: $header-margin;
+    margin-bottom: $header-margin-bottom;
   }
 
   h2 {
     font-weight: 200;
     text-align: center;
-    margin-bottom: $header-margin;
+    margin-bottom: $header-margin-bottom;
   }
 
-  &.news-block {
-    h2 {
-      text-align: left;
-      margin-bottom: 1rem;
+  &.light-background a {
+    font-weight: bold;
+    color: black;
+    &:hover {
+      color: lighten(Black, 30%)
     }
-
-    small {
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    p {
-      text-align: justify;
-    }
-
-    .header-image {
-      margin: auto;
-      margin-bottom: 2rem;
-      display: block;
-      max-height: 300px;
-    }
-
-    .col-md-6 {
-      padding-left: 2.5rem;
-      padding-right: 2.5rem;
+    .fa-youtube {
+      color: red;
     }
   }
-}
 
-/* About
--------------------------------------------------- */
-.about {
-  p {
-    font-size: 1.5rem;
-    font-weight: 100;
-  }
-}
-
-/* News
--------------------------------------------------- */
-.news-console {
-    font-size: 1.2rem;
-    font-family: monospace;
+  &.last-year {
     text-align: center;
+    h1 {
+      margin-bottom: 1em;
+    }
+  }
 }
 
-/* Conf numbers
--------------------------------------------------- */
-.conf-numbers {
+.dark-block {
   color: White;
   text-align: center;
   background: url("res/paths-background.jpg");
@@ -199,129 +220,176 @@ $header-margin-bottom: 2.5rem;
   background-position: 50% 50%;
   background-attachment: fixed;
 
-  .conf-numbers-inner {
+  .dark-block-inner {
     padding: 2rem;
-    background-color: rgba(0,0,0, 0.6);
   }
 
-  span {
-    font-size: 4rem;
-  }
-  small {
-    display: block;
+  &.conf-numbers {
+    font-size: 2rem;
+    span {
+      font-size: 6rem;
+    }
+    small {
+      display: block;
+    }
   }
 }
+
+/* About
+-------------------------------------------------- */
+.about {
+  .main-page-block {
+    .container {
+      padding: 2em;
+    }
+  }
+}
+
 /* Full screen banners
 -------------------------------------------------- */
 .full-page {
   height: 100%;
+  min-height: 600px;
   margin-bottom: 2.5rem;
+  background-color: #777;
+  background-image: url("res/front-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  color: white;
 
-  .carousel,
-  .carousel-inner,
-  .carousel-item,
-  .carousel-item.active {
+  .info-page {
+    text-align: left;
+    vertical-align: middle;
     height: 100%;
-  }
+    padding-top: 30%;
 
-  .carousel-caption {
-    top: 30%;
-    text-align: center;
-    z-index: 10;
-
+    // headers
+    h1, h2 { font-weight: 800; }
     h1 {
-      font-size: 5rem;
-      font-weight: normal;
-      margin-bottom: 2rem;
+      color: $primary;
+      font-size: 18pt;
+    }
+    h2 {
+      color: white;
+      font-size: 13pt;
+    }
+
+    @include media-breakpoint-up(md) {
+      h1 { font-size: 25pt; }
+      h2 { font-size: 20pt; }
+    }
+    @include media-breakpoint-up(lg) {
+      h1 { font-size: 35pt; }
+      h2 { font-size: 30pt; }
+    }
+    @include media-breakpoint-up(xl) {
+      h1 { font-size: 40pt; }
+      h2 { font-size: 35pt; }
+    }
+
+    div:first-child {
+      .btn {
+        margin-bottom: 20px;
+      }
+	}
+	// sponsors slider
+	.carousel-indicators{
+		li {
+
+			background: none;
+			border: 1px solid #fff;
+			cursor: pointer;
+            width: 15px;
+            height: 15px;
+            border-radius: 7px;
+            @include media-breakpoint-up(md) {
+              border-radius: 5px;
+              width: 10px;
+              height: 10px;
+            }
+		}
+		.active{
+			background: #fff;
+		}
+	}
+	.carousel-wrapper{
+		.carousel-inner{
+			height: 210px;
+			img{
+				height: 80px;
+				width: auto;
+			}
+		}
+	}
+    // right column
+    div:last-child {
+      p.strong-info {
+        color: #000;
+        background-color: #32E37A;
+        padding: 10px 14px;
+        display: inline-block;
+        margin-bottom: 0;
+        box-decoration-break: clone;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 3px;
+        margin-bottom: 5px;
+      }
     }
   }
+}
 
-  .carousel-item {
-    background-color: #777;
+/* Temporary counter
+-------------------------------------------------- */
+.ticket-container{
+  background: url('res/ticket-bcg.jpg') no-repeat fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-bottom: 5em;
+  color: #fff;
+	h3, h2{
+		font-weight: 700;
+	}
+}
+.countdown-wrapper{
+	color: $darker-green;
+	span{
+		color: #fff;
+		font-size: 2em
+	}
+	p{
+		font-weight: 700;
+	}
+}
+.ticket-item {
+	width: 100%;
+  padding: 60px 0;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin-bottom: 1em;
 
-    &.first-slide {
-      background-image: url("res/front-background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-attachment: fixed;
-    }
+  @include media-breakpoint-up(md) {
+    font-size: 0.8em;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 23%;
+  }
 
-    &.partner-slide {
-      @extend .first-slide;
-      
-      @include media-breakpoint-down(md) {
-          font-size: 0.8rem;
-      }
-      
-      .banner-logo {
-        margin-bottom: 2em;
-      }
-
-      .carousel-caption {
-        top: 10%;
-      }
-      .partner-content {
-        @include media-breakpoint-down(md) {
-          margin-top: 3rem;
-        }
-
-        .btn {
-          font-stretch: extra-condensed;
-          font-family: 'Roboto Condensed', sans-serif;
-        }
-        
-        .big-plus {
-          font-weight: bold;
-          font-size: 4rem;
-          margin: 0;
-          padding: 0;
-        }
-        .partner-description {
-          background: rgb(243, 111, 57);
-          padding: 1rem;
-          text-align: left;
-
-          .btn-light {
-            background-color: White;
-          }
-        }
-
-        &.metapack {
-          .partner-description {
-            background: #005395;
-          }
-        }
-        &.ttpsc {
-          .partner-description {
-            background: #7a2d85;
-          }
-          .logo {
-            display: block;
-            margin: 15px;
-          }
-        }
-        &.cinkciarz {
-          .partner-description {
-            color: black;
-            background: white;
-          }
-          .cinkciarz-slogan {
-            font-weight: bold;
-            font-size: 1.1em;
-            line-height: 1em;
-            padding: 10px;
-          }
-          .bottom-panel {
-            margin-top: 1em;
-          }
-          .logo {
-            display: block;
-            margin: 10px;
-          }
-        }
-      }
-    }
+	h3 {
+		font-weight: 700;
+		font-size: 1.2em
+	}
+	p {
+		font-weight: 700;
+		font-size: 2.5em
+	}
+	.btn {
+		border-radius: 30px;
+  }
+  &.disabled-ticket{
+    color: White;
   }
 }
 
@@ -345,12 +413,23 @@ $header-margin-bottom: 2.5rem;
     .speaker-actions {
       font-size: 1.4rem;
     }
-
-    .fa-question {
+    .fa-question, .fa-microphone {
       font-size: 8rem;
       display: block;
       height: 140px;
     }
+  }
+
+  &.speakers-block{
+    padding-top: $header-margin;
+    .description {
+      text-align: center;
+      margin-bottom: 3em;
+    }
+  }
+
+  &.partner-block {
+    padding: 3em;
   }
 }
 
@@ -371,7 +450,6 @@ $header-margin-bottom: 2.5rem;
   }
 
   .jumbotron {
-    background-color: rgba(0,0,0, 0.6);
     color: White;
   }
 
@@ -467,9 +545,7 @@ $header-margin-bottom: 2.5rem;
 /* Schedule page
 -------------------------------------------------- */
 .schedule-table {
-
   font-weight: 300;
-
   // time
   tr {
     > td:first-child {
@@ -634,7 +710,7 @@ footer {
   i {
     margin-right: 0.5rem;
 
-    &.contact-icon {
+    &.fab, &.fas {
       background-color: darken($dark, 3%);
       padding: 1rem;
     }
@@ -678,7 +754,7 @@ footer {
   background-color: #000000;
 }
 .copyright p {
-  text-align: left;
+  text-align: center;
   color: #FFF;
   padding: 10px;
   margin: 0;
@@ -686,9 +762,10 @@ footer {
 
 /* sub-pages */
 .sub-page {
-  .main-page-block {
+  .main-page-block:first-child {
     margin-top: 7.5rem;
-
+  }
+  .main-page-block {
     h1, h2 {
       padding-top: $header-margin;
     }
@@ -749,22 +826,20 @@ footer {
 
 /* partners page */
 .partners {
-    .main-page-block {
-        h1 {
-            text-align: center;
-            margin-top: $header-margin;
-            margin-bottom: $header-margin-bottom;
-        }
-
-        .row.uz {
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-
-        .media {
-            img {
-                margin-bottom: 10px;
-            }
-        }
+  .main-page-block {
+    h1 {
+      text-align: center;
+      margin-top: $header-margin;
+      margin-bottom: $header-margin-bottom;
     }
+    .row.uz {
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .media {
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

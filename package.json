@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "devwin": "set NODE_ENV=development & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "set NODE_ENV=development & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "set NODE_ENV=development & node node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "set NODE_ENV=development & webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "set NODE_ENV=production & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -18,15 +17,19 @@
   },
   "homepage": "https://github.com/freud/GreenfieldConf#readme",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.1",
     "bootstrap": "4.0.0-beta.2",
     "cross-env": "^5.0.1",
-    "font-awesome": "^4.7.0",
     "google-maps": "^3.2.1",
     "jquery": "^3.2.1",
     "laravel-mix": "^1.6.1"
   },
   "dependencies": {
+    "countdown": "^2.6.0",
     "jquery.cookie": "^1.4.1",
+    "moment": "^2.24.0",
+    "moment-countdown": "0.0.3",
+    "moment-timezone": "^0.5.23",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.0.10",
     "style-loader": "^0.19.1"
