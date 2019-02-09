@@ -59,18 +59,6 @@ $(document).ready(function(){
 });
 
 //Ticket counter
-// $(document).ready(function() {
-//     countdown(
-//         new Date(Date.UTC('2019/02/11 12:00')),
-//         function(ts) {
-//             $("#days").text(ts.days);
-//             $("#hours").text(ts.hours);
-//             $("#minutes").text(ts.minutes);
-//             $("#seconds").text(ts.seconds);
-//         },
-//         countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS);
-// });
-//Ticket counter
 $(document).ready(function() {
 	var moment = require('moment');
 	require('moment-timezone');
@@ -112,7 +100,26 @@ $(document).ready(function() {
 		$m.text(m);
 		$s.text(s);
 
-	}, interval);
+    }, interval);
 
-
+    // cookies consent
+    window.cookieconsent.initialise({
+        "palette": {
+        "popup": {
+            "background": "#000",
+            "text": "#ffffff"
+        },
+        "button": {
+            "background": "#32e37a"
+        }
+        },
+        "theme": "edgeless",
+        "position": "bottom-right",
+        "content": {
+        "message": "Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim wspieramy popularność Konferencji Greenfield. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje. ",
+        "dismiss": "AKCEPTUJĘ!",
+        "link": "Dowiedz się jak je wyłączyć",
+        "href": "http://greenfieldconf.pl/polityka-prywatnosci.html"
+        }
+    });
 });
