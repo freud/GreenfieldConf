@@ -21,6 +21,7 @@ mix.js([
         'node_modules/bootstrap/dist/js/bootstrap.js',
         'node_modules/jquery.cookie/jquery.cookie.js',
         'node_modules/countdown/countdown.js',
+        'node_modules/cookieconsent/build/cookieconsent.min.js',
         'src/js/map.js',
         'src/js/main.js'
     ], 'main.js');
