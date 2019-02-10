@@ -27,13 +27,22 @@ h1 {
 }
 .btn-secondary {
   font-weight: bold;
+  @include button-variant(
+                  $darker-secondary, $darker-secondary,
+          $hover-background: darken($darker-secondary, 7.5%),
+          $active-background: darken($darker-secondary, 10%),
+          $active-border: darken($darker-secondary, 12.5%)
+  );
+  font-weight: bold;
+  color: darken($darker-green, 40%);
 }
 .btn-green {
   @include button-variant(
     $darker-green, $darker-green, 
     $hover-background: darken($darker-green, 7.5%), 
     $active-background: darken($darker-green, 10%), 
-    $active-border: darken($darker-green, 12.5%));
+    $active-border: darken($darker-green, 12.5%)
+  );
 
     font-weight: bold;
     color: darken($darker-green, 40%);
@@ -391,9 +400,7 @@ $header-margin-bottom: 2.5rem;
 		font-weight: 700;
 		font-size: 2.5em
 	}
-	.btn {
-		border-radius: 30px;
-  }
+
   &.disabled-ticket{
     color: White;
   }
