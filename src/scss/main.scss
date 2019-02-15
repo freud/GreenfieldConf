@@ -66,7 +66,7 @@ a.anchor {
 
 /* Main menu
 -------------------------------------------------- */
-$navbar-margin: 1.5rem;
+$navbar-margin: 1rem;
 $navbar-margin-small: 0.2rem;
 
 @keyframes fadeInFromNone {
@@ -118,7 +118,8 @@ header {
         margin: 1rem 0rem 1rem 0.5rem;
       }
       .navbar-toggler {
-        margin: 1rem 0.5rem 1rem 0rem;
+		margin: 1rem 0.5rem 1rem 0rem;
+		cursor: pointer;
       }
       .navbar-collapse {
         background-color:$header-navbar-backgound;
@@ -127,7 +128,10 @@ header {
           padding: 0.5rem;
         }
       }
-    }
+	}
+	.navbar-brand img{
+		width: 300px;
+	  }
 
     // The rest of main menu styles
     ul {
@@ -149,8 +153,8 @@ header {
     &.shrink {
       animation: fadeInFromNone 0.2s ease-in;
       background-color:$header-navbar-backgound;
-      padding-bottom: $navbar-margin-small;
-      padding-top: $navbar-margin-small;
+      padding-bottom:  0.2rem;
+      padding-top: 0.2rem;
     }
     &.top {
       animation: fadeOutFromVisible 0.2s ease-out;
@@ -162,29 +166,7 @@ header {
 }
 
 
-@media (max-width: 920px) {
-  header .navbar {
-    font-size: 1.3rem;
 
-  }
- 
-}
-
-
-
-@media (max-width: 767px) {
-
-  .buy-btn{
-    display: block;
-    width: 150px;
-    text-align: center;
-  }
-  .prev-btn{
-    display: block;
-    text-align: center;
-  }
-
-}
 $header-margin: 1.5rem;
 $header-margin-bottom: 2.5rem;
 
@@ -835,6 +817,7 @@ footer {
   }
 }
 
+
 /* partners page */
 .partners {
   .main-page-block {
@@ -854,3 +837,59 @@ footer {
     }
   }
 }
+
+.img-sponsor{
+	min-height: 100px;
+	max-width: 300px;
+  }
+
+  @media (min-width: 920px) {
+	.container-small{
+		max-width: 720px;
+	}
+  }
+  
+
+@media (max-width: 920px) {
+	header .navbar {
+	  font-size: 1.3rem;
+  
+	}
+	.navbar-brand img{
+	  width: 220px !important;
+	}
+  
+   h1, h2{
+	 font-size: 26px;
+   }
+   .speaker-name{
+	font-size: 26px !important;
+  }
+   .fa-7x{
+	 font-size: 40px ;
+   }
+   .fa-microphone{
+	font-size: 60px !important;
+	height: auto !important;
+  }
+  .dark-block.conf-numbers span{
+	font-size: 40px;
+	font-weight: 700;
+  }
+  }
+  
+  
+  
+  @media (max-width: 767px) {
+  
+	.buy-btn{
+	  display: block;
+	  width: 150px;
+	  text-align: center;
+	}
+	.prev-btn{
+	  display: block;
+	  text-align: center;
+	}
+  
+  }
