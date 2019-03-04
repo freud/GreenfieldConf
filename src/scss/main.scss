@@ -848,20 +848,17 @@ footer {
 		max-width: 720px;
 	}
   }
-  
 
 @media (max-width: 920px) {
 	header .navbar {
 	  font-size: 1.3rem;
-  
 	}
 	.navbar-brand img{
 	  width: 220px !important;
 	}
-  
-   h1, h2{
-	 font-size: 26px;
-   }
+  h1, h2{
+	  font-size: 26px;
+  }
    .speaker-name{
 	font-size: 26px !important;
   }
@@ -876,12 +873,9 @@ footer {
 	font-size: 40px;
 	font-weight: 700;
   }
-  }
-  
-  
-  
-  @media (max-width: 767px) {
-  
+}
+
+@media (max-width: 767px) {
 	.buy-btn{
 	  display: block;
 	  width: 150px;
@@ -890,6 +884,57 @@ footer {
 	.prev-btn{
 	  display: block;
 	  text-align: center;
-	}
-  
   }
+}
+
+/* Speakers, agenda
+-------------------------------------------------- */
+.main-page-block {
+  .speaker-block {
+    margin-bottom: 1.5em;
+    text-align: center;
+
+    a, a:hover {
+      color: Black;
+      text-decoration: none;
+    }
+    .speaker-name {
+      font-weight: 300;
+      font-size: 1.5em;
+      margin: 0;
+      display: block;
+    }
+    .speaker-actions {
+      font-size: 1.2em;
+    }
+    .fa-question {
+      font-size: 8rem;
+      display: block;
+      height: 140px;
+      color: #a0a3a4;
+    }
+  }
+}
+
+/* Speakers page
+-------------------------------------------------- */
+.main-page-block.speakers {
+  .speaker-block {
+    padding: 2rem;
+    .desc {
+      text-align: justify;
+    }
+    .schedule-entry {
+      font-size: 0.8em;
+      display: block;
+      text-align: left;
+      @extend .rounded;
+      background-color: #f8f8f8;
+      background-image: url('res/favicons/favicon-32x32.png');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      padding: 10px;
+      padding-left: 50px;
+    }
+  }
+}
