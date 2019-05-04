@@ -1001,3 +1001,20 @@ footer {
     }
   }
 }
+
+/* Lightbox images configuration */
+.lb-cancel {
+  background: url(res/lightbox/loading.gif) no-repeat;
+}
+
+.lb-nav a.lb-prev {
+  background: url(res/lightbox/prev.png) left 48% no-repeat;
+}
+
+.lb-nav a.lb-next {
+  background: url(res/lightbox/next.png) right 48% no-repeat;
+}
+
+.lb-data .lb-close {
+  background: url(res/lightbox/close.png) top right no-repeat;
+}

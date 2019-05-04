@@ -42,3 +42,4 @@ mix.autoload({
     'popper.js/dist/umd/popper.js': ['Popper'],
     'countdown/countdown.js': ['countdown']
 });
+mix.minify('public/main.js')
