@@ -22,11 +22,13 @@ mix.js([
         'node_modules/jquery.cookie/jquery.cookie.js',
         'node_modules/countdown/countdown.js',
         'node_modules/cookieconsent/build/cookieconsent.min.js',
+        'node_modules/lightbox2/dist/js/lightbox.js',
         'src/js/map.js',
         'src/js/main.js'
     ], 'main.js');
-mix.sass('src/scss/main.scss', 'main.css')
-    .options({processCssUrls: false});
+mix.sass('src/scss/main.scss', 'main.css', {
+    outputStyle: 'compressed'
+}).options({processCssUrls: false});
 mix.copyDirectory('src/res/', 'public/res/');
 mix.copyDirectory('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/res/fonts/');
 mix.webpackConfig({
@@ -41,3 +43,4 @@ mix.autoload({
     'popper.js/dist/umd/popper.js': ['Popper'],
     'countdown/countdown.js': ['countdown']
 });
+mix.minify('public/main.js')
