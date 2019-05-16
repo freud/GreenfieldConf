@@ -936,6 +936,11 @@ footer {
 	font-size: 40px;
 	font-weight: 700;
   }
+  .carousel-wrapper .carousel-inner{
+		img{
+			height: 50px !important;
+		}
+	}
 }
 
 @media (max-width: 767px) {
