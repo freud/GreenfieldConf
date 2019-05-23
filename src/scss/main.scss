@@ -611,20 +611,24 @@ $header-margin-bottom: 2.5rem;
     > td:nth-child(3) {
       width: 45%;
     }
-
-    td {
+    th{
+      text-align: center;
+    }
+    td, th {
       div.row > div
       {
         padding-bottom: 1rem;
       }
       @include media-breakpoint-up(md) {
-        div.row > div:first-child
+        div.row > div:nth-child(1),
+        div.row > div:nth-child(2)
         {
           border-right: 3px solid #e0e0e0;
         }
       }
       @include media-breakpoint-down(sm) {
-        div.row > div:first-child
+        div.row > div:nth-child(1),
+        div.row > div:nth-child(2)
         {
           border-bottom: 3px solid #e0e0e0;
           margin-bottom: 1rem;
@@ -922,15 +926,12 @@ footer {
   h1, h2{
 	  font-size: 26px;
   }
-   .speaker-name{
-	font-size: 26px !important;
+  .fa-7x{
+	  font-size: 40px ;
   }
-   .fa-7x{
-	 font-size: 40px ;
-   }
-   .fa-microphone{
-	font-size: 60px !important;
-	height: auto !important;
+  .fa-microphone{
+    font-size: 60px !important;
+    height: auto !important;
   }
   .dark-block.conf-numbers span{
 	font-size: 40px;
@@ -1022,4 +1023,91 @@ footer {
 
 .lb-data .lb-close {
   background: url(res/lightbox/close.png) top right no-repeat;
+}
+
+
+/* Schedule page
+-------------------------------------------------- */
+.schedule {
+  .schedule-table {
+    font-weight: 300;
+    // time
+    tr {
+      > td:first-child {
+        font-size: 1.5rem;
+        font-weight: 300;
+        span {
+          font-size: 0.9rem;
+        }
+      }
+      > td:nth-child(3) {
+        width: 45%;
+      }
+
+      td {
+        div.row > div
+        {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 0rem;
+    }
+    .schedule-categories {
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .dinner {
+      text-align: center;
+      i {
+        font-size: 2em;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+    }
+    .speaker-block {
+      float: left;
+      margin-right: 1rem;
+      width: 100px;
+      .speaker-name {
+        font-size: 1em;
+      }
+    }
+    @media (max-width: 767px) {
+      .speaker-block {
+        a:nth-child(1){
+          display: table-cell;
+        }
+        .speaker-name {
+          vertical-align: middle;
+          display: table-cell;
+          padding-left: 0.5em;
+        }
+        float: none;
+        display: table;
+        margin-right: 0rem;
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+
+  .main-page-block.speakers {
+    .schedule-entry {
+      display: block;
+      text-align: left;
+      @extend .rounded;
+      background-color: #f8f8f8;
+      background-image: url('res/favicons/favicon-32x32.png');
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      padding: 10px;
+      padding-left: 50px;
+    }
+  }
 }
