@@ -6,7 +6,7 @@ if ($("#location-map").length > 0)
 
     GoogleMapsLoader.load(function(google) {
         var centerMap = {lat: 51.939639, lng: 15.5188455};
-        var confLocation = {lat: 51.9400937, lng: 15.5267821};
+        var confLocation = {lat: 51.941340, lng: 15.529606};
 
         var map = new google.maps.Map(document.getElementById('location-map'), {
             zoom: 16,
