@@ -234,14 +234,17 @@ $header-margin-bottom: 2.5rem;
 /* Newsletter modal
 -------------------------------------------------- */
 .modal-content {
-	background: #000;
-	color: #fff;
+	background: #fff;
+	color: #000;
+	padding: 30px 50px;
 	#mce-EMAIL{
-		border: 1px solid #fff !important;
+		border: 1px solid #777 !important;
 		background: none;
-		color: #fff;
+		color: #777;
 		transition: .3s all ease;
 		padding: 5px;
+		width: 100%;
+		border-radius: 3px;
 		&:focus, &:active{
 			border: none !important;
 			box-shadow: none !important;
@@ -251,21 +254,23 @@ $header-margin-bottom: 2.5rem;
 			color: #000 !important
 		}
 	}
+	h5{
+		font-weight: 700;
+		font-size: 24px;
+	}
 	.subfield span, p{
 		font-size: 14px;
 	}
 	#mc-embedded-subscribe{
 		background: #32E37A;
-		color: #fff;
-		border: 1px solid #000;
-		padding: 5px 10px !important;
+		color: #000;
+		padding: 15px 30px !important;
 		font-weight: 700;
 		transition: .3s all ease;
+		border: none;
 		cursor: pointer;
 		&:hover{
-			border: 1px solid #fff;
-			color: #000;
-			background: #fff;
+			color: #fff;
 		}
 	}
 	.content__gdprLegal a{
@@ -288,6 +293,20 @@ $header-margin-bottom: 2.5rem;
 			color: #fff
 		}
 	}
+}
+
+.next-year-btn{
+	background: none;
+		color: #32E37A;
+		border: 1px solid #32E37A;
+		transition: .3s all ease;
+		font-weight: 300;
+		cursor: pointer;
+		&:hover{
+			background: #fff;
+			color: #000;
+			border: 1px solid #fff;
+		}
 }
 
 /* About
