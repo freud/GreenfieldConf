@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "set NODE_ENV=development & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "set NODE_ENV=development & node node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "set NODE_ENV=development & webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "set NODE_ENV=production & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "dev": "cross-env NODE_ENV=development & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js & node node_modules/uglify-js/bin/uglifyjs -o public/main.js public/main.js",
+    "watch": "cross-env NODE_ENV=development & node node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js & node node_modules/uglify-js/bin/uglifyjs -o public/main.js public/main.js",
+    "hot": "cross-env NODE_ENV=development & webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js & node node_modules/uglify-js/bin/uglifyjs -o public/main.js public/main.js",
+    "production": "cross-env NODE_ENV=production & node node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js & node node_modules/uglify-js/bin/uglifyjs -o public/main.js public/main.js"
   },
   "keywords": [],
   "author": "",
@@ -28,11 +28,13 @@
     "cookieconsent": "^3.1.0",
     "countdown": "^2.6.0",
     "jquery.cookie": "^1.4.1",
+    "lightbox2": "^2.11.0",
     "moment": "^2.24.0",
     "moment-countdown": "0.0.3",
     "moment-timezone": "^0.5.23",
     "popper.js": "^1.12.9",
     "postcss-loader": "^2.0.10",
-    "style-loader": "^0.19.1"
+    "style-loader": "^0.19.1",
+    "uglify-js": "^3.5.10"
   }
 }

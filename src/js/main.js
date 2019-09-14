@@ -122,4 +122,12 @@ $(document).ready(function() {
         "href": "http://greenfieldconf.pl/polityka-prywatnosci.html"
         }
     });
+
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true
+    })
 });
+
+
