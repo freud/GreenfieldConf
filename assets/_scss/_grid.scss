@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: none;
+  @include media-breakpoint-up(sm) {
+    max-width: 540px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 960px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 1170px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^="col"] {
+  position: relative;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@mixin createColumns($breakpoint: null) {
+  @for $i from 1 through 12 {
+    $width: 100% / 12 * $i;
+    $column: col-#{$breakpoint}-#{$i};
+    $offset: offset-#{$breakpoint}-#{$i};
+    @if($breakpoint == null) {
+      $column: col-#{$i};
+      $offset: offset-#{$i};
+    }
+
+    .#{$column} {
+      max-width: $width;
+      flex: 0 0 $width;
+    }
+    .#{$offset} {
+      margin-left: $width;
+    }
+  }
+}
+
+@include createColumns();
+@each $breakpoint, $value in $breakpoints {
+  @if($breakpoint != 'xs') {
+    @include media-breakpoint-up($breakpoint) {
+      @include createColumns($breakpoint);
+    }
+  }
+}
