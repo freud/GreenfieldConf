@@ -1,0 +1,75 @@
+@mixin flexClasses($breakpoint: null) {
+  @if $breakpoint {
+    $breakpoint: -#{$breakpoint};
+  }
+
+  .justify-content#{$breakpoint}-start {
+    justify-content: flex-start;
+  }
+  .justify-content#{$breakpoint}-center {
+    justify-content: center;
+  }
+  .justify-content#{$breakpoint}-end {
+    justify-content: flex-end;
+  }
+  .justify-content#{$breakpoint}-between {
+    justify-content: space-between;
+  }
+  .justify-content#{$breakpoint}-around {
+    justify-content: space-around;
+  }
+
+  .align-items#{$breakpoint}-start {
+    align-items: flex-start;
+  }
+  .align-items#{$breakpoint}-center {
+    align-items: center;
+  }
+  .align-items#{$breakpoint}-end {
+    align-items: flex-end;
+  }
+
+  .align-self#{$breakpoint}-start {
+    align-self: flex-start;
+  }
+  .align-self#{$breakpoint}-center {
+    align-self: center;
+  }
+  .align-self#{$breakpoint}-end {
+    align-self: flex-end;
+  }
+
+  .flex#{$breakpoint}-column {
+    flex-direction: column;
+  }
+  .flex#{$breakpoint}-row {
+    flex-direction: row;
+  }
+
+  .flex#{$breakpoint}-wrap {
+    flex-wrap: wrap;
+  }
+  .flex#{$breakpoint}-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .flex#{$breakpoint}-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @for $i from 1 through 3 {
+    .order#{$breakpoint}-#{$i} {
+      order: $i;
+    }
+  }
+}
+
+@include flexClasses();
+@each $breakpoint, $value in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    @if($breakpoint != 'xs') {
+      @include flexClasses($breakpoint);
+    }
+  }
+}
