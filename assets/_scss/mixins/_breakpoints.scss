@@ -1,0 +1,30 @@
+$breakpoints-names: xs, sm, md, lg, xl;
+
+@mixin media-breakpoint-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $index: index($breakpoints-names, $breakpoint);
+    $smaller: nth($breakpoints-names, $index + 1);
+    @media (max-width: map-get($breakpoints, $smaller) - 1) {
+      @content;
+    }
+  }
+}
+
+@mixin media-breakpoint-between($start, $end) {
+  $min: map-get($breakpoints, $start);
+  $max: map-get($breakpoints, $end);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  }
+}
