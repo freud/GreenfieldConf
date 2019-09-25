@@ -1,0 +1,48 @@
+$display-list: none block flex inline inline-block inline-flex table-caption;
+$text-align-list: center right left;
+
+@each $breakpoint, $value in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+
+    @each $value in $text-align-list {
+      $textClass: text-#{$breakpoint}-#{$value};
+      @if($breakpoint == 'xs') {
+        $textClass: text-#{$value};
+      }
+      .#{$textClass} {
+        text-align: $value !important;
+      }
+    }
+
+    @each $value in $display-list {
+      $displayClass: d-#{$breakpoint}-#{$value};
+      @if($breakpoint == 'xs') {
+        $displayClass: d-#{$value};
+      }
+      .#{$displayClass} {
+        display: $value !important;
+      }
+    }
+  }
+}
+
+.text-normal {
+  font-weight: 400 !important;
+}
+.text-medium {
+  font-weight: 500 !important;
+}
+.text-semibold {
+  font-weight: 600 !important;
+}
+.text-bold {
+  font-weight: 700 !important;
+}
+.text-sm {
+  font-size: 13px !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
