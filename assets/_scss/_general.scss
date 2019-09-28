@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-X: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  footer {
+    margin-top: auto;
+  }
+}
+
+.disable-scroll {
+  overflow-Y: hidden;
+}
