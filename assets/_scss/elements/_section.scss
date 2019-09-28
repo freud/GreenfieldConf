@@ -1,0 +1,8 @@
+.section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  @include media-breakpoint-down(sm) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
