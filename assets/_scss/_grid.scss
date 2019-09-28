@@ -33,16 +33,25 @@
   @for $i from 1 through 12 {
     $width: 100% / 12 * $i;
     $column: col-#{$breakpoint}-#{$i};
-    $offset: offset-#{$breakpoint}-#{$i};
     @if($breakpoint == null) {
       $column: col-#{$i};
-      $offset: offset-#{$i};
     }
 
     .#{$column} {
       max-width: $width;
       flex: 0 0 $width;
     }
+  }
+}
+
+@mixin createOffsets($breakpoint: null) {
+  @for $i from 0 through 5 {
+    $width: 100% / 12 * $i;
+    $offset: offset-#{$breakpoint}-#{$i};
+    @if($breakpoint == null) {
+      $offset: offset-#{$i};
+    }
+
     .#{$offset} {
       margin-left: $width;
     }
@@ -50,10 +59,12 @@
 }
 
 @include createColumns();
+@include createOffsets();
 @each $breakpoint, $value in $breakpoints {
   @if($breakpoint != 'xs') {
     @include media-breakpoint-up($breakpoint) {
       @include createColumns($breakpoint);
+      @include createOffsets($breakpoint);
     }
   }
 }
