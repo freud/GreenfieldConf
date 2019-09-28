@@ -1,0 +1,26 @@
+{% assign links = "Call For Papers, O nas, Kontakt" | split: ", " %}
+
+<nav class="navbar">
+    <div class="container">
+        <div class="row justify-content-between">
+            <a href="/" class="col-sm-4 col-md-3 col-xl-3 logo">
+                <img src="/images/gf_logo.svg" alt="Greenfield Conference logo" class="img-fluid logo" />
+            </a>
+            <div class="wrapper col-md-8 col-lg-6 col-xl-5">
+                <div class="nav-links">
+                    {% for link in links %}
+                    <div class="nav-link">
+                        <a href="/{{link | downcase | replace: ' ', '-' }}">{{link}}</a>
+                    </div>
+                    {% endfor %}
+                    <div class="nav-link">
+                        {% include lang_switch.html %}
+                    </div>
+                </div>
+            </div>
+            <button class="nav-toggler">
+                <span>Menu</span>
+            </button>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,212 @@
+$btn-padding: 7px;
+$header-height: 135px;
+$mobile-pseudo-height: 112px;
+
+@include media-breakpoint-down(md) {
+  $header-height: 125px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 48px 0;
+  .container {
+    @include media-breakpoint-down(md) {
+      max-width: none;
+      padding: 0 30px;
+    }
+  }
+  .logo {
+    min-width: 190px;
+    @include media-breakpoint-down(xs) {
+      min-width: 0;
+      max-width: 160px;
+    }
+  }
+  .nav-toggler {
+    background: transparent;
+    outline: none !important;
+    border: none;
+    text-transform: uppercase;
+    width: 54px;
+    box-sizing: content-box;
+    padding: $btn-padding;
+    text-align: right;
+    align-self: center;
+    font-size: 12px;
+    position: relative;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: $btn-padding;
+      height: 1px;
+      width: 14px;
+      background: $dark;
+      transition: transform 0.2s;
+    }
+    &::before {
+      top: $btn-padding + 4px;
+    }
+    &::after {
+      top: $btn-padding + 9px;
+    }
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+    span {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 29px;
+        bottom: 5px;
+        display: block;
+        background: $primary;
+        height: 8px;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+    &.active {
+      &::after {
+        transform: rotate(45deg) translate(-2px, -2px);
+      }
+      &::before {
+        transform: rotate(135deg) translate(1px, -1px);
+      }
+    }
+  }
+  .wrapper {
+    @include media-breakpoint-down(sm) {
+      overflow: hidden;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 160px 30px;
+      position: fixed;
+      right: 0;
+      top: $header-height;
+      background: $white;
+      z-index: 10;
+      transform: scale(0);
+      width: 100vw;
+      height: calc(100vh - #{$header-height});
+      transform-origin: 100% 50%;
+      transition: 0.3s transform ease;
+      &.show {
+        transform: scale(1);
+        .nav-links {
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: flex-start;
+        }
+      }
+    }
+    .nav-links {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      @include media-breakpoint-down(sm) {
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          background: transparent;
+          height: 100%;
+        }
+        &::before {
+          border-right: 1px solid $primary;
+          top: -100%;
+        }
+        &::after {
+          border-left: 1px solid $primary;
+          bottom: -100%;
+          left: 0;
+        }
+      }
+      .nav-link {
+        font-size: 22px;
+        position: relative;
+        @include media-breakpoint-down(md) {
+          font-size: 20px;
+        }
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 32px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
+          background-color: $primary;
+          transform: scaleY(0);
+          transform-origin: top left;
+          transition: transform 0.3s;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 3px;
+          height: 100%;
+          background-color: $primary;
+          transform: scaleY(0);
+          transform-origin: bottom right;
+          transition: transform 0.3s;
+        }
+        a {
+          display: inline-block;
+          padding: 5px 10px;
+          &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $primary;
+            transform: scaleX(0);
+            transform-origin: top left;
+
+            transition: transform 0.3s;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $primary;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s;
+          }
+        }
+        &:hover {
+          &::before,
+          &::after {
+            transform: scaleY(1);
+          }
+          a {
+            &::before,
+            &::after {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
