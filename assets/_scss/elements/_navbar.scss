@@ -7,9 +7,15 @@ $mobile-pseudo-height: 112px;
 }
 
 .navbar {
-  width: 100%;
+  width: 100vw;
   display: flex;
   padding: 48px 0;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+  z-index: 3;
+  background: $white;
+  transition: padding .2s;
   .container {
     @include media-breakpoint-down(md) {
       max-width: none;
@@ -18,9 +24,10 @@ $mobile-pseudo-height: 112px;
   }
   .logo {
     min-width: 190px;
+    transition: all .2s;
     @include media-breakpoint-down(xs) {
       min-width: 0;
-      max-width: 160px;
+      max-width: 160px !important;
     }
   }
   .nav-toggler {
@@ -85,7 +92,7 @@ $mobile-pseudo-height: 112px;
       align-items: center;
       padding: 160px 30px;
       position: fixed;
-      right: 0;
+      left: 0;
       top: $header-height;
       background: $white;
       z-index: 10;
@@ -141,47 +148,10 @@ $mobile-pseudo-height: 112px;
         &:last-child {
           margin-right: 0;
         }
-        &::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 3px;
-          height: 100%;
-          background-color: $primary;
-          transform: scaleY(0);
-          transform-origin: top left;
-          transition: transform 0.3s;
-        }
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 3px;
-          height: 100%;
-          background-color: $primary;
-          transform: scaleY(0);
-          transform-origin: bottom right;
-          transition: transform 0.3s;
-        }
         a {
+          padding: 5px 2px;
           display: inline-block;
-          padding: 5px 10px;
-          &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: $primary;
-            transform: scaleX(0);
-            transform-origin: top left;
-
-            transition: transform 0.3s;
-          }
-          &::after {
+          &:not(.lang-link)::after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -190,22 +160,25 @@ $mobile-pseudo-height: 112px;
             height: 2px;
             background-color: $primary;
             transform: scaleX(0);
-            transform-origin: bottom right;
             transition: transform 0.3s;
           }
         }
         &:hover {
-          &::before,
-          &::after {
-            transform: scaleY(1);
-          }
-          a {
-            &::before,
-            &::after {
-              transform: scaleX(1);
-            }
+          a::after {
+            transform: scaleX(1);
           }
         }
+      }
+    }
+  }
+  &-shadow {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .29);
+    padding: 32px 0;
+    .logo {
+      max-width: 225px;
+      @include media-breakpoint-down(md) {
+        max-width: 160px;
+        min-width: 0;
       }
     }
   }

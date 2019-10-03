@@ -34,6 +34,7 @@ footer {
         }
       }
       .img-fluid {
+        max-width: 160px;
         @include media-breakpoint-down(sm) {
           max-width: 140px;
         }

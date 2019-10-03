@@ -53,7 +53,7 @@
     }
 
     .#{$offset} {
-      margin-left: $width;
+      margin-left: $width !important;
     }
   }
 }
@@ -65,6 +65,10 @@
     @include media-breakpoint-up($breakpoint) {
       @include createColumns($breakpoint);
       @include createOffsets($breakpoint);
+      .col-#{$breakpoint} {
+        max-width: none;
+        flex: 1;
+      }
     }
   }
 }

@@ -1,18 +1,175 @@
 ---
 permalink: /
+layout: default
+style: home
+newsletterModal: true
+js: ['pages/home']
 ---
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <title>Document</title>
-</head>
-<body>
+<section class="section container">
+    <div class="row justify-content-center">
+        <div class="col-10 col-sm-12 col-md-5 col-xl-4">
+            <div class="frame-fill">
+                <div class="rect">
+                </div>
+                <h1 class="content d-table-caption">
+                    Greenfield conference 2020
+                </h1>
+            </div>
+            <p class="mb-32">
+                Największa konferencja IT/UX w wojewódzwtwie lubuskim
+            </p>
+            <button class="btn primary btn-signup mb-64" aria-label="Zapisz się do newslettera">
+                Zapisz się do newslettera
+            </button>
+        </div>
+        <div class="col-md-6 col-xl-7 offset-md-1 d-none d-md-block align-self-lg-center align-self-xl-start">
+            <div class="img-frame">
+                <div class="img-darken img-scale">
+                    <img src="/images/comming_soon.png" alt="Greenfield Conference 2019" class="img-fluid" />
+                </div>
+                <div class="content">
+                    <p class="h3 mb-8">
+                        30 maja 2020 r.
+                    </p>
+                    <small>Szczegóły wkrótce</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Join us:</p>
+            <div class="d-flex social">
+                <a href="https://twitter.com/greenfield_conf" target="blank">
+                    <span class="icon-twitter mr-32"></span>
+                </a>
+                <a href="https://www.facebook.com/GreenfieldConf/" target="blank">
+                    <span class="icon-facebook mr-32"></span>
+                </a>
+                <a href="https://www.youtube.com/c/GreenfieldConf" target="blank">
+                    <span class="icon-youtube mr-32"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-</body>
-</html>
+<section class="section container mb-32 mb-lg-80">
+    <div class="row section-bounce mb-16">
+        <div class="col-11 col-sm-12 col-md-6">
+            <p class="fade">
+                To już kolejna edycja
+            </p>
+            <h2 class="bounce-left mb-16">
+                Zobacz jak było w poprzednich latach
+            </h2>
+            <p class="bounce-right mb-32">
+                To już trzecia edycja. Popularność poprzednich przerosła nasze najśmielsze oczekiwania. W tym roku chcemy to zrobić jeszcze lepiej. Zanim odsłonimy kolejne karty tegorocznej edycji - popatrz jak zaczynaliśmy.
+            </p>
+            <div class="mb-32">
+                <a href="#" class="btn secondary sm fade mr-64">
+                    Galeria Zdjęć
+                </a>
+                <a href="#" class="btn secondary sm fade">
+                    Prelekcje
+                </a>
+            </div>
+        </div>
+        <div class="col-10 col-md-5 offset-1 align-self-center px-0 mb-8">
+            <div class="img-before animate">
+                <img src="/images/previous_years.png" alt="Poprzednie lata" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-frame container py-md-64 my-md-80">
+    <div class="frame frame-left">
+        {% include frame.html %}
+    </div>
+    <div class="row">
+        <div class="col-9 offset-1 col-md-6 offset-md-0 d-flex flex-column align-items-start">
+            <p>
+                Dochód z biletów przeznaczamy
+            </p>
+            <h2 class="mb-16">
+                Na cele charytatywne
+            </h2>
+            <p class="mb-40">
+                Działamy non-profit. Kupując bilet decydujesz komu pomóc. Dotychczas uzbieraliśmy:
+            </p>
+            <strong class="h3">
+                23 456 12,25 PLN
+            </strong>
+            <a href="#" class="btn secondary sm">Działamy non-profit</a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 offset-lg-1 align-self-center d-none d-md-block">
+            <div class="img-scale">
+                <img src="/images/section_charity.png" alt="Non profit" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section container">
+    <div class="row section-bounce">
+        <div class="col-12 col-md-6">
+            <p class="fade">
+                Call for Papers
+            </p>
+            <h2 class="bounce-left">
+                Agenda i Prelegenci
+            </h2>
+            <p class="bounce-right mb-24">
+                Szukamy najlepszych prelegentów, oryginalnego podejścia do świata IT/ UX. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
+            </p>
+            <a href="#" class="btn secondary sm mb-40 mb-md-0 fade">
+                Zgłoś się już dzisiaj
+            </a>
+        </div>
+        <div class="swiper-container col-12 col-md-5 offset-md-1">
+            <div class="swiper-wrapper">
+                {% for speaker in site.data.speakers %}
+                    <div class="swiper-slide d-flex align-items-center">
+                        <div class="img-before col-6 offset-1 align-self-center px-0 mr-32">
+                            <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
+                        </div>
+                        <div class="speaker mb-16">
+                            <p class="d-table-caption mb-8">
+                                {{ speaker.name }}
+                            </p>
+                            <span class="icon-twitter mr-8"></span>
+                            <span class="icon-linkedin"></span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if site.data.speakers.length > 1 %}
+                <div class="swiper-pagination"></div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="section section-frame container px-16">
+    <div class="frame frame-center">
+        {% include frame.html %}
+    </div>
+    <div class="row justify-content-center">
+        <div class="col col-md-8 col-lg-7 col-xl-6 text-center">
+            <p class="mb-8">
+                Trzymaj rękę na pulsie
+            </p>
+            <h3 class="h2">
+                Zapisz się do <br class="d-lg-none" /> newslettera
+            </h3>
+            <p class="mb-40">
+                Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
+            </p>
+            <button class="btn primary btn-signup" aria-label="Subskrybuj">
+                Subskrybuj
+            </button>
+        </div>
+    </div>
+</section>

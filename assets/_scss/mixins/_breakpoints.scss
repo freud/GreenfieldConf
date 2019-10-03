@@ -28,3 +28,11 @@ $breakpoints-names: xs, sm, md, lg, xl;
     }
   }
 }
+
+@mixin media-laptop-size() {
+  @media (min-width: map-get($breakpoints, lg)) {
+    @media (max-height: 850px) {
+      @content;
+    }
+  }
+}

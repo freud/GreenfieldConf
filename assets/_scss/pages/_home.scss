@@ -1,50 +1,117 @@
-h1 {
-  display: table-caption;
+section:first-child {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -2vw;
+    width: 2px;
+    height: 256px;
+    background: $primary;
+    filter: blur(0);
+    transition: filter .9s ease-in;
+    @include media-breakpoint-down(sm) {
+      content: none;
+    }
+    @include media-breakpoint-down(md) {
+      height: 128px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    @media (max-height: 940px) {
+      padding-top: 10vh;
+    }
+    @include media-laptop-size {
+      .btn {
+        margin-bottom: 32px !important;
+      }
+      p {
+        margin-top: -16px;
+      }
+    }
+  }
+  &.scrolled {
+    &::after {
+      filter: blur(50px);
+    }
+  }
 }
+
 .social {
   span {
     font-size: 24px;
   }
 }
 
-
 .frame {
   &.frame-left {
-    &::before {
-      width: 196px;
-      left: 3.5vw;
-      @include media-breakpoint-up(sm) {
-        left: 0;
-      }
-      @include media-breakpoint-up(lg) {
-        left: -2.5vw;
-        width: 300px;
-      }
+    width: 196px;
+    left: 3.5vw;
+    @include media-breakpoint-up(sm) {
+      left: 0;
+    }
+    @include media-breakpoint-up(lg) {
+      left: -2.5vw;
+      width: 300px;
     }
   }
   &.frame-center {
-    margin-bottom: 96px;
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 256px;
-      margin-top: 128px;
-    }
-    &::before {
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 236px;
-      @include media-breakpoint-up(lg) {
-        width: 300px;
-      }
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 236px;
+    @include media-breakpoint-up(lg) {
+      width: 300px;
     }
   }
 }
 
-.img-darken {
-  .img-fluid {
-    max-height: 360px;
+.img-scale {
+  img {
+    transform: scale(1.4);
+  }
+}
+
+.img-frame {
+  position: relative;
+  display: flex;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    border: 2px solid $primary;
+    z-index: 1;
+    transform: translate(7%, 7%);
+    box-sizing: border-box;
+  }
+  .img-darken {
+    transform: translate(7%, 7%);
+    width: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: rgba(13, 13, 13, .67);
+    }
+    .img-fluid {
+      max-height: 360px;
+      width: 100%;
+    }
   }
   .content {
+    color: $white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
     p {
       @include media-breakpoint-down(lg) {
         font-size: 24px;
@@ -56,6 +123,19 @@ h1 {
     small {
       color: darken($white, 20%);
     }
+  } 
+}
+
+.shown {
+  .content {
+    transition: opacity .3s ease-in;
+    transition-delay: .7s;
+    opacity: 1;
+  }
+  .img-darken {
+    transition: transform .5s ease-out;
+    transition-delay: 1s;
+    transform: translate(0);
   }
 }
 

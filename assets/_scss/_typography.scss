@@ -24,60 +24,57 @@ p,
 h1,
 .h1 {
   font-size: 60px;
-  line-height: 90px;
+  line-height: 1.5;
   @include media-breakpoint-down($mobile) {
     font-size: 40px;
-    line-height: 60px;
   }
 }
 
 h2,
 .h2 {
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
   @include media-breakpoint-down($mobile) {
     font-size: 30px;
-    line-height: 36px;
   }
 }
 
 h3,
 .h3 {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   @include media-breakpoint-down($mobile) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
   }
 }
 
 h4,
 .h4 {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 1.33;
   @include media-breakpoint-down($mobile) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
   }
 }
 
 h5,
 .h5 {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   @include media-breakpoint-down($mobile) {
     font-size: 12px;
-    line-height: 18px;
   }
 }
 
 p,
 .p {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 1.6;
   margin-bottom: 16px;
   @include media-breakpoint-down($mobile) {
     font-size: 16px;
-    line-height: 24px;
+    line-height:1.5;
   }
 }

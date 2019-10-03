@@ -4,58 +4,58 @@
   }
 
   .justify-content#{$breakpoint}-start {
-    justify-content: flex-start;
+    justify-content: flex-start !important;
   }
   .justify-content#{$breakpoint}-center {
-    justify-content: center;
+    justify-content: center !important;
   }
   .justify-content#{$breakpoint}-end {
-    justify-content: flex-end;
+    justify-content: flex-end !important;
   }
   .justify-content#{$breakpoint}-between {
-    justify-content: space-between;
+    justify-content: space-between !important;
   }
   .justify-content#{$breakpoint}-around {
-    justify-content: space-around;
+    justify-content: space-around !important;
   }
 
   .align-items#{$breakpoint}-start {
-    align-items: flex-start;
+    align-items: flex-start !important;
   }
   .align-items#{$breakpoint}-center {
-    align-items: center;
+    align-items: center !important;
   }
   .align-items#{$breakpoint}-end {
-    align-items: flex-end;
+    align-items: flex-end !important;
   }
 
   .align-self#{$breakpoint}-start {
-    align-self: flex-start;
+    align-self: flex-start !important;
   }
   .align-self#{$breakpoint}-center {
-    align-self: center;
+    align-self: center !important;
   }
   .align-self#{$breakpoint}-end {
-    align-self: flex-end;
+    align-self: flex-end !important;
   }
 
   .flex#{$breakpoint}-column {
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .flex#{$breakpoint}-row {
-    flex-direction: row;
+    flex-direction: row !important;
   }
 
   .flex#{$breakpoint}-wrap {
-    flex-wrap: wrap;
+    flex-wrap: wrap !important;
   }
   .flex#{$breakpoint}-nowrap {
-    flex-wrap: nowrap;
+    flex-wrap: nowrap !important;
   }
 
   .flex#{$breakpoint}-center {
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   @for $i from 1 through 3 {
