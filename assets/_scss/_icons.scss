@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'icomoon';
+  font-display: block;
+  src:  url('../icons/icomoon.eot?f9a3kb');
+  src:  url('../icons/icomoon.eot?f9a3kb#iefix') format('embedded-opentype'),
+  url('../icons/icomoon.ttf?f9a3kb') format('truetype'),
+  url('../icons/icomoon.woff?f9a3kb') format('woff'),
+  url('../icons/icomoon.svg?f9a3kb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-loading:before {
+  content: "\e900";
+}
+.icon-facebook:before {
+  content: "\ea91";
+  cursor: pointer;
+}
+.icon-twitter:before {
+  content: "\ea96";
+  cursor: pointer;
+}
+.icon-youtube:before {
+  content: "\ea9d";
+  cursor: pointer;
+  @include hover-active-focus {
+    color: #1dcaff;
+  }
+}
+.icon-linkedin:before {
+  content: "\eac9";
+  cursor: pointer;
+}
+
+[class^="icon"] {
+  transition: 0.2s color ease;
+}
+
+.icon-facebook {
+  @include hover-active-focus {
+    color: #3b5998;
+  }
+}
+.icon-twitter {
+  @include hover-active-focus {
+    color: #1dcaff;
+  }
+}
+.icon-youtube {
+  @include hover-active-focus {
+    color: #d71e18;
+  }
+}
+
+.icon-linkedin {
+  @include hover-active-focus {
+    color: #0077B5;
+  }
+}

@@ -1,0 +1,81 @@
+h1 {
+  display: table-caption;
+}
+.social {
+  span {
+    font-size: 24px;
+  }
+}
+
+
+.frame {
+  &.frame-left {
+    &::before {
+      width: 196px;
+      left: 3.5vw;
+      @include media-breakpoint-up(sm) {
+        left: 0;
+      }
+      @include media-breakpoint-up(lg) {
+        left: -2.5vw;
+        width: 300px;
+      }
+    }
+  }
+  &.frame-center {
+    margin-bottom: 96px;
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 256px;
+      margin-top: 128px;
+    }
+    &::before {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 236px;
+      @include media-breakpoint-up(lg) {
+        width: 300px;
+      }
+    }
+  }
+}
+
+.img-darken {
+  .img-fluid {
+    max-height: 360px;
+    width: 100%;
+  }
+  .content {
+    p {
+      @include media-breakpoint-down(lg) {
+        font-size: 24px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 18px;
+      }
+    }
+    small {
+      color: darken($white, 20%);
+    }
+  }
+}
+
+.speaker {
+  @include media-breakpoint-up(lg) {
+    p {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      margin-bottom: 54px !important;
+      font-family: 'Montserrat', sans-serif;
+    }
+    span {
+      font-size: 30px;
+    }
+  }
+}
+
+.btn.btn-signup {
+  @include media-breakpoint-down(md) {
+    font-size: 13px;
+  }
+}
