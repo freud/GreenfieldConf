@@ -4,11 +4,15 @@ main {
             left: -13%;
             @include media-breakpoint-down(md) {
                 left: -10%;
+                top: -10%;
             }
         }
     }
     .section:first-child {
         padding-top: 148px;
+        @include media-breakpoint-down(md) {
+            padding-top: 80px;
+        }
         .frame-container {
             position: relative;
             min-height: 540px;

@@ -1,9 +1,5 @@
 (function(){
     const wrappers = document.querySelectorAll('.anim-wrapper');
-    let entire = true;
-    if(window.innerHeight < 766) {
-        entire = false;
-    }
 
     revealElements(wrappers);
     window.addEventListener('scroll', () => {
@@ -11,7 +7,7 @@
     });
     
     function isInViewport (el) {
-        let divider = entire ? 2 : 3
+        let divider = 2;
         let top = el.offsetTop;
         let left = el.offsetLeft;
         const width = el.offsetWidth;
