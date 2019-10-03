@@ -46,12 +46,6 @@ $bounce-duration: 0.7s;
       margin-bottom: 64px;
     }
   }
-  &:last-child {
-    margin-bottom: 256px;
-    @include media-breakpoint-down(md) {
-      margin-bottom: 128px;
-    }
-  }
 }
 
 .section-bounce {
@@ -71,7 +65,7 @@ $bounce-duration: 0.7s;
   }
 }
 
-.section.shown {
+.shown {
   .bounce-left {
     @include animation-bounce(left);
   }

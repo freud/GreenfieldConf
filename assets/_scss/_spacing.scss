@@ -23,22 +23,34 @@ $spacing-map: (
       }
     }
 
-    $horizontalClass: px-#{$spacing};
-    $verticalClass: py-#{$spacing};
+    $horizontalPadding: px-#{$spacing};
+    $verticalPadding: py-#{$spacing};
+    $horizontalMargin: mx-#{$spacing};
+    $verticalMargin: my-#{$spacing};
 
     @if ($breakpoint) {
-      $horizontalClass: px-#{$breakpoint}-#{$spacing};
-      $verticalClass: py-#{$breakpoint}-#{$spacing}
+      $horizontalPadding: px-#{$breakpoint}-#{$spacing};
+      $verticalPadding: py-#{$breakpoint}-#{$spacing}
     }
 
-    .#{$horizontalClass} {
+    .#{$horizontalPadding} {
       padding-left: #{$spacing}px !important;
       padding-right: #{$spacing}px !important;
     }
 
-    .#{$verticalClass} {
+    .#{$verticalPadding} {
       padding-top: #{$spacing}px !important;
       padding-bottom: #{$spacing}px !important;
+    }
+
+    .#{$horizontalMargin} {
+      margin-left: #{$spacing}px !important;
+      margin-right: #{$spacing}px !important;
+    }
+
+    .#{$verticalMargin} {
+      margin-top: #{$spacing}px !important;
+      margin-bottom: #{$spacing}px !important;
     }
   }
 }

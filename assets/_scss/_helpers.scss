@@ -42,6 +42,14 @@ $text-align-list: center right left;
   font-size: 13px !important;
 }
 
+.text-smaller {
+  font-size: 16px !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;

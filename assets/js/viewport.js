@@ -1,16 +1,17 @@
 (function(){
-    const sections = document.querySelectorAll('.section:not(.section-frame)');
-    const sectionsFrame = document .querySelectorAll('.section-frame');
-    
-    revealElements(sections);
-    revealElements(sectionsFrame, true);
+    const wrappers = document.querySelectorAll('.anim-wrapper');
+    let entire = true;
+    if(window.innerHeight < 766) {
+        entire = false;
+    }
+
+    revealElements(wrappers);
     window.addEventListener('scroll', () => {
-        revealElements(sections);
-        revealElements(sectionsFrame, true);
+        revealElements(wrappers);
     });
     
-    function isInViewport (el, entire = false) {
-        entire = entire ? 1 : 1.5;
+    function isInViewport (el) {
+        let divider = entire ? 2 : 3
         let top = el.offsetTop;
         let left = el.offsetLeft;
         const width = el.offsetWidth;
@@ -23,17 +24,17 @@
         }
     
         return (
-          top >= window.pageYOffset &&
+          (top + height) >= window.pageYOffset &&
           left >= window.pageXOffset &&
-          (top + height / entire) <= (window.pageYOffset + window.innerHeight) &&
+          top <= (window.pageYOffset + window.innerHeight / divider) &&
           (left + width) <= (window.pageXOffset + window.innerWidth)
         );
     }
     
-    function revealElements(elements, entire = false) {
+    function revealElements(elements) {
         if(elements.length) {
             elements.forEach(el => {
-                if(isInViewport(el, entire)) {
+                if(isInViewport(el)) {
                     el.classList.add('shown');
                 };
             })

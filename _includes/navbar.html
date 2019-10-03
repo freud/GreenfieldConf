@@ -6,15 +6,15 @@
             <a href="/" class="col-sm-4 col-md-3 col-xl-3 logo">
                 <img src="/images/gf_logo.svg" alt="Greenfield Conference logo" class="img-fluid logo" />
             </a>
-            <button class="nav-toggler">
+            <button class="nav-toggler" aria-label="Menu">
                     <span>Menu</span>
                 </button>
             <div class="wrapper col-md-8 col-lg-6 col-xl-5">
                 <div class="nav-links">
                     {% for link in links %}
-                    <div class="nav-link">
-                        <a href="/{{link | downcase | replace: ' ', '-' }}">{{link}}</a>
-                    </div>
+                        <div class="nav-link">
+                            <a href="/{{link | downcase | replace: ' ', '-' }}">{{link}}</a>
+                        </div>
                     {% endfor %}
                     <div class="nav-link">
                         {% include lang_switch.html %}

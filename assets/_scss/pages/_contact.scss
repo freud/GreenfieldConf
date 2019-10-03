@@ -1,0 +1,41 @@
+main {
+    .frame-fill {
+        .rect {
+            left: -13%;
+            @include media-breakpoint-down(md) {
+                left: -10%;
+            }
+        }
+    }
+    .section:first-child {
+        padding-top: 148px;
+        .frame-container {
+            position: relative;
+            min-height: 540px;
+            margin-top: -4%;
+            @include media-breakpoint-down(md) {
+                margin-top: 72px;
+                min-height: 460px;
+            }
+            .frame-left {
+                left: -9%;
+                width: 300px;
+                @include media-breakpoint-down(md) {
+                    width: 230px;
+                }
+                path {
+                    stroke-width: 1px;
+                }
+            }
+        }
+        .h3 {
+            font-size: 26px;
+            @include media-breakpoint-down(sm) {
+                font-size: 20px;
+            }
+        }
+        .social {
+            font-size: 32px;
+        }
+    }
+}

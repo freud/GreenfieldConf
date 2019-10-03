@@ -45,7 +45,7 @@
 }
 
 @mixin createOffsets($breakpoint: null) {
-  @for $i from 0 through 5 {
+  @for $i from 0 through 6 {
     $width: 100% / 12 * $i;
     $offset: offset-#{$breakpoint}-#{$i};
     @if($breakpoint == null) {

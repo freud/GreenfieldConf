@@ -27,7 +27,9 @@ const content = `
             </label>  
         </form>
         <button class="btn primary">Zapisuję się!</button>
-        <button class="close">&times;</button>
+        <button class="close">
+            <span class="icon-clear"></span>
+        </button>
     </div>
 `;
 

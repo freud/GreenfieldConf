@@ -9,12 +9,14 @@ js: ['pages/home']
 <section class="section container">
     <div class="row justify-content-center">
         <div class="col-10 col-sm-12 col-md-5 col-xl-4">
-            <div class="frame-fill">
-                <div class="rect">
+            <div class="anim-wrapper">
+                <div class="frame-fill">
+                    <div class="rect">
+                    </div>
+                    <h1 class="content d-table-caption">
+                        Greenfield conference 2020
+                    </h1>
                 </div>
-                <h1 class="content d-table-caption">
-                    Greenfield conference 2020
-                </h1>
             </div>
             <p class="mb-32">
                 Największa konferencja IT/UX w wojewódzwtwie lubuskim
@@ -23,7 +25,7 @@ js: ['pages/home']
                 Zapisz się do newslettera
             </button>
         </div>
-        <div class="col-md-6 col-xl-7 offset-md-1 d-none d-md-block align-self-lg-center align-self-xl-start">
+        <div class="col-md-6 col-xl-7 offset-md-1 anim-wrapper d-none d-md-block align-self-lg-center align-self-xl-start">
             <div class="img-frame">
                 <div class="img-darken img-scale">
                     <img src="/images/comming_soon.png" alt="Greenfield Conference 2019" class="img-fluid" />
@@ -57,7 +59,7 @@ js: ['pages/home']
 
 <section class="section container mb-32 mb-lg-80">
     <div class="row section-bounce mb-16">
-        <div class="col-11 col-sm-12 col-md-6">
+        <div class="col-11 col-sm-12 col-md-6 anim-wrapper">
             <p class="fade">
                 To już kolejna edycja
             </p>
@@ -76,7 +78,7 @@ js: ['pages/home']
                 </a>
             </div>
         </div>
-        <div class="col-10 col-md-5 offset-1 align-self-center px-0 mb-8">
+        <div class="col-10 col-md-5 offset-1 align-self-center px-0 mb-8 anim-wrapper">
             <div class="img-before animate">
                 <img src="/images/previous_years.png" alt="Poprzednie lata" class="img-fluid" />
             </div>
@@ -85,8 +87,10 @@ js: ['pages/home']
 </section>
 
 <section class="section section-frame container py-md-64 my-md-80">
-    <div class="frame frame-left">
-        {% include frame.html %}
+    <div class="anim-wrapper">
+        <div class="frame frame-left">
+            {% include frame.html %}
+        </div>
     </div>
     <div class="row">
         <div class="col-9 offset-1 col-md-6 offset-md-0 d-flex flex-column align-items-start">
@@ -104,7 +108,7 @@ js: ['pages/home']
             </strong>
             <a href="#" class="btn secondary sm">Działamy non-profit</a>
         </div>
-        <div class="col-12 col-md-6 col-lg-5 offset-lg-1 align-self-center d-none d-md-block">
+        <div class="col-12 col-md-6 col-lg-5 offset-lg-1 align-self-center d-none d-md-block anim-wrapper">
             <div class="img-scale">
                 <img src="/images/section_charity.png" alt="Non profit" class="img-fluid" />
             </div>
@@ -114,7 +118,7 @@ js: ['pages/home']
 
 <section class="section container">
     <div class="row section-bounce">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 anim-wrapper">
             <p class="fade">
                 Call for Papers
             </p>
@@ -128,7 +132,7 @@ js: ['pages/home']
                 Zgłoś się już dzisiaj
             </a>
         </div>
-        <div class="swiper-container col-12 col-md-5 offset-md-1">
+        <div class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper">
             <div class="swiper-wrapper">
                 {% for speaker in site.data.speakers %}
                     <div class="swiper-slide d-flex align-items-center">
@@ -139,8 +143,12 @@ js: ['pages/home']
                             <p class="d-table-caption mb-8">
                                 {{ speaker.name }}
                             </p>
-                            <span class="icon-twitter mr-8"></span>
-                            <span class="icon-linkedin"></span>
+                            <a href="{{speaker.twitter}}" target="blank">
+                                <span class="icon-twitter mr-8"></span>
+                            </a>
+                            <a href="{{speaker.linkedin}}" target="blank">
+                                <span class="icon-linkedin"></span>
+                            </a>
                         </div>
                     </div>
                 {% endfor %}
@@ -152,7 +160,7 @@ js: ['pages/home']
     </div>
 </section>
 
-<section class="section section-frame container px-16">
+<section class="section section-frame container px-16 anim-wrapper">
     <div class="frame frame-center">
         {% include frame.html %}
     </div>

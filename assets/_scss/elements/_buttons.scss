@@ -62,3 +62,10 @@
     width: 100%;
   }
 }
+
+.link {
+  transition: color 0.3s ease;
+  @include hover-active-focus {
+    color: $primary;
+  }
+}
