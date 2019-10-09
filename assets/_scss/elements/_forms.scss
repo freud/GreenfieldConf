@@ -6,8 +6,18 @@
     font-size: 20px;
     font-family: inherit;
     font-style: italic;
+    outline: none;
+    margin-bottom: 32px;
     @include media-breakpoint-down(md) {
         padding: 16px 32px;
+    }
+    @include hover-active-focus {
+        border-color: $primary;
+        transition: 0.3s border-color ease;
+    }
+    &.invalid {
+        border: 1px solid $invalid;
+        margin-bottom: 0;
     }
 }
 
@@ -51,4 +61,18 @@
             }
         }
     }
+    &.invalid + label::before {
+        border-color: $invalid;
+    }
+}
+
+.invalid-message {
+    display: none;
+    color: $invalid;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.invalid ~ .invalid-message {
+    display: block;
 }

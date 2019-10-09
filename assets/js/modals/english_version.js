@@ -16,17 +16,18 @@ const content = `
                 </div>
             </div>
         </div>
-        <form class="mb-32">
+        <form>
             <div class="col-md-10 col-lg-7">
-                <input type="email" class="form-input mb-32" placeholder="Your e-mail" id="email-english" />
+                <input type="email" class="form-input" placeholder="Your e-mail" id="email-english" />
+                <div class="invalid-message mt-8 ml-16">Podaj poprawny adres e-mail</div>
                 <label class="d-none" for="email">Twój adres e-mail</label>
             </div>
             <input type="checkbox" class="checkbox" id="agreement"/>
             <label for="agreement">
             I agree to the processing of my personal data in accordance with the PDP Act, for marketing purposes. Providing personal data is voluntary. I know that I have the right to access and correct my personal data, request the cessation of their processing. The administrator of the data is the conf.IT Foundation ul. Rydza Śmigłego 62/8, Zielona Góra, Poland. We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. Learn more about Mailchimp's privacy practices here.
             </label>  
+            <button type="submit" class="btn primary mt-32">Zapisuję się!</button>
         </form>
-        <button class="btn primary">Zapisuję się!</button>
         <button class="close">
             <span class="icon-clear"></span>
         </button>
