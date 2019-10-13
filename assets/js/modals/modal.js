@@ -6,12 +6,12 @@ export function initModal(triggers, id, content, submitted = false) {
             modal = createModal(id, content);
             const form = modal.modalContent.querySelector('form');
             validateForm(form, submitted);
+            handleCollapse(modal.modalContent);
          }
 
          const {modalBg, modalContent} = modal;
          modalBg.classList.add('open');
-         setTimeout(() => modalContent.classList.add('shown'), 10);
-         
+         setTimeout(() => modalContent.classList.add('shown'), 10);         
      };
     
      if(triggers.length) {
@@ -89,5 +89,23 @@ function validateForm(form) {
             checkbox.classList.remove('invalid');
         }
         submitted = true;
+    }
+}
+
+function handleCollapse(modal) {
+    const collapseToggle = modal.querySelectorAll('.toggle-collapse');
+
+    if(collapseToggle.length) {
+        collapseToggle.forEach(toggler => {
+            toggler.addEventListener('click', () => {
+                const target = modal.querySelector(toggler.dataset.target);
+                target.classList.toggle('show');
+                if(target.classList.contains('show')) {
+                    toggler.innerText = toggler.dataset.less;
+                } else {
+                    toggler.innerText = toggler.dataset.more;
+                }
+            });
+        });
     }
 }

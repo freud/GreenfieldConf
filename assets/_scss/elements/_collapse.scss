@@ -1,0 +1,29 @@
+.collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s linear;
+    padding: 0;
+    &.show {
+        max-height: 300px;
+    }
+    .modal & {
+        @include media-breakpoint-up(md) {
+            max-height: none;
+            display: inline;
+        }
+    }
+}
+
+.toggle-collapse {
+    border: none;
+    background: transparent;
+    color: $primary;
+    outline: none;
+    cursor: pointer;
+    margin-top: 8px;
+    display: block;
+    padding-left: 4px;
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}

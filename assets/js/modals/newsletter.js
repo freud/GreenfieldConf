@@ -5,7 +5,7 @@ const id = 'modal-newsletter';
 const content = `
     <div class="modal">
         <div class="row">
-            <div class="heading col-9 mb-80">
+            <div class="heading col-sm-8 mb-48 mb-md-80">
                 <div class="frame-fill">
                     <div class="rect"></div>
                     <div class="content">
@@ -16,15 +16,27 @@ const content = `
             </div>
         </div>
         <form novalidate>
-            <div class="col-md-10 col-lg-7">
+            <div class="col-md-10 col-lg-7 px-0">
                 <input type="email" class="form-input" placeholder="Twój adres e-mail" id="email" required />
-                <div class="invalid-message mt-8 ml-16">Enter a valid email address</div>
+                <div class="invalid-message mt-8 ml-16">Podaj poprawny adres e-mail</div>
                 <label class="d-none" for="email">Twój adres e-mail</label>
             </div>
             <input type="checkbox" class="checkbox" id="agreement"/>
             <label for="agreement">
-                Wyrażam zgodę na przetwarzanie moich danych osobowych, zgodnie z ustawą o ochronie danych osobowych, do celów marketingowych. Podanie danych osobowych jest dobrowolne. Wiem, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest Fundacja conf.IT ul. Rydza Śmigłego 62/8, Zielona Góra. Wykorzystujemy Mailchimp jako naszą platformę marketingową. Klikając poniżej, potwierdzasz, że Twoje informacje zostaną przekazane Mailchimp w celu ich przetworzenia. Dowiedz się więcej o praktykach ochrony prywatności stosowanych przez Mailchimp tutaj.
+                Wyrażam zgodę na przetwarzanie moich danych osobowych, zgodnie z ustawą o ochronie danych osobowych, do celów marketingowych. 
+                <div class="collapse" id="agreement-collapse">
+                    Podanie danych osobowych jest dobrowolne. Wiem, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest Fundacja conf.IT ul. Rydza Śmigłego 62/8, Zielona Góra. Wykorzystujemy Mailchimp jako naszą platformę marketingową. Klikając poniżej, potwierdzasz, że Twoje informacje zostaną przekazane Mailchimp w celu ich przetworzenia. Dowiedz się więcej o praktykach ochrony prywatności stosowanych przez Mailchimp tutaj.
+                </div>
             </label>  
+            <button 
+                class="toggle-collapse" 
+                type="button" 
+                data-target="#agreement-collapse"
+                data-more="Więcej"
+                data-less="Mniej"
+            >
+                Więcej
+            </button>
             <button type="submit" class="btn primary mt-32">Zapisuję się!</button>
         </form>
         <button class="close">

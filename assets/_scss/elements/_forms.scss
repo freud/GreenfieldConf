@@ -11,6 +11,9 @@
     @include media-breakpoint-down(md) {
         padding: 16px 32px;
     }
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+    }
     @include hover-active-focus {
         border-color: $primary;
         transition: 0.3s border-color ease;

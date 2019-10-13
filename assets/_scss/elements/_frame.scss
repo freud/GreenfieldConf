@@ -41,10 +41,10 @@ $frame-fill-duration: .4s;
   svg {
     path {
       stroke: $primary;
-      stroke-width: 2px;
+      stroke-width: $frame-border-width;
       transition: none;
       &:nth-child(even) {
-        stroke-width: 1px;
+        stroke-width: $frame-border-width / 2;
       }
       &:first-child {
         transform: scaleY(0);
