@@ -33,11 +33,6 @@ section {
         }
       }
     }
-    &.scrolled {
-      &::after {
-        filter: blur(50px);
-      }
-    }
   }
   &:last-child {
     margin-bottom: 256px;
@@ -84,20 +79,17 @@ section {
 .img-frame {
   position: relative;
   display: flex;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+  .frame {
     width: 100%;
-    height: 100%;
-    border: $frame-border-width solid $primary;
     z-index: 1;
-    transform: translate(7%, 7%);
-    box-sizing: border-box;
+    svg {
+      transform: translate(5%, 7%);
+      path {
+        stroke-width: 1px;
+      }
+    }
   }
   .img-darken {
-    transform: translate(7%, 7%);
     width: 100%;
     &::after {
       content: '';

@@ -2,6 +2,7 @@ main {
     .frame-fill {
         .rect {
             left: -13%;
+            top: -12%;
             @include media-breakpoint-down(md) {
                 left: -10%;
                 top: -10%;
@@ -26,9 +27,6 @@ main {
                 width: 300px;
                 @include media-breakpoint-down(md) {
                     width: 230px;
-                }
-                path {
-                    stroke-width: 1px;
                 }
             }
         }

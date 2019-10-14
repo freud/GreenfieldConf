@@ -82,8 +82,8 @@ $frame-fill-duration: .4s;
     @include media-breakpoint-up(lg) {
       height: 280px;
       width: 280px;
-      top: -17%;
-      left: -18%;
+      top: -15%;
+      left: -16%;
     }
     &::before,
     &::after {

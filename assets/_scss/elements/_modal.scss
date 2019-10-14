@@ -37,6 +37,17 @@
         height: 100vh;
         overflow-y: auto;
     }
+    @include media-laptop-size() {
+        max-width: 90vw;
+        padding-top: 64px;
+        h2 {
+          max-width: 550px;  
+        }
+        .rect {
+           top: -10%;
+           left: -10%;
+        }
+    }
     .h1 {
         line-height: 1.2;
         @include media-breakpoint-down(sm) {

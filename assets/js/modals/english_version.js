@@ -11,7 +11,7 @@ const content = `
                     <div class="content">
                         <p class=mb-8>Ups!</p>
                         <h2 class="h1 mb-16">English version coming soon</h2>
-                        <p>We work hard to provide you with the best possible experience. Please be patient. So let's keep in touch.</p>
+                        <p>We work hard to provide you with the best possible experience. Please be patient. So let's stay in touch.</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@ const content = `
             </div>
             <input type="checkbox" class="checkbox" id="agreement"/>
             <label for="agreement">
-            I agree to the processing of my personal data in accordance with the PDP Act, for marketing purposes. 
+                I agree to the processing of my personal data in accordance with the PDP Act, for marketing purposes.
             <div class="collapse" id="en-agreement-collapse">
                 Providing personal data is voluntary. I know that I have the right to access and correct my personal data, request the cessation of their processing. The administrator of the data is the conf.IT Foundation ul. Rydza Śmigłego 62/8, Zielona Góra, Poland. We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. Learn more about Mailchimp's privacy practices here.
             </div>
