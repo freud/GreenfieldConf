@@ -65,6 +65,7 @@
 
 .link {
   transition: color 0.3s ease;
+  display: inline-block;
   @include hover-active-focus {
     color: $primary;
   }

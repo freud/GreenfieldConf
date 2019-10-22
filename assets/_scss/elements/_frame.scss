@@ -165,6 +165,10 @@ $frame-fill-duration: .4s;
   }
 }
 
+.anim-wrapper {
+  position: relative;
+}
+
 @keyframes frame-reveal {
   0% {
     height: 0;

@@ -1,0 +1,54 @@
+.section {
+    h1 {
+        line-height: 72px;
+    }
+    .h3 {
+        @include media-breakpoint-down(lg) {
+            font-size: 20px;
+        }
+        @media (max-width: 360px) {
+            font-size: 16px;
+        }
+    }
+    .rect {
+        @include media-breakpoint-up(lg) {
+            top: -15%;
+            left: -13%;
+        }
+        @include media-breakpoint-up(xl) {
+            top: -18%;
+        }
+    }
+    .frame-container {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 254px;
+    }
+    .frame {
+        height: 212px;
+        left: 0;
+        &:first-child {
+            height: 150px;
+            width: 240px;
+        }
+        svg {
+            path {
+                stroke-width: 1px;
+            }
+        }
+    }
+}
+
+.policy-text {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -4vw;
+        width: 4px;
+        height: 100%;
+        background-color: $primary;
+        display: block;
+    }
+}
