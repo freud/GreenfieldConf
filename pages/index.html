@@ -89,11 +89,9 @@ js: ['pages/home']
     </div>
 </section>
 
-<section class="section section-frame container py-md-64 my-md-80">
-    <div class="anim-wrapper">
-        <div class="frame frame-left">
-            {% include frame.html %}
-        </div>
+<section class="section section-frame container anim-wrapper py-md-64 my-md-80">
+    <div class="frame frame-left">
+        {% include frame.html %}
     </div>
     <div class="row">
         <div class="col-9 offset-1 col-md-6 offset-md-0 d-flex flex-column align-items-start">
@@ -109,11 +107,15 @@ js: ['pages/home']
             <strong class="h3">
                 23 456 12,25 PLN
             </strong>
-            <a href="#" class="btn secondary sm">Działamy non-profit</a>
+            <a href="#" class="btn secondary sm">
+                Działamy non-profit
+            </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-5 offset-lg-1 align-self-center d-none d-md-block anim-wrapper">
-            <div class="img-scale">
-                <img src="/images/section_charity.png" alt="Non profit" class="img-fluid" />
+        <div class="col-12 col-md-6 col-lg-5 offset-lg-1 align-self-center d-none d-md-block">
+            <div class="img-wrapper img-stroke">
+                <div class="img-scale">
+                    <img src="/images/section_charity.png" alt="Non profit" class="img-fluid" />
+                </div>
             </div>
         </div>
     </div>

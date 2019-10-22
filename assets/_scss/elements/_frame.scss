@@ -1,25 +1,35 @@
 $frame-draw-duration: .7s;
 $frame-fill-duration: .4s;
+$img-before-duration: .5s;
 
 .img-before {
   position: relative;
   display: inline-flex;
   align-self: flex-start;
   align-items: flex-start;
-  &::before {
+  &::before,
+  &::after {
     content: '';
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
-    top: 7%;
-    left: -7%;
-    background: $primary;
     z-index: -1;
+    box-sizing: border-box;
   }
-  img {
-    transform: translate(-7%, 7%);
-    transition: transform .7s ease;
+  &::before {
+    border: 1px solid $primary;
+    background: transparent;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    border-top-right-radius: 75%;
+    transform: scale(0);
+    transform-origin: 0% 100%;
+    background: $primary;
+    bottom: -7%;
+    left: -7%;
   }
 }
 
@@ -83,7 +93,7 @@ $frame-fill-duration: .4s;
       height: 280px;
       width: 280px;
       top: -15%;
-      left: -16%;
+      left: -1%;
     }
     &::before,
     &::after {
@@ -135,8 +145,14 @@ $frame-fill-duration: .4s;
 
 .shown {
   .img-before {
-    img {
-      transform: translate(0);
+    &::before {
+      transform: translate(-7%, 7%);
+      transition: transform $img-before-duration ease-out;
+    }
+    &::after {
+      transform: scale(1);
+      transition: transform .4s ease-out;
+      transition-delay: $img-before-duration - .1s;
     }
   }
   .frame-fill {
@@ -160,7 +176,13 @@ $frame-fill-duration: .4s;
   }
   .img-scale {
     img {
-      transform: scale(1);
+      transform: scale(1) !important;
+    }
+  }
+  .img-stroke {
+    &::after {
+      transition: transform .3s ease;
+      transform: scaleY(1) !important;
     }
   }
 }

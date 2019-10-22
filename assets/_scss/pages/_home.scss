@@ -40,6 +40,19 @@ section {
       margin-bottom: 128px;
     }
   }
+  .img-stroke {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      display: block;
+      width: 4px;
+      background: $primary;
+      height: 100%;
+    }
+  }
 }
 
 .social {
@@ -70,9 +83,26 @@ section {
   }
 }
 
-.img-scale {
-  img {
-    transform: scale(1.4);
+.img-wrapper {
+  position: relative;
+  &.img-stroke {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 70%;
+      right: 15%;
+      width: 4px;
+      height: 60%;
+      display: block;
+      background: $primary;
+      z-index: 1;
+      transform: scaleY(0);
+    }
+  }
+  .img-scale {
+    img {
+      transform: scale(1.4);
+    }
   }
 }
 
