@@ -16,18 +16,43 @@ const content = `
                 </div>
             </div>
         </div>
-        <form>
+        <form 
+            novalidate 
+            action="https://greenfieldconf.us20.list-manage.com/subscribe/post?u=28984104b9db97fbf1e0e8c4f&amp;id=10ad75a3a1" 
+            method="POST"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+        >
             <div class="col-md-10 col-lg-7 px-0">
-                <input type="email" class="form-input" placeholder="Your e-mail" id="email-english" />
-                <div class="invalid-message mt-8 ml-16">Enter a valid email address</div>
-                <label class="d-none" for="email">Twój adres e-mail</label>
+                <input
+                    type="email" 
+                    class="form-input" 
+                    placeholder="Twój adres e-mail" 
+                    id="mce-EMAIL"
+                    name="EMAIL" 
+                    required 
+                />
+                <div class="invalid-message mt-8 ml-16">
+                    Enter a valid email address
+                </div>
+                <label class="d-none" for="mce-EMAIL">
+                    Twój adres e-mail
+                </label>
             </div>
-            <input type="checkbox" class="checkbox" id="agreement"/>
-            <label for="agreement">
+            <input 
+                type="checkbox" 
+                class="checkbox" 
+                id="gdpr_5581"
+                name="gdpr[5581]"
+            />
+            <label for="gdpr_5581">
                 I agree to the processing of my personal data in accordance with the PDP Act, for marketing purposes.
-            <div class="collapse" id="en-agreement-collapse">
-                Providing personal data is voluntary. I know that I have the right to access and correct my personal data, request the cessation of their processing. The administrator of the data is the conf.IT Foundation ul. Rydza Śmigłego 62/8, Zielona Góra, Poland. We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. Learn more about Mailchimp's privacy practices here.
-            </div>
+                <div class="collapse" id="en-agreement-collapse">
+                    Providing personal data is voluntary. I know that I have the right to access and correct my personal data, request the cessation of their processing. The administrator of the data is the conf.IT Foundation ul. Rydza Śmigłego 62/8, Zielona Góra, Poland. We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. Learn more about Mailchimp's privacy practices 
+                    Mailchimp 
+                    <a href="https://mailchimp.com/legal/privacy/" target="_blank" class="text-primary">here</a>.
+                </div>
             </label>  
             <button 
                 class="btn toggle-collapse" 

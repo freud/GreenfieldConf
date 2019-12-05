@@ -54,8 +54,11 @@ function validateForm(form) {
 
     form.addEventListener('submit', e => {
         e.preventDefault();
-        validateEmail();
         validateCheckbox();
+        validateEmail();
+        if(validateEmail() && validateCheckbox()) {
+            form.submit();
+        }
     });
 
     emailInput.addEventListener('input', () => {
@@ -73,12 +76,15 @@ function validateForm(form) {
     function validateEmail() {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         const isValid = regex.test(emailInput.value);
+
         if(!isValid) {
             emailInput.classList.add('invalid');
         } else {
             emailInput.classList.remove('invalid');
         }
         submitted = true;
+
+        return isValid;
     }
 
     function validateCheckbox() {
@@ -89,6 +95,8 @@ function validateForm(form) {
             checkbox.classList.remove('invalid');
         }
         submitted = true;
+
+        return isValid;
     }
 }
 

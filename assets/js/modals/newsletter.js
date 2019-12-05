@@ -15,17 +15,41 @@ const content = `
                 </div>
             </div>
         </div>
-        <form novalidate>
+        <form 
+            novalidate 
+            action="https://greenfieldconf.us20.list-manage.com/subscribe/post?u=28984104b9db97fbf1e0e8c4f&amp;id=10ad75a3a1" 
+            method="POST"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            target="_blank"
+        >
             <div class="col-md-10 col-lg-7 px-0">
-                <input type="email" class="form-input" placeholder="Twój adres e-mail" id="email" required />
-                <div class="invalid-message mt-8 ml-16">Podaj poprawny adres e-mail</div>
-                <label class="d-none" for="email">Twój adres e-mail</label>
+                <input 
+                    type="email" 
+                    class="form-input" 
+                    placeholder="Twój adres e-mail" 
+                    id="mce-EMAIL"
+                    name="EMAIL" 
+                    required 
+                />
+                <div class="invalid-message mt-8 ml-16">
+                    Podaj poprawny adres e-mail
+                </div>
+                <label class="d-none" for="mce-EMAIL">
+                    Twój adres e-mail
+                </label>
             </div>
-            <input type="checkbox" class="checkbox" id="agreement"/>
-            <label for="agreement">
+            <input 
+                type="checkbox" 
+                class="checkbox" 
+                id="gdpr_5581"
+                name="gdpr[5581]"
+            />
+            <label for="gdpr_5581">
                 Wyrażam zgodę na przetwarzanie moich danych osobowych, zgodnie z ustawą o ochronie danych osobowych, do celów marketingowych. 
                 <div class="collapse" id="agreement-collapse">
-                    Podanie danych osobowych jest dobrowolne. Wiem, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest Fundacja conf.IT ul. Rydza Śmigłego 62/8, Zielona Góra. Wykorzystujemy Mailchimp jako naszą platformę marketingową. Klikając poniżej, potwierdzasz, że Twoje informacje zostaną przekazane Mailchimp w celu ich przetworzenia. Dowiedz się więcej o praktykach ochrony prywatności stosowanych przez Mailchimp tutaj.
+                    Podanie danych osobowych jest dobrowolne. Wiem, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest Fundacja conf.IT ul. Rydza Śmigłego 62/8, Zielona Góra. Wykorzystujemy Mailchimp jako naszą platformę marketingową. Klikając poniżej, potwierdzasz, że Twoje informacje zostaną przekazane Mailchimp w celu ich przetworzenia. Dowiedz się więcej o praktykach ochrony prywatności stosowanych przez Mailchimp 
+                    <a href="https://mailchimp.com/legal/privacy/" target="_blank" class="text-primary">tutaj</a>.
                 </div>
             </label>  
             <button 

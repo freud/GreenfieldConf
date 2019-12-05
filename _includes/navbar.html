@@ -1,5 +1,3 @@
-{% assign links = "Call For Papers, O nas, Kontakt" | split: ", " %}
-
 <header>
     <nav class="navbar">
         <div class="container">
@@ -12,9 +10,11 @@
                     </button>
                 <div class="wrapper col-md-8 col-lg-6 col-xl-5">
                     <div class="nav-links">
-                        {% for link in links %}
+                        {% for link in site.data.navlinks %}
                             <div class="nav-link">
-                                <a href="/{{link | downcase | replace: ' ', '-' }}">{{link}}</a>
+                                <a href="{{ link.url }}">
+                                    {{ link.text }}
+                                </a>
                             </div>
                         {% endfor %}
                         <div class="nav-link">
