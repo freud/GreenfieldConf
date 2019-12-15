@@ -1,8 +1,18 @@
 [
   {
-    "name": "Vaugh Vernon",
+    "name": "Vaughn Vernon",
     "img": "vaugh_vernon.png",
     "twitter": "https://twitter.com/vaughnvernon",
-    "linkedin": "https://www.linkedin.com/in/vaughnvernon"
+    "linkedin": "https://www.linkedin.com/in/vaughnvernon",
+    "website": "vaughnvernon.co",
+    "desc": "Domain Model Whisperer. A champion of simplicity and everything reactive. The author of bestsellers: \"Implementing Domain-Driven Design\", \"Domain-Design Distilled \", \"Reactive Messaging Patterns with the Actor Model: Applications and Integration in Scala and Akka\". Founder of vlingo/PLATFORM."
+  },
+  {
+    "name": "Tomasz Jaskuła",
+    "img": "tomasz_jaskula.png",
+    "twitter": "https://twitter.com/tjaskula",
+    "linkedin": "https://www.linkedin.com/in/tomasz-jaskula-16b2823",
+    "website": "vaughnvernon.co",
+    "desc": "Domain Model Whisperer. A champion of simplicity and everything reactive. The author of bestsellers: \"Implementing Domain-Driven Design\", \"Domain-Design Distilled \", \"Reactive Messaging Patterns with the Actor Model: Applications and Integration in Scala and Akka\". Founder of vlingo/PLATFORM."
   }
 ]

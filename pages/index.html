@@ -2,8 +2,7 @@
 permalink: /
 layout: default
 style: home
-newsletterModal: true
-js: ['pages/home']
+scripts: ['plugins/swiper.min', 'modals/newsletter', 'modals/speaker', 'pages/home']
 ---
 
 <section class="section container">
@@ -18,7 +17,7 @@ js: ['pages/home']
                     </h1>
                 </div>
             </div>
-            <p class="mb-16">
+            <p class="mb-16 d-md-none">
                 Zielona Góra
                 <br/>
                 <strong class="h3 nb-0">30 maja 2020</strong>
@@ -120,7 +119,7 @@ js: ['pages/home']
                 Działamy non-profit. Kupując bilet decydujesz komu pomóc. Dotychczas uzbieraliśmy:
             </p>
             <strong class="h3">
-                23 456 12,25 PLN
+                21 351,02 PLN
             </strong>
             <a href="/kontakt" class="btn secondary sm">
                 Działamy non-profit
@@ -137,7 +136,7 @@ js: ['pages/home']
 </section>
 
 <section class="section container">
-    <div class="row section-bounce">
+    <dv class="row section-bounce">
         <div class="col-12 col-md-6 anim-wrapper">
             <p class="fade">
                 Call for Papers
@@ -152,15 +151,21 @@ js: ['pages/home']
                 Zgłoś się już dzisiaj
             </a>
         </div>
-        <div class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper">
+        <div 
+            class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper pb-80 pb-md-0 pb-xl-64"
+            id="swiper-speakers"
+        >
             <div class="swiper-wrapper">
                 {% for speaker in site.data.speakers %}
-                    <div class="swiper-slide d-flex align-items-center">
-                        <div class="img-before col-6 offset-1 align-self-center px-0 mr-32">
+                    <div 
+                        class="swiper-slide d-flex align-items-center"
+                        data-speaker='{{speaker}}'
+                    >
+                        <div class="speaker-img img-before col-6 offset-1 align-self-center px-0 mr-32">
                             <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
                         </div>
                         <div class="speaker mb-16">
-                            <p class="d-table-caption mb-8">
+                            <p class="speaker-heading d-table-caption mb-8">
                                 {{ speaker.name }}
                             </p>
                             <a href="{{speaker.twitter}}" target="blank">
@@ -173,14 +178,14 @@ js: ['pages/home']
                     </div>
                 {% endfor %}
             </div>
-            {% if site.data.speakers.length > 1 %}
+            {% if site.data.speakers.size > 1 %}
                 <div class="swiper-pagination"></div>
             {% endif %}
         </div>
     </div>
 </section>
 
-<section class="section section-frame container px-16 anim-wrapper">
+<section class="section section-frame container px-16 anim-wrapper mt-0 mt-md-64">
     <div class="frame frame-center">
         {% include frame.html %}
     </div>

@@ -1,30 +1,28 @@
-export function initModal(triggers, id, content, submitted = false) {
-    let modal = null;
-
-    function onClick() {
-        if(!modal) {
-            modal = createModal(id, content);
-            const form = modal.modalContent.querySelector('form');
+function initModal({id, content, submitted = false, validate = false}) {
+    let modal = document.getElementById(id);
+    const created = !!modal;
+    
+    if (!created) {
+        modal = createModal({id, content});
+        const form = modal.querySelector('form');
+        if(validate) {
             validateForm(form, submitted);
-            handleCollapse(modal.modalContent);
-         }
+        }
+        handleCollapse(modal);
+    }
 
-         const {modalBg, modalContent} = modal;
-         modalBg.classList.add('open');
-         setTimeout(() => modalContent.classList.add('shown'), 10);         
-     };
-    
-     if(triggers.length) {
-         triggers.forEach(trigger => {
-            trigger.addEventListener('click', onClick);
-         });
-     } else {
-         triggers.addEventListener('click', onClick);
-     }
-    
+        if(created) {
+            modal.innerHTML = content;
+            createCloseModalHandler(modal);
+        }
+        const modalContent = modal.querySelector('.modal');
+
+        modal.classList.add('open');
+        document.body.style.overflowY = 'hidden';
+        setTimeout(() => modalContent.classList.add('shown'), 10);         
 }
 
-function createModal(id, content) {
+function createModal({id, content}) {
     const modal = document.createElement('div');
     modal.setAttribute('id', id);
     modal.classList.add('modal-bg');
@@ -32,20 +30,21 @@ function createModal(id, content) {
 
     document.body.appendChild(modal);
 
+    createCloseModalHandler(modal);
+
+    return modal;
+} 
+
+function createCloseModalHandler(modal) {
     const modalContent = modal.querySelector('.modal');
     const closeBtn = modal.querySelector('.close');
 
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('open');
         modalContent.classList.remove('shown');
+        document.body.style.overflowY = 'auto';
     });
-
-    return {
-        modalBg: modal,
-        modalContent,
-        closeBtn
-    }
-} 
+}
 
 function validateForm(form) {
     let submitted = false;

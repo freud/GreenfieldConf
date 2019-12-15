@@ -93,4 +93,65 @@
             left: -15%;
         }
     }
+
+    &-speakers {
+        @include media-breakpoint-between(sm, sm) {
+            padding-top: 128px;
+        }
+        .frame-fill {
+            .rect {
+                top: -50px;
+                left: -70px;
+                @include media-breakpoint-down(md) {
+                    top: -35px;
+                    left: -45px;
+                }
+                @include media-breakpoint-down(md) {
+                    left: -45px;
+                    top: -30px;
+                }
+            }
+        }
+        .img-frame {
+            display: inline-flex;
+            position: relative;
+            &::after,
+            &::before  {
+                content: '';
+                position: absolute;
+                border: 2px solid $primary;
+                z-index: -1;
+                box-sizing: border-box;
+                height: 0%;
+                width: 0%;
+            }
+            &::before {
+                border-bottom: none;
+                border-left: none;
+                right: -10%;
+                top: -10%;
+            }
+            &::after {
+                border-top: none;
+                border-right: none;
+                left: 10%;
+                bottom: 10%;
+            }
+            img {
+                @include media-breakpoint-down(md) {
+                    max-width: 210px;
+                }
+            }
+        }
+        &.shown {
+            .img-frame {
+                &::before,
+                &::after {
+                    transition: all .3s ease .4s;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
 }
