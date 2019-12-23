@@ -66,6 +66,56 @@ scripts: ['plugins/swiper.min', 'modals/newsletter', 'modals/speaker', 'pages/ho
     </div>
 </section>
 
+<section class="section container">
+    <dv class="row section-bounce">
+        <div class="col-12 col-md-6 anim-wrapper">
+            <p class="fade">
+                Call for Papers
+            </p>
+            <h2 class="bounce-left">
+                Agenda i Prelegenci
+            </h2>
+            <p class="bounce-right mb-24">
+                Szukamy najlepszych prelegentów, oraz oryginalnego podejścia do tematu. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
+            </p>
+            <a href="/kontakt" class="btn secondary sm mb-40 mb-md-0 fade">
+                Zgłoś się już dzisiaj
+            </a>
+        </div>
+        <div 
+            class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper pb-80 pb-md-0 pb-xl-64"
+            id="swiper-speakers"
+        >
+            <div class="swiper-wrapper">
+                {% for speaker in site.data.speakers %}
+                    <div 
+                        class="swiper-slide d-flex align-items-center"
+                        data-speaker='{{speaker}}'
+                    >
+                        <div class="speaker-img img-before col-6 offset-1 align-self-center px-0 mr-32">
+                            <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
+                        </div>
+                        <div class="speaker mb-16">
+                            <p class="speaker-heading d-table-caption mb-8">
+                                {{ speaker.name }}
+                            </p>
+                            <a href="{{speaker.twitter}}" target="blank">
+                                <span class="icon-twitter mr-8"></span>
+                            </a>
+                            <a href="{{speaker.linkedin}}" target="blank">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if site.data.speakers.size > 1 %}
+                <div class="swiper-pagination"></div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
 <section class="section container mb-32 mb-lg-80">
     <div class="row section-bounce mb-16">
         <div class="col-11 col-sm-12 col-md-6 anim-wrapper">
@@ -131,56 +181,6 @@ scripts: ['plugins/swiper.min', 'modals/newsletter', 'modals/speaker', 'pages/ho
                     <img src="/images/section_charity.png" alt="Non profit" class="img-fluid" />
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="section container">
-    <dv class="row section-bounce">
-        <div class="col-12 col-md-6 anim-wrapper">
-            <p class="fade">
-                Call for Papers
-            </p>
-            <h2 class="bounce-left">
-                Agenda i Prelegenci
-            </h2>
-            <p class="bounce-right mb-24">
-                Szukamy najlepszych prelegentów, oraz oryginalnego podejścia do tematu. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
-            </p>
-            <a href="/kontakt" class="btn secondary sm mb-40 mb-md-0 fade">
-                Zgłoś się już dzisiaj
-            </a>
-        </div>
-        <div 
-            class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper pb-80 pb-md-0 pb-xl-64"
-            id="swiper-speakers"
-        >
-            <div class="swiper-wrapper">
-                {% for speaker in site.data.speakers %}
-                    <div 
-                        class="swiper-slide d-flex align-items-center"
-                        data-speaker='{{speaker}}'
-                    >
-                        <div class="speaker-img img-before col-6 offset-1 align-self-center px-0 mr-32">
-                            <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
-                        </div>
-                        <div class="speaker mb-16">
-                            <p class="speaker-heading d-table-caption mb-8">
-                                {{ speaker.name }}
-                            </p>
-                            <a href="{{speaker.twitter}}" target="blank">
-                                <span class="icon-twitter mr-8"></span>
-                            </a>
-                            <a href="{{speaker.linkedin}}" target="blank">
-                                <span class="icon-linkedin"></span>
-                            </a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            {% if site.data.speakers.size > 1 %}
-                <div class="swiper-pagination"></div>
-            {% endif %}
         </div>
     </div>
 </section>
