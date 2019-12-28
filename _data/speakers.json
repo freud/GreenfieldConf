@@ -14,5 +14,13 @@
     "linkedin": "https://www.linkedin.com/in/tomasz-jaskula-16b2823",
     "website": "vaughnvernon.co",
     "desc": "Domain Model Whisperer. A champion of simplicity and everything reactive. The author of bestsellers: \"Implementing Domain-Driven Design\", \"Domain-Design Distilled \", \"Reactive Messaging Patterns with the Actor Model: Applications and Integration in Scala and Akka\". Founder of vlingo/PLATFORM."
+  },
+  {
+    "name": "Mariusz Gil",
+    "img": "mariusz_gil.jpg",
+    "twitter": "https://twitter.com/mariuszgil",
+    "linkedin": "https://www.linkedin.com/in/mariuszgil",
+    "website": "sourceministry.com",
+    "desc": "Software architect, trainer, conference speaker. DDD practitioner, #EventStorming Evangelist. Owner at <a href=\"https://sourceministry.com\" target=\"blank\">@SrcMinistry</a>"
   }
 ]
