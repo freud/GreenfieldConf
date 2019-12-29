@@ -32,13 +32,21 @@
 <script src="/assets/js/modals/english_version.js"></script>
 
 {% if page.newsletterModal %}
-    <script src="/assets/js/modals/newsletter.js"></script>
+<script src="/assets/js/modals/newsletter.js"></script>
 {% endif %}
 
 {% if page.scripts %}
-    {% for file in page.scripts %}
-        <script src="/assets/js/{{ file }}.js"></script>
-    {% endfor %}
+{% for file in page.scripts %}
+<script src="/assets/js/{{ file }}.js"></script>
+{% endfor %}
 {% endif %}
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112832593-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'UA-112832593-1');
+</script>
 </body>
 </html>
