@@ -1,0 +1,63 @@
+global:
+    polish: Polish
+    english: English
+
+index:
+
+    en:
+        date: 30 May 2020
+        city: Zielona Góra
+        tickets_soon: Tickets soon
+        button_subscribe: Subscribe to newsletter
+        slogan: Największa konferencja dla programistów w woj. lubuskim
+
+        cfp_section_title: Call for Papers
+        cfp_section_title2: Agenda i Prelegenci
+        cfp_section_text: Szukamy najlepszych prelegentów, oraz oryginalnego podejścia do tematu. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
+        cfp_section_action_text: Zgłoś się już dzisiaj
+
+        lastyear_section_title1: To już kolejna edycja
+        lastyear_section_title2: Zobacz jak było w poprzednich latach
+        lastyear_section_text: To już trzecia edycja. Popularność poprzednich przerosła nasze najśmielsze oczekiwania. W tym roku będzie jeszcze więcej emocji oraz wiedzy. Zanim odsłonimy kolejne karty tegorocznej edycji - popatrz jak zaczynaliśmy.
+        lastyear_section_gallery_action_text: Galeria Zdjęć
+        lastyear_section_youtube_action_text: Prelekcje
+
+        charity_section_title1: Dochód z biletów przeznaczamy
+        charity_section_title2: Na cele charytatywne
+        charity_section_text: Działamy non-profit. Kupując bilet decydujesz komu pomóc. Dotychczas uzbieraliśmy
+        charity_section_price: 21 351,02 PLN
+        charity_section_contact_action_text: Działamy non-profit
+
+        newsletter_section_title1: Trzymaj rękę na pulsie
+        newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
+        newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
+        newsletter_section_action_text: Subskrybuj
+
+    pl:
+        date: 30 maj 2020
+        city: Zielona Góra
+        tickets_soon: Bilety już wkrótce
+        button_subscribe: Zapisz się do newslettera
+        slogan: Największa konferencja dla programistów w woj. lubuskim
+
+        cfp_section_title: Call for Papers
+        cfp_section_title2: Agenda i Prelegenci
+        cfp_section_text: Szukamy najlepszych prelegentów, oraz oryginalnego podejścia do tematu. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
+        cfp_section_action_text: Zgłoś się już dzisiaj
+
+        lastyear_section_title1: To już kolejna edycja
+        lastyear_section_title2: Zobacz jak było w poprzednich latach
+        lastyear_section_text: To już trzecia edycja. Popularność poprzednich przerosła nasze najśmielsze oczekiwania. W tym roku będzie jeszcze więcej emocji oraz wiedzy. Zanim odsłonimy kolejne karty tegorocznej edycji - popatrz jak zaczynaliśmy.
+        lastyear_section_gallery_action_text: Galeria Zdjęć
+        lastyear_section_youtube_action_text: Prelekcje
+
+        charity_section_title1: Dochód z biletów przeznaczamy
+        charity_section_title2: Na cele charytatywne
+        charity_section_text: Działamy non-profit. Kupując bilet decydujesz komu pomóc. Dotychczas uzbieraliśmy
+        charity_section_price: 21 351,02 PLN
+        charity_section_contact_action_text: Działamy non-profit
+
+        newsletter_section_title1: Trzymaj rękę na pulsie
+        newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
+        newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
+        newsletter_section_action_text: Subskrybuj
