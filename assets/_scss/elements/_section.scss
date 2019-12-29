@@ -31,7 +31,7 @@ $bounce-duration: 0.7s;
 }
 
 .section {
-  padding-top: 128px;
+  padding-top: 0px;
   padding-bottom: 128px;
   position: relative;
   @include media-breakpoint-down(md) {
