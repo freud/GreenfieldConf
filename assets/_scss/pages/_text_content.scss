@@ -42,7 +42,7 @@
     }
 }
 
-.policy-text {
+.content-text {
     position: relative;
     &::before {
         content: '';
@@ -53,5 +53,16 @@
         height: 100%;
         background-color: $primary;
         display: block;
+    }
+
+    ul {
+        font-size: 20px;
+        margin-bottom: 20px;
+        list-style-type: none;
+        list-style-position: inside;
+
+        li:before {
+            content: '- ';
+        }
     }
 }
