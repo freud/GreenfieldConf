@@ -4,7 +4,7 @@ const speakerModal = {
         const id = 'speakers-modal';
         triggers.forEach(trigger => {
             trigger.addEventListener('click', e => {
-                let speaker = e.target.closest('.swiper-slide').dataset.speaker
+                let speaker = e.target.closest('[data-speaker]').dataset.speaker
                 speaker = speaker.replace(/=>/g, ': ')
                 speaker = JSON.parse(speaker)
 

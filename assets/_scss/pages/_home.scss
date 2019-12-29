@@ -172,7 +172,7 @@ section {
   }
 }
 
-.speaker {
+.cfp-speaker {
   @include media-breakpoint-up(lg) {
     p {
       font-weight: bold;
@@ -184,6 +184,29 @@ section {
     span {
       font-size: 30px;
     }
+  }
+}
+
+.speaker {
+  cursor: pointer;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 40px;
+  }
+
+  .speaker-heading {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 20px !important;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30%;
+  }
+  .speaker-more {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: right;
+    cursor: pointer;
   }
 }
 

@@ -67,6 +67,23 @@ scripts: ['plugins/swiper.min', 'modals/newsletter', 'modals/speaker', 'pages/ho
 </section>
 
 <section class="section container">
+    <dv class="row anim-wrapper">
+        {% for speaker in site.data.speakers %}
+        <div 
+            class="speaker col-md-3 offset-1 frame-after" 
+            data-speaker='{{speaker}}'>
+            <div class="speaker-img">
+                <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
+            </div>
+            <div class="speaker-heading d-table-caption">{{speaker.name}}</div>
+            <div class="speaker-more">→</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<section class="section container">
     <dv class="row section-bounce">
         <div class="col-12 col-md-6 anim-wrapper">
             <p class="fade">
@@ -95,7 +112,7 @@ scripts: ['plugins/swiper.min', 'modals/newsletter', 'modals/speaker', 'pages/ho
                         <div class="speaker-img img-before col-6 offset-1 align-self-center px-0 mr-32">
                             <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
                         </div>
-                        <div class="speaker mb-16">
+                        <div class="cfp-speaker mb-16">
                             <p class="speaker-heading d-table-caption mb-8">
                                 {{ speaker.name }}
                             </p>
