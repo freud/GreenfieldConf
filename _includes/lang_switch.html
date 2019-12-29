@@ -1,5 +1,11 @@
 <span class="lang-switch">
-    <button class="lang-link active pr-0">PL</button>
+    {% if page.lang == "pl" %}
+    <a href="/pl" class="lang-link active">PL</a>
     /
-    <button class="lang-link lang-link-en pl-0">EN</button>
+    <a href="/" class="lang-link">EN</a>
+    {% else %}
+    <a href="/pl" class="lang-link">PL</a>
+    /
+    <a href="/" class="lang-link active">EN</a>
+    {% endif %}
 </span>
