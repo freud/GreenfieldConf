@@ -1,5 +1,4 @@
 index:
-
     en:
         date: 30 May 2020
         city: Zielona Góra
@@ -28,7 +27,6 @@ index:
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
         newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
         newsletter_section_action_text: Subskrybuj
-
     pl:
         date: 30 maj 2020
         city: Zielona Góra
@@ -57,7 +55,6 @@ index:
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
         newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
         newsletter_section_action_text: Subskrybuj
-
 contact:
     en:
         intouch: In Touch!
@@ -77,7 +74,6 @@ contact:
         text4: Zielona Góra, Uniwersytet Zielonogórski
         text5: Wydział Matematyki, Informatyki i Ekonometrii
         general_contact_text1: Kontakt ogólny
-
 cfp:
     en:
         header1: Zostań prelegentem
@@ -127,3 +123,34 @@ cfp:
         content_text7: Wymagania dodatkowe co do wyposażenia, pytania do nas (jeśli takie posiadasz) i ew. informacje dodatkowe, które Twoim zdaniem powinniśmy wziąć pod uwagę.
         send_cfp_text1: Swoje zgłoszenie wyślij na
         send_cfp_text2: Damy ci znać, jeżeli któryś z twoich tematów zostanie wybrany do agendy konferencji.
+privacy_policy:
+    en:
+        header: Polityka prywatności
+        header_text: Nie zbieramy i nie przetwarzamy danych ponad to co jest niezbędne do organizacji konferencji. Szczegóły poniżej.
+        questions_text: Masz jakieś wątpliwości? Pisz
+        text1: 1. Za pośrednictwem strony www.GreenfieldConf.pl nie zbieramy i nie przetwarzamy żadnych danych osobowych.
+        text2: 2. Do obsługi newslettera wykorzystujemy zewnętrzne narzędzie serwisu mailchimp.com (cele marketingowe).
+        text3: 3. Jeśli przy zakupie biletu wyraziłeś zgodę zgodę na przetwarzanie moich danych osobowych w celach marketingowych, zgodnie z ustawą o ochronie danych osobowych, w celu wysyłania informacji handlowej i chcesz tą zgodę cofnąć, to pisz na <a href="mailto:contact@greenfieldconf.pl" class="link">contact@greenfieldconf.pl</a>. Zostałeś poinformowany, że przysługuje Ci prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest Fundacja conf.IT ul. Rydza Śmigłego 62/8.
+        text4: 4. Do obsługi sprzedaży biletów wykorzystujemy zewnętrzne narzędzie - Evenea. Więcej o polityce prywatności tego narzędzia <a href="https://evenea.pl/polityka-prywatnosci" target="_blank" class="link">https://evenea.pl/polityka-prywatnosci</a>
+        text5: 5. Strona wykorzystuje narzędzia analityczne - Google Analytics (anonimize IP) i Hotjar.
+        text6: 6. Pliki cookies – nie używamy żadnych zaawansowanych rozwiązań – domyślne mechanizmy ww. narzędzi.
+        text7: 7. Strona internetowa www.GreenfieldConf.pl używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim wspieramy popularność Konferencji Greenfield. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje. Dowiedz się jak wyłączyć ciasteczka.
+        text8: 8. Możesz się z nami skontaktować za pośrednictwem <a href="mailto:contact@greenfieldconf.pl" class="link">contact@greenfieldconf.pl</a>, Twittera lub Facebooka. W przypadku kontaktu z Twojej inicjatywy – korespondencja jest archiwizowana w wymienionych narzędziach.
+        text9: 9. W każdej chwili możesz poprosić o wgląd w Twoje dane i poprosić o usunięcie ich. Pisz na <a href="mailto:contact@greenfieldconf.pl" class="link">contact@greenfieldconf.pl</a>
+        text10: 10. Jeżeli powyższe dziewięć punktów nie rozwiało Twoich wątpliwości związanych z polityką prywatności na tej stronie, skontaktuj się z nami. Z chęcią wyjaśnimy wszystkie wątpliwości.
+        questions_text: Masz jakieś wątpliwości? Pisz
+    pl:
+        header: Polityka prywatności
+        header_text: Nie zbieramy i nie przetwarzamy danych ponad to co jest niezbędne do organizacji konferencji. Szczegóły poniżej.
+        questions_text: Masz jakieś wątpliwości? Pisz
+        text1: 1. Za pośrednictwem strony www.GreenfieldConf.pl nie zbieramy i nie przetwarzamy żadnych danych osobowych.
+        text2: 2. Do obsługi newslettera wykorzystujemy zewnętrzne narzędzie serwisu mailchimp.com (cele marketingowe).
+        text3: 3. Jeśli przy zakupie biletu wyraziłeś zgodę zgodę na przetwarzanie moich danych osobowych w celach marketingowych, zgodnie z ustawą o ochronie danych osobowych, w celu wysyłania informacji handlowej i chcesz tą zgodę cofnąć, to pisz na <a href="mailto:contact@greenfieldconf.pl" class="link">contact@greenfieldconf.pl</a>. Zostałeś poinformowany, że przysługuje Ci prawo dostępu do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych jest Fundacja conf.IT ul. Rydza Śmigłego 62/8.
+        text4: 4. Do obsługi sprzedaży biletów wykorzystujemy zewnętrzne narzędzie - Evenea. Więcej o polityce prywatności tego narzędzia <a href="https://evenea.pl/polityka-prywatnosci" target="_blank" class="link">https://evenea.pl/polityka-prywatnosci</a>
+        text5: 5. Strona wykorzystuje narzędzia analityczne - Google Analytics (anonimize IP) i Hotjar.
+        text6: 6. Pliki cookies – nie używamy żadnych zaawansowanych rozwiązań – domyślne mechanizmy ww. narzędzi.
+        text7: 7. Strona internetowa www.GreenfieldConf.pl używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim wspieramy popularność Konferencji Greenfield. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje. Dowiedz się jak wyłączyć ciasteczka.
+        text8: 8. Możesz się z nami skontaktować za pośrednictwem <a href="mailto:contact@greenfieldconf.pl" class="link">contact@greenfieldconf.pl</a>, Twittera lub Facebooka. W przypadku kontaktu z Twojej inicjatywy – korespondencja jest archiwizowana w wymienionych narzędziach.
+        text9: 9. W każdej chwili możesz poprosić o wgląd w Twoje dane i poprosić o usunięcie ich. Pisz na <a href="mailto:contact@greenfieldconf.pl" class="link">contact@greenfieldconf.pl</a>
+        text10: 10. Jeżeli powyższe dziewięć punktów nie rozwiało Twoich wątpliwości związanych z polityką prywatności na tej stronie, skontaktuj się z nami. Z chęcią wyjaśnimy wszystkie wątpliwości.
+        questions_text: Masz jakieś wątpliwości? Pisz
