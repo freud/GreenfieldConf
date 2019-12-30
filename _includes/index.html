@@ -1,0 +1,202 @@
+<section class="section container">
+    <div class="row justify-content-center">
+        <div class="col-10 col-sm-12 col-md-5 col-xl-4">
+            <div class="anim-wrapper">
+                <div class="frame-fill">
+                    <div class="rect"></div>
+                    <h1 class="content d-table-caption">Greenfield conference 2020</h1>
+                </div>
+            </div>
+            <p class="mb-16 d-md-none">
+                {{include.t.city}}
+                <br/>
+                <strong class="h3 nb-0">{{include.t.date}}</strong>
+                <br/>
+                <strong class="h4 nb-0">{{include.t.tickets_soon}}</strong>
+            </p>
+            <p class="mb-32">
+                {{include.t.slogan}}
+            </p>
+            <button class="btn primary btn-signup mb-32 mb-md-64" aria-label="{{include.t.button_subscribe}}">
+                {{include.t.button_subscribe}}
+            </button>
+        </div>
+        <div class="col-md-6 col-xl-7 offset-md-1 anim-wrapper d-none d-md-block align-self-lg-center align-self-xl-start">
+            <div class="img-frame">
+                   <div class="frame">
+                        {% include frame.html %}
+                   </div>
+                <div class="img-darken img-scale">
+                    <img src="/images/comming_soon.png" alt="Greenfield Conference 2019" class="img-fluid" />
+                </div>
+                <div class="content">
+                    <p class="h2 mb-8">{{include.t.date}}</p>
+                    <small class="h4">{{include.t.city}}
+                    </small>
+                    <br /><br /><br />
+                    <small class="h4">
+                        {{include.t.tickets_soon}}
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Join us:</p>
+            <div class="d-flex social">
+                <a href="https://twitter.com/greenfield_conf" target="blank"><span class="icon-twitter mr-32"></span></a>
+                <a href="https://www.facebook.com/GreenfieldConf/" target="blank"><span class="icon-facebook mr-32"></span></a>
+                <a href="https://www.youtube.com/c/GreenfieldConf" target="blank"><span class="icon-youtube mr-32"></span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section container">
+    <dv class="row anim-wrapper">
+        {% for speaker in site.data.speakers %}
+        <div 
+            class="speaker col-md-3 offset-1 frame-after" 
+            data-speaker='{{speaker}}'>
+            <div class="speaker-img">
+                <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
+            </div>
+            <div class="speaker-heading d-table-caption">{{speaker.name}}</div>
+            <div class="speaker-more">→</div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<section class="section container">
+    <dv class="row section-bounce">
+        <div class="col-12 col-md-6 anim-wrapper">
+            <p class="fade">
+                {{include.t.cfp_section_title1}}
+            </p>
+            <h2 class="bounce-left">
+                {{include.t.cfp_section_title2}}
+            </h2>
+            <p class="bounce-right mb-24">
+                {{include.t.cfp_section_text}}
+            </p>
+            <a href="/kontakt" class="btn secondary sm mb-40 mb-md-0 fade">
+                {{include.t.cfp_section_action_text}}
+            </a>
+        </div>
+        <div 
+            class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper pb-80 pb-md-0 pb-xl-64"
+            id="swiper-speakers"
+        >
+            <div class="swiper-wrapper">
+                {% for speaker in site.data.speakers %}
+                    <div 
+                        class="swiper-slide d-flex align-items-center"
+                        data-speaker='{{speaker}}'
+                    >
+                        <div class="speaker-img img-before col-6 offset-1 align-self-center px-0 mr-32">
+                            <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
+                        </div>
+                        <div class="cfp-speaker mb-16">
+                            <p class="speaker-heading d-table-caption mb-8">
+                                {{ speaker.name }}
+                            </p>
+                            <a href="{{speaker.twitter}}" target="blank">
+                                <span class="icon-twitter mr-8"></span>
+                            </a>
+                            <a href="{{speaker.linkedin}}" target="blank">
+                                <span class="icon-linkedin"></span>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            {% if site.data.speakers.size > 1 %}
+                <div class="swiper-pagination"></div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="section container mb-32 mb-lg-80">
+    <div class="row section-bounce mb-16">
+        <div class="col-11 col-sm-12 col-md-6 anim-wrapper">
+            <p class="fade">
+                {{include.t.lastyear_section_title1}}
+            </p>
+            <h2 class="bounce-left mb-16">
+                {{include.t.lastyear_section_title2}}
+            </h2>
+            <p class="bounce-right mb-32">
+                {{include.t.lastyear_section_text}}
+            </p>
+            <div class="mb-32">
+                <a 
+                    href="https://www.facebook.com/pg/GreenfieldConf/photos/" 
+                    target="_blank"
+                    class="btn secondary sm fade mr-64"
+                    >
+                    {{include.t.lastyear_section_gallery_action_text}}
+                </a>
+                <a 
+                    href="https://www.youtube.com/channel/UChG7hsrjUYyYG13AkSIfQIw/playlists" 
+                    taget="_blank"
+                    class="btn secondary sm fade"
+                >
+                    {{include.t.lastyear_section_youtube_action_text}}
+                </a>
+            </div>
+        </div>
+        <div class="col-10 col-md-5 offset-1 align-self-center px-0 mb-8 anim-wrapper">
+            <div class="img-before animate">
+                <img src="/images/previous_years.png" alt="Poprzednie lata" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-frame container anim-wrapper py-md-64 my-md-80">
+    <div class="frame frame-left">
+        {% include frame.html %}
+    </div>
+    <div class="row">
+        <div class="col-9 offset-1 col-md-6 offset-md-0 d-flex flex-column align-items-start">
+            <p>{{include.t.charity_section_title1}}</p>
+            <h2 class="mb-16">{{include.t.charity_section_title2}}</h2>
+            <p class="mb-40">{{include.t.charity_section_text}}</p>
+            <strong class="h3">{{include.t.charity_section_price}}</strong>
+            <a href="/kontakt" class="btn secondary sm">{{include.t.charity_section_contact_action_text}}</a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 offset-lg-1 align-self-center d-none d-md-block">
+            <div class="img-wrapper img-stroke">
+                <div class="img-scale">
+                    <img src="/images/section_charity.png" alt="Non profit" class="img-fluid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-frame container px-16 anim-wrapper mt-0 mt-md-64">
+    <div class="frame frame-center">
+        {% include frame.html %}
+    </div>
+    <div class="row justify-content-center">
+        <div class="col col-md-8 col-lg-7 col-xl-6 text-center">
+            <p class="mb-8">
+                {{include.t.newsletter_section_title1}}
+            </p>
+            <h3 class="h2">
+                {{include.t.newsletter_section_title2}}
+            </h3>
+            <p class="mb-40">
+                {{include.t.newsletter_section_text}}
+            </p>
+            <button class="btn primary btn-signup" aria-label="Subskrybuj">
+                {{include.t.newsletter_section_action_text}}
+            </button>
+        </div>
+    </div>
+</section>

@@ -10,16 +10,12 @@
                     </button>
                 <div class="wrapper col-md-8 col-lg-6 col-xl-5">
                     <div class="nav-links">
-                        {% for link in site.data.navlinks %}
-                            <div class="nav-link">
-                                <a href="{{ link.url }}">
-                                    {{ link.text }}
-                                </a>
-                            </div>
-                        {% endfor %}
+                        {% for link in site.data.navlinks[page.lang] %}
                         <div class="nav-link">
-                            {% include lang_switch.html %}
+                            <a href="{{ link.url }}">{{ link.text }}</a>
                         </div>
+                        {% endfor %}
+                        <div class="nav-link">{% include lang_switch.html %}</div>
                     </div>
                 </div>
             </div>
