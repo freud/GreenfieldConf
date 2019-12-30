@@ -1,3 +1,32 @@
+global:
+    en:
+        contact:
+            url: /contact
+            text: Contact
+        cfp:
+            url: /cfp
+            text: Call For Papers
+        aboutus:
+            url: /aboutus
+            text: About Us
+        privacy_policy:
+            url: /privacy-policy
+            text: Privacy Policy
+        all_rights_reserved: Greenfield Conference - all rights reserved.
+    pl:
+        contact:
+            url: /pl/kontakt
+            text: Kontakt
+        cfp:
+            url: /pl/cfp
+            text: Call For Papers
+        aboutus:
+            url: /pl/kontakt
+            text: O nas
+        privacy_policy:
+            url: /pl/polityka-prywatnosci
+            text: Polityka prywatności
+        all_rights_reserved: Greenfield Conference - wszelkie prawa zastrzeżone.
 index:
     en:
         date: 30 May 2020

@@ -3,7 +3,7 @@
         <div class="row mb-32 mb-md-64">
             <ul class="col-sm-6 col-md-3 mb-0 mb-md-16">
                 <li>
-                    <img src="/images/gf_logo.svg" class="img-fluid" alt="Greenfield Conference logo" />
+                    <img src="/images/gf_logo.svg" class="img-fluid" alt="Greenfield Conference" />
                 </li>
                 <li>
                     <a href="https://2019.greenfieldconf.pl/" target="blank">Greenfield 2019</a>
@@ -14,26 +14,21 @@
             </ul>
 
             <ul class="col-sm-6 col-md-3">
-                <li>
-                    <a href="/kontakt">Agenda i Prelegenci</a>
-                </li>
-                <li>
-                    <a href="/kontakt">Call for papers</a>
-                </li>
+                <li><a href="{{site.data.translations.global[page.lang].aboutus.url}}">{{site.data.translations.global[page.lang].aboutus.text}}</a></li>
+                <li><a href="{{site.data.translations.global[page.lang].cfp.url}}">{{site.data.translations.global[page.lang].cfp.text}}</a></li>
+                <li><a href="{{site.data.translations.global[page.lang].contact.url}}">{{site.data.translations.global[page.lang].contact.text}}</a></li>
             </ul>
 
             <ul class="col-sm-6 col-md-3">
                 <li>
                     <a href="https://berlincodeofconduct.org/" target="blank">Berlin code of conduct</a>
                 </li>
-                <li>
-                    <a href="/polityka-prywatnosci">Polityka Prywatności</a>
-                </li>
+                <li><a href="{{site.data.translations.global[page.lang].privacy_policy.url}}">{{site.data.translations.global[page.lang].privacy_policy.text}}</a></li>
             </ul>
 
             <ul class="col-sm-6 col-md-3">
                 <li>
-                    <a href="/kontakt">Kontakt</a>
+                    <a href="{{site.data.translations.global[page.lang].contact.url}}">{{site.data.translations.global[page.lang].contact.text}}</a>
                 </li>
                 <li>
                     <a href="mailto:contact@greenfieldconf.pl">contact@greenfieldconf.pl</a>
@@ -56,7 +51,7 @@
 
         <div class="row">
             <div class="col d-flex justify-content-between">
-                <small>Greenfield Conference - wszelkie prawa zastrzeżone.</small>
+                <small>{{site.data.translations.global[page.lang].all_rights_reserved}}</small>
                 <div class="d-none d-sm-inline">
                     {% include lang_switch.html %}
                 </div>
