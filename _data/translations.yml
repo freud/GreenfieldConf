@@ -1,7 +1,3 @@
-global:
-    polish: Polish
-    english: English
-
 index:
 
     en:
@@ -81,3 +77,53 @@ contact:
         text4: Zielona Góra, Uniwersytet Zielonogórski
         text5: Wydział Matematyki, Informatyki i Ekonometrii
         general_contact_text1: Kontakt ogólny
+
+cfp:
+    en:
+        header1: Zostań prelegentem
+        header2: Call For Papers
+        header_text: Szukamy najlepszych prelegentów, oryginalnego podejścia do świata IT/UX. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
+        contact_text: Zgłoś się już teraz
+        content_header1: Kryteria CFP
+        content_header2: Na co zwracamy uwagę
+        content_header21: Tematyka
+        content_text1: Konferencja jest agnostyczna technologicznie (bez tematów poświęconych jednemu językowi programowania np. .NET, PHP etc.). Zdajemy sobie sprawę, że nie sposób mówić o IT bez technologii, lecz niech to nie będzie główny przedmiot Twojego wystąpienia.
+        content_text2: To jest konferencja głównie dla programistów. Szukamy też tematów miękkich - wszystkiego co dotyka branżę w codziennej pracy.
+        content_header22: Prelegent
+        content_text3: Jesteśmy Ciebie tak samo ciekawi jak tematu, który proponujesz. Przedstaw się. Pochwal się swoimi wystąpieniami na innych konferencjach. Prowadzisz bloga/vloga, szkolenia - tym lepiej!
+        content_text4: Bardzo ważnym dla nas elementem jest również Twoja aktywność w sieci. Jeśli prowadzisz Twittera, ale nie jesteś popularny na scenie, to może to być dla nas istotne.
+        content_header23: Nasze wsparcie
+        content_text5: Twoje zgłoszenie powinno zawierać
+        content_header24: Reasumując
+        content_text6: Wszystkich wybranych w CFP prelegentów wspieramy poprzez zwrot kosztów dojazdu oraz noclegu, który dla Ciebie organizujemy.
+        content_text61: informację o Tobie jako prelegencie,
+        content_text62: informacje o prezentacji,
+        content_text63: abstrakt / zajawkę,
+        content_text64: Twoje zdjęcie (do umieszczenia na stronie).
+        content_text7: Wymagania dodatkowe co do wyposażenia, pytania do nas (jeśli takie posiadasz) i ew. informacje dodatkowe, które Twoim zdaniem powinniśmy wziąć pod uwagę.
+        send_cfp_text1: Swoje zgłoszenie wyślij na
+        send_cfp_text2: Damy ci znać, jeżeli któryś z twoich tematów zostanie wybrany do agendy konferencji.
+    pl:
+        header1: Zostań prelegentem
+        header2: Call For Papers
+        header_text: Szukamy najlepszych prelegentów, oryginalnego podejścia do świata IT/UX. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
+        contact_text: Zgłoś się już teraz
+        content_header1: Kryteria CFP
+        content_header2: Na co zwracamy uwagę
+        content_header21: Tematyka
+        content_text1: Konferencja jest agnostyczna technologicznie (bez tematów poświęconych jednemu językowi programowania np. .NET, PHP etc.). Zdajemy sobie sprawę, że nie sposób mówić o IT bez technologii, lecz niech to nie będzie główny przedmiot Twojego wystąpienia.
+        content_text2: To jest konferencja głównie dla programistów. Szukamy też tematów miękkich - wszystkiego co dotyka branżę w codziennej pracy.
+        content_header22: Prelegent
+        content_text3: Jesteśmy Ciebie tak samo ciekawi jak tematu, który proponujesz. Przedstaw się. Pochwal się swoimi wystąpieniami na innych konferencjach. Prowadzisz bloga/vloga, szkolenia - tym lepiej!
+        content_text4: Bardzo ważnym dla nas elementem jest również Twoja aktywność w sieci. Jeśli prowadzisz Twittera, ale nie jesteś popularny na scenie, to może to być dla nas istotne.
+        content_header23: Nasze wsparcie
+        content_text5: Twoje zgłoszenie powinno zawierać
+        content_header24: Reasumując
+        content_text6: Wszystkich wybranych w CFP prelegentów wspieramy poprzez zwrot kosztów dojazdu oraz noclegu, który dla Ciebie organizujemy.
+        content_text61: informację o Tobie jako prelegencie,
+        content_text62: informacje o prezentacji,
+        content_text63: abstrakt / zajawkę,
+        content_text64: Twoje zdjęcie (do umieszczenia na stronie).
+        content_text7: Wymagania dodatkowe co do wyposażenia, pytania do nas (jeśli takie posiadasz) i ew. informacje dodatkowe, które Twoim zdaniem powinniśmy wziąć pod uwagę.
+        send_cfp_text1: Swoje zgłoszenie wyślij na
+        send_cfp_text2: Damy ci znać, jeżeli któryś z twoich tematów zostanie wybrany do agendy konferencji.
