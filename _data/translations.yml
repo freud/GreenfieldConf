@@ -61,3 +61,23 @@ index:
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
         newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
         newsletter_section_action_text: Subskrybuj
+
+contact:
+    en:
+        intouch: In Touch!
+        header: Kontakt
+        text1: W każdej chwili możesz znami się skontaktować przez nasz facebook lub twitter. Preferujemy kontakt mailowy. 
+        text2: Działamy non-profit. Od 2019 roku jako fundacja.
+        text3: Lokalizacja
+        text4: Zielona Góra, Uniwersytet Zielonogórski
+        text5: Wydział Matematyki, Informatyki i Ekonometrii
+        general_contact_text1: Kontakt ogólny
+    pl:
+        intouch: In Touch!
+        header: Kontakt
+        text1: W każdej chwili możesz znami się skontaktować przez nasz facebook lub twitter. Preferujemy kontakt mailowy. 
+        text2: Działamy non-profit. Od 2019 roku jako fundacja.
+        text3: Lokalizacja
+        text4: Zielona Góra, Uniwersytet Zielonogórski
+        text5: Wydział Matematyki, Informatyki i Ekonometrii
+        general_contact_text1: Kontakt ogólny
