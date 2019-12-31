@@ -23,7 +23,7 @@ p,
 
 h1,
 .h1 {
-  font-size: 60px;
+  font-size: 58px;
   line-height: 1.5;
   @include media-breakpoint-down($mobile) {
     font-size: 40px;
@@ -77,4 +77,8 @@ p,
     font-size: 16px;
     line-height:1.5;
   }
+}
+
+.header-text {
+  font-size: 18px;
 }
