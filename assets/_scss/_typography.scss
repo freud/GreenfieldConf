@@ -81,4 +81,8 @@ p,
 
 .header-text {
   font-size: 18px;
+
+  &.bigger {
+    font-size: 1.6em;
+  }
 }

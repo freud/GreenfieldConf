@@ -1,16 +1,16 @@
 $spacing-map: (
-        margin-top: mt,
-        margin-bottom: mb,
-        margin-right: mr,
-        margin-left: ml,
-        padding-top: pt,
-        padding-bottom: pb,
-        padding-right: pr,
-        padding-left: pl,
+  margin-top: mt,
+  margin-bottom: mb,
+  margin-right: mr,
+  margin-left: ml,
+  padding-top: pt,
+  padding-bottom: pb,
+  padding-right: pr,
+  padding-left: pl,
 );
 
 @mixin spacingClasses($breakpoint: null) {
-  @for $i from 0 through 10 {
+  @for $i from 0 through 200  {
     $spacing: $i * 8;
     @each $property, $className in $spacing-map {
       $class: #{$className}-#{$spacing};
