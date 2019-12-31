@@ -39,6 +39,7 @@ index:
         cfp_section_title2: Call for Papers
         cfp_section_text: We're looking for the best speakers and innovative approaches to topics. We'll name names gradually. Call for Papers is ongoing until we fill up the agenda.
         cfp_section_action_text: Submit your paper today!
+        cfp_section_action_url: /cfp
 
         lastyear_section_title1: Yet another edition
         lastyear_section_title2: Check out previous editions
@@ -51,6 +52,7 @@ index:
         charity_section_text: We're a non-profit organization. When buying a ticket, you decide about the donation. So far, we've donated
         charity_section_price: 21 351.02 PLN
         charity_section_contact_action_text: We're a non-profit organization
+        charity_section_contact_action_url: /contact
 
         newsletter_section_title1: Stay in touch!
         newsletter_section_title2: Subscribe to the <br class="d-lg-none" /> newsletter
@@ -67,6 +69,7 @@ index:
         cfp_section_title2: Call for Papers
         cfp_section_text: Szukamy najlepszych prelegentów, oraz oryginalnego podejścia do tematu. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
         cfp_section_action_text: Zgłoś się już dzisiaj
+        cfp_section_action_url: /pl/cfp
 
         lastyear_section_title1: To już kolejna edycja
         lastyear_section_title2: Zobacz jak było w poprzednich latach
@@ -79,6 +82,7 @@ index:
         charity_section_text: Działamy non-profit. Kupując bilet decydujesz komu pomóc. Dotychczas uzbieraliśmy
         charity_section_price: 21 351,02 PLN
         charity_section_contact_action_text: Działamy non-profit
+        charity_section_contact_action_url: /pl/kontakt
 
         newsletter_section_title1: Trzymaj rękę na pulsie
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
@@ -120,8 +124,7 @@ cfp:
         content_text3: We're interested in you as much as in your topic. Introduce yourself. Show us your previous speeches.
         content_text4: It's even better if you have a blog or vlog. Your acitivity on  the Internet is equally important. If you have a Twitter account but you're not popular, this is telling to us.
         content_header23: Our support
-        content_text5: All the selected speakers will be get a refund of their travel and accomodation that we'll organize. We're a charity organization.
-        Let us know if you want to give up some of the benefits - we'll be able to help NGOs even more. This is neither required nor expected. Contact us if you have doubts! We will be delighted to host you!
+        content_text5: All the selected speakers will be get a refund of their travel and accomodation that we'll organize. We're a charity organization. Let us know if you want to give up some of the benefits - we'll be able to help NGOs even more. This is neither required nor expected. Contact us if you have doubts! We will be delighted to host you!
         content_header24: To sum it up
         content_text6: All the selected speakers will be get a refund of their travel and accomodation that we'll organize for you.
         content_text61: information about you as a speaker,
