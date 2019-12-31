@@ -5,7 +5,7 @@ global:
             text: Contact
         cfp:
             url: /cfp
-            text: Call For Papers
+            text: Call for Papers
         aboutus:
             url: /contact
             text: About Us
@@ -49,7 +49,7 @@ index:
         charity_section_title1: Ticket fees will be donated to
         charity_section_title2: Charities
         charity_section_text: We're a non-profit organization. When buying a ticket, you decide about the donation. So far, we've donated
-        charity_section_price: 21 351,02 PLN
+        charity_section_price: 21 351.02 PLN
         charity_section_contact_action_text: We're a non-profit organization
 
         newsletter_section_title1: Stay in touch!
@@ -108,7 +108,7 @@ contact:
 cfp:
     en:
         header1: Become a speaker
-        header2: Call For Papers
+        header2: Call for Papers
         header_text: "We're looking for the best speakers and innovative approaches to topics. We'll name names gradually. Call for Papers is ongoing until we fill up the agenda."
         contact_text: Send your CFP now
         content_header1: CFP criteria
