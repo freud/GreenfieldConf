@@ -1,3 +1,6 @@
+{%
+    assign last_update_date_to_enforce_files_reload = "20200101"
+%}
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -14,7 +17,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% if page.style %}
-        <link rel="stylesheet" href="/assets/css/{{ page.style }}.css">
+        <link rel="stylesheet" href="/assets/css/{{ page.style }}.css?{{last_update_date_to_enforce_files_reload}}">
     {% endif %}
 </head>
 <body>
@@ -25,11 +28,11 @@
 </main>
 
 {% include footer.html %}
-<script src="/assets/js/viewport.js"></script>
-<script src="/assets/js/nav.js"></script>
-<script src="/assets/js/cookie_bar.js"></script>
-<script src="/assets/js/modals/modal.js"></script>
-<script src="/assets/js/modals/english_version.js"></script>
+<script src="/assets/js/viewport.js?{{last_update_date_to_enforce_files_reload}}"></script>
+<script src="/assets/js/nav.js?{{last_update_date_to_enforce_files_reload}}"></script>
+<script src="/assets/js/cookie_bar.js?{{last_update_date_to_enforce_files_reload}}"></script>
+<script src="/assets/js/modals/modal.js?{{last_update_date_to_enforce_files_reload}}"></script>
+<script src="/assets/js/modals/english_version.js?{{last_update_date_to_enforce_files_reload}}"></script>
 
 {% if page.newsletterModal %}
 <script src="/assets/js/modals/newsletter.js"></script>
