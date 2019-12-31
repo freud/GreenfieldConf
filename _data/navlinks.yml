@@ -1,14 +1,10 @@
 en:
-  - text: "About us"
-    url: "/contact"
-  - text: "Contact"
-    url: "/contact"
   - text: "Call For Papers"
     url: "/cfp"
+  - text: "Contact"
+    url: "/contact"
 pl:
-  - text: "O nas"
-    url: "/pl/kontakt"
-  - text: "Kontakt"
-    url: "/pl/kontakt"
   - text: "Call For Papers"
     url: "/pl/cfp"
+  - text: "Kontakt"
+    url: "/pl/kontakt"
