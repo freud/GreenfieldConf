@@ -35,8 +35,8 @@ index:
         button_subscribe: Subscribe to newsletter
         slogan: The biggest software developement conference in the Lubuskie province
 
-        cfp_section_title: Call for Papers
-        cfp_section_title2: Agenda and speakers
+        cfp_section_title1: Agenda and speakers
+        cfp_section_title2: Call for Papers
         cfp_section_text: We're looking for the best speakers and innovative approaches to topics. We'll name names gradually. Call for Papers is ongoing until we fill up the agenda.
         cfp_section_action_text: Submit your paper today!
 
@@ -63,8 +63,8 @@ index:
         button_subscribe: Zapisz się do newslettera
         slogan: Największa konferencja dla programistów w woj. lubuskim
 
-        cfp_section_title: Call for Papers
-        cfp_section_title2: Agenda i Prelegenci
+        cfp_section_title1: Agenda i Prelegenci
+        cfp_section_title2: Call for Papers
         cfp_section_text: Szukamy najlepszych prelegentów, oraz oryginalnego podejścia do tematu. Powoli będziemy odsłaniali kolejne nazwiska. CFP (Call For Papers) cały czas jest otwarte, aż do całkowitego zapełnienia agendy.
         cfp_section_action_text: Zgłoś się już dzisiaj
 
