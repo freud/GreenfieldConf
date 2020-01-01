@@ -1,0 +1,11 @@
+---
+permalink: /privacy-policy
+layout: default
+style: text_content
+title: Privacy Policy
+lang: en
+translations_id: privacy_policy
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include privacy_policy.html t=translations %}

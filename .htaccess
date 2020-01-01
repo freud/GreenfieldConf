@@ -1,0 +1,21 @@
+# BEGIN Jekyll redirect
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+
+#Map /pl to /pl.html
+RewriteRule ^pl/$ /pl.html [L]
+
+#Map http://www.example.com/x to /_site/x unless there is a x in the web root.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /$1.html
+
+# Add trailing slash to directories within jekyll
+# This does not expose the internal URL.
+RewriteCond %{SCRIPT_FILENAME} -d
+RewriteRule ^/(.*[^/])$ http://2020.greenfieldconf.pl/$1/ [R=301]
+</IfModule>
+# END Jekyll redirect
+

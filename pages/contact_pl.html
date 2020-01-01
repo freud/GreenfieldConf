@@ -1,0 +1,10 @@
+---
+permalink: /pl/kontakt
+layout: default
+style: contact
+lang: pl
+translations_id: contact
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include contact.html t=translations %}

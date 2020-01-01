@@ -1,0 +1,10 @@
+---
+permalink: /pl/cfp
+layout: default
+style: text_content
+lang: pl
+translations_id: cfp
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include cfp.html t=translations %}

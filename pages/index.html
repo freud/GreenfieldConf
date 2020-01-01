@@ -1,0 +1,11 @@
+---
+permalink: /
+layout: default
+style: home
+lang: en
+translations_id: index
+scripts: ['plugins/swiper.min', 'modals/newsletter', 'modals/speaker', 'pages/home']
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include index.html t=translations %}

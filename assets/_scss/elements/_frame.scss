@@ -1,0 +1,309 @@
+$frame-draw-duration: .7s;
+$frame-fill-duration: .4s;
+$img-before-duration: .5s;
+
+.img-before {
+  position: relative;
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+  &::before {
+    border: 1px solid $primary;
+    background: transparent;
+    top: 0;
+    left: 0;
+  }
+  &::after {
+    border-top-right-radius: 75%;
+    transform: scale(0);
+    transform-origin: 0% 100%;
+    background: $primary;
+    bottom: -7%;
+    left: -7%;
+  }
+}
+
+.frame-after {
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+  &::before {
+    border: 1px solid $primary;
+    background: transparent;
+    top: 0;
+    left: 0;
+  }
+}
+
+.frame-over {
+  position: relative;
+  margin-bottom: 10%;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+  &::before {
+    border: 1px solid $primary;
+    background: transparent;
+    top: 0;
+    left: 0;
+  }
+}
+
+.frame-under {
+  position: relative;
+  margin-bottom: 30%;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 55%;
+    height: 180%;
+    z-index: -1;
+    box-sizing: border-box;
+  }
+  &::before {
+    border: 1px solid $primary;
+    background: transparent;
+    top: -40%;
+    left: 25%;
+  }
+}
+
+.img-scale {
+  display: inline-flex;
+  overflow: hidden;
+  img {
+    transform: scale(1.2);
+    transition: transform .7s ease-out;
+  }
+}
+
+.frame {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  svg {
+    path {
+      stroke: $primary;
+      stroke-width: $frame-border-width;
+      transition: none;
+      &:nth-child(even) {
+        stroke-width: $frame-border-width / 2;
+      }
+      &:first-child {
+        transform: scaleY(0);
+      }
+      &:nth-child(2) {
+        transform: scaleX(0);
+      }
+      &:nth-child(3) {
+        transform: scaleY(0);
+        transform-origin: 50% 100%;
+      }
+      &:nth-child(4) {
+        transform: scaleX(0);
+        transform-origin: 100% 50%;
+      }
+    }
+  }
+}
+
+.frame-fill {
+  position: relative;
+  .rect {
+    display: block;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: -13%;
+    left: -13%;
+    z-index: -1;
+    overflow: hidden;
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    @include media-breakpoint-up(lg) {
+      height: 280px;
+      width: 280px;
+      top: -15%;
+      left: -18%;
+    }
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+    }
+    &::before {
+      top: 0;
+      left: 0;
+      border-top: 2px solid $primary;
+      border-left: 2px solid $primary;
+      width: 100%;
+      height: 100%;
+      transform-origin: 0% 0%;
+    }
+    &::after {
+      bottom: 0;
+      right: 0;
+      background: $primary;
+      height: 50%;
+      width: 50%;
+      border-top-left-radius: 100%;
+      transform: scale(0);
+      transition: transform 0.4s ease;
+      transform-origin: 100% 100%;
+      transition-delay: $frame-draw-duration;
+    }
+  }
+  .content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition-delay: $frame-draw-duration + $frame-fill-duration;
+  }
+  @include media-laptop-size {
+    h1,
+    .h1 {
+      font-size: 48px;
+    }
+    .rect {
+      width: 220px;
+      height: 220px;
+      top: -15%;
+      left: -15%;
+    }
+  }
+}
+
+.shown {
+  .img-before {
+    &::before {
+      transform: translate(-7%, 7%);
+      transition: transform $img-before-duration ease-out;
+    }
+    &::after {
+      transform: scale(1);
+      transition: transform .4s ease-out;
+      transition-delay: $img-before-duration - .1s;
+    }
+  }
+  .frame-after {
+    &::before {
+      transform: translate(5%, 5%);
+      transition: transform $img-before-duration ease-out;
+    }
+  }
+  .frame-over {
+    &::before {
+      transform: translate(10%, -10%);
+      transition: transform $img-before-duration ease-out;
+    }
+  }
+  .frame-under {
+    &::before {
+      transform: translate(10%, -10%);
+      transition: transform $img-before-duration ease-out;
+    }
+  }
+  .frame-fill {
+    .rect,
+     .rect::before {
+       opacity: 1;
+       animation: frame-fill-anim 0.7s ease forwards;
+   }
+   .rect::after {
+     transform: scale(3);
+   }
+   .content {
+     opacity: 1;
+   }
+  }
+  .frame {
+    path {
+      transition: transform .8s ease;
+      transform: scale(1) !important;
+    }
+  }
+  .img-scale {
+    img {
+      transform: scale(1) !important;
+    }
+  }
+  .img-stroke {
+    &::after {
+      transition: transform .3s ease;
+      transform: scaleY(1) !important;
+    }
+  }
+}
+
+.anim-wrapper {
+  position: relative;
+}
+
+@keyframes frame-reveal {
+  0% {
+    height: 0;
+    width: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  40% {
+    height: 0;
+    width: 300px;
+  }
+  80% {
+    height: 100%;
+    width: 300px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+  100% {
+    height: 100%;
+    width: 300px;
+    border-left-color: $primary;
+    border-right-color: $primary;
+  }
+}
+
+@keyframes frame-fill-anim {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

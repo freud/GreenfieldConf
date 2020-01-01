@@ -1,0 +1,74 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: none;
+  @include media-breakpoint-up(sm) {
+    max-width: 540px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 960px;
+  }
+  @include media-breakpoint-up(xl) {
+    max-width: 1170px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class^="col"] {
+  position: relative;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@mixin createColumns($breakpoint: null) {
+  @for $i from 1 through 12 {
+    $width: 100% / 12 * $i;
+    $column: col-#{$breakpoint}-#{$i};
+    @if($breakpoint == null) {
+      $column: col-#{$i};
+    }
+
+    .#{$column} {
+      max-width: $width;
+      flex: 0 0 $width;
+    }
+  }
+}
+
+@mixin createOffsets($breakpoint: null) {
+  @for $i from 0 through 6 {
+    $width: 100% / 12 * $i;
+    $offset: offset-#{$breakpoint}-#{$i};
+    @if($breakpoint == null) {
+      $offset: offset-#{$i};
+    }
+
+    .#{$offset} {
+      margin-left: $width !important;
+    }
+  }
+}
+
+@include createColumns();
+@include createOffsets();
+@each $breakpoint, $value in $breakpoints {
+  @if($breakpoint != 'xs') {
+    @include media-breakpoint-up($breakpoint) {
+      @include createColumns($breakpoint);
+      @include createOffsets($breakpoint);
+      .col-#{$breakpoint} {
+        max-width: none;
+        flex: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+---
+permalink: /pl/polityka-prywatnosci
+layout: default
+style: text_content
+title: Polityka Prywatności
+lang: pl
+translations_id: privacy_policy
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include privacy_policy.html t=translations %}

@@ -1,0 +1,78 @@
+$bounce-duration: 0.7s;
+
+@mixin animation-bounce($direction) {
+  @include bounceAnimation($direction);
+  animation: bounce-#{$direction} $bounce-duration forwards;
+}
+
+@mixin bounceAnimation($direction) {
+  @keyframes bounce-#{$direction} {
+    @if $direction == left OR $direction == right {
+
+      $values: 200px -15px 0;
+      @if($direction == left) {
+        $values: -200px 15px 0;
+      }
+
+      0% {
+        transform: translateX(nth($values, 1));
+        opacity: 0.2;
+      }
+      60% {
+        transform: translateX(nth($values, 2));
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateX(nth($values, 3));
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.section {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  &.section-frame {
+    margin-top: 128px;
+    margin-bottom: 128px;
+    @include media-breakpoint-down(md) {
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+  }
+}
+
+.section-bounce {
+  overflow: hidden;
+  .bounce-left {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  .bounce-right {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  .fade {
+    opacity: 0;
+    transition: 0.3s opacity ease-in;
+    transition-delay: $bounce-duration - 0.2s;
+  }
+}
+
+.shown {
+  .bounce-left {
+    @include animation-bounce(left);
+  }
+  .bounce-right {
+    @include animation-bounce(right);
+  }
+  .fade {
+    opacity: 1;
+  }
+}

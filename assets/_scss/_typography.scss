@@ -1,0 +1,88 @@
+$mobile: md;
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+p,
+.p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+.h1 {
+  font-size: 58px;
+  line-height: 1.5;
+  @include media-breakpoint-down($mobile) {
+    font-size: 40px;
+  }
+}
+
+h2,
+.h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  @include media-breakpoint-down($mobile) {
+    font-size: 30px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  @include media-breakpoint-down($mobile) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 1.33;
+  @include media-breakpoint-down($mobile) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+  line-height: 1.5;
+  @include media-breakpoint-down($mobile) {
+    font-size: 12px;
+  }
+}
+
+p,
+.p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  @include media-breakpoint-down($mobile) {
+    font-size: 16px;
+    line-height:1.5;
+  }
+}
+
+.header-text {
+  font-size: 18px;
+
+  &.bigger {
+    font-size: 1.6em;
+  }
+}

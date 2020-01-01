@@ -1,0 +1,81 @@
+.form-input {
+    width: 100%;
+    border-radius: 37px;
+    border: 1px solid $gray-3;
+    padding: 24px 40px;
+    font-size: 20px;
+    font-family: inherit;
+    font-style: italic;
+    outline: none;
+    margin-bottom: 32px;
+    @include media-breakpoint-down(md) {
+        padding: 16px 32px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+    }
+    @include hover-active-focus {
+        border-color: $primary;
+        transition: 0.3s border-color ease;
+    }
+    &.invalid {
+        border: 1px solid $invalid;
+        margin-bottom: 0;
+    }
+}
+
+.checkbox  {
+    display: none;
+    + label {
+        display: block;
+        margin: 0.2em;
+        cursor: pointer;
+        padding: 0.2em;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+        }
+        &::before {
+            content: "\2714";
+            border: 1px solid $gray-2;
+            border-radius: 4px;
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            line-height: 19px;
+            text-align: center;
+            box-sizing: border-box;
+            margin-right: 0.2em;
+            vertical-align: bottom;
+            color: transparent;
+            transition: transform .2s ease;
+        }
+        &:active {
+            &::before {
+                transform: scale(0);
+            }
+        }
+    }
+    &:checked {
+        + label {
+            &::before {
+                background-color: $primary;
+                border-color: $primary;
+                color: #fff;
+            }
+        }
+    }
+    &.invalid + label::before {
+        border-color: $invalid;
+    }
+}
+
+.invalid-message {
+    display: none;
+    color: $invalid;
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.invalid ~ .invalid-message {
+    display: block;
+}

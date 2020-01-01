@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Vaughn Vernon",
+    "img": "vaugh_vernon.png",
+    "twitter": "https://twitter.com/vaughnvernon",
+    "linkedin": "https://www.linkedin.com/in/vaughnvernon",
+    "website": "vaughnvernon.co",
+    "desc": "Domain Model Whisperer. A champion of simplicity and everything reactive. The author of bestsellers: \"Implementing Domain-Driven Design\", \"Domain-Design Distilled \", \"Reactive Messaging Patterns with the Actor Model: Applications and Integration in Scala and Akka\". Founder of vlingo/PLATFORM."
+  },
+  {
+    "name": "Tomasz Jaskuła",
+    "img": "tomasz_jaskula.png",
+    "twitter": "https://twitter.com/tjaskula",
+    "linkedin": "https://www.linkedin.com/in/tomasz-jaskula-16b2823",
+    "website": "luteceo.com",
+    "desc": "FP lover. French @IDDDWorkshop trainer. @vlingo_io active contributor. Humble servant of Paris F# and DDD user groups. Founder of @luteceo_fr."
+  },
+  {
+    "name": "Mariusz Gil",
+    "img": "mariusz_gil.jpg",
+    "twitter": "https://twitter.com/mariuszgil",
+    "linkedin": "https://www.linkedin.com/in/mariuszgil",
+    "website": "sourceministry.com",
+    "desc": "Software architect, trainer, conference speaker. DDD practitioner, #EventStorming Evangelist. Owner at @SrcMinistry."
+  }
+]

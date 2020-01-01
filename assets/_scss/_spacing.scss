@@ -1,0 +1,66 @@
+$spacing-map: (
+  margin-top: mt,
+  margin-bottom: mb,
+  margin-right: mr,
+  margin-left: ml,
+  padding-top: pt,
+  padding-bottom: pb,
+  padding-right: pr,
+  padding-left: pl,
+);
+
+@mixin spacingClasses($breakpoint: null) {
+  @for $i from 0 through 200  {
+    $spacing: $i * 8;
+    @each $property, $className in $spacing-map {
+      $class: #{$className}-#{$spacing};
+      @if($breakpoint) {
+        $class: #{$className}-#{$breakpoint}-#{$spacing}
+      }
+
+      .#{$class} {
+        #{$property}: #{$spacing}px !important;
+      }
+    }
+
+    $horizontalPadding: px-#{$spacing};
+    $verticalPadding: py-#{$spacing};
+    $horizontalMargin: mx-#{$spacing};
+    $verticalMargin: my-#{$spacing};
+
+    @if ($breakpoint) {
+      $horizontalPadding: px-#{$breakpoint}-#{$spacing};
+      $verticalPadding: py-#{$breakpoint}-#{$spacing}
+    }
+
+    .#{$horizontalPadding} {
+      padding-left: #{$spacing}px !important;
+      padding-right: #{$spacing}px !important;
+    }
+
+    .#{$verticalPadding} {
+      padding-top: #{$spacing}px !important;
+      padding-bottom: #{$spacing}px !important;
+    }
+
+    .#{$horizontalMargin} {
+      margin-left: #{$spacing}px !important;
+      margin-right: #{$spacing}px !important;
+    }
+
+    .#{$verticalMargin} {
+      margin-top: #{$spacing}px !important;
+      margin-bottom: #{$spacing}px !important;
+    }
+  }
+}
+
+@include spacingClasses();
+
+@each $breakpoint, $value in $breakpoints {
+  @if($breakpoint != 'xs') {
+    @include media-breakpoint-up($breakpoint) {
+      @include spacingClasses($breakpoint);
+    }
+  }
+}
