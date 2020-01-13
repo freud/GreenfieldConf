@@ -1,0 +1,8 @@
+pl:
+  - type: "Partner <br/> diamentowy"
+    logo: 'metapack.svg'
+    name: 'Metapack'
+en:
+  - type: "Diamond <br/> partner"
+    logo: "metapack.svg"
+    name: 'Metapack'

@@ -33,6 +33,22 @@ section {
         }
       }
     }
+    .swiper-container {
+      &#swiper-partners {
+        @include media-breakpoint-down(xs) {
+          max-width: 360px;
+        }
+        img {
+          max-width: 220px;
+          @include media-breakpoint-down(sm) {
+            max-width: 190px;
+          }
+          @include media-breakpoint-down(xs) {
+            max-width: 160px;
+          }
+        }
+      }
+    }
   }
   &:last-child {
     margin-bottom: 256px;
