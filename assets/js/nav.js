@@ -3,6 +3,7 @@
     const nav = document.querySelector('.navbar');
     const menu = nav.querySelector('.wrapper');
     const navToggler = nav.querySelector('.nav-toggler');
+    const scrollBtn = nav.querySelector('.scroll-trigger');
     let navHeight = nav.offsetHeight;
     let isOpen = false;
 
@@ -33,6 +34,13 @@
             height: `calc(100vh - ${navHeight}px)`,
             boxShadow: 'none'
         });
+    });
+
+    scrollBtn.addEventListener('click', () => {
+        if(isOpen) {
+            menu.style = '';
+            toggleMenu();
+        }
     });
 
     function addNavShadow() {
