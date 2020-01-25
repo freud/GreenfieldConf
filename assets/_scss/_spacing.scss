@@ -10,6 +10,17 @@ $spacing-map: (
 );
 
 @mixin spacingClasses($breakpoint: null) {
+  @each $property, $className in $spacing-map {
+    $autoClass: #{$className}-auto;
+    @if ($breakpoint) {
+      $autoClass: #{$className}-#{$breakpoint}-auto;
+    }
+
+    .#{$autoClass} {
+      #{$property}: auto;
+    }
+  }
+
   @for $i from 0 through 200  {
     $spacing: $i * 8;
     @each $property, $className in $spacing-map {

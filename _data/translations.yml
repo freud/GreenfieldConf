@@ -13,6 +13,7 @@ global:
             url: /privacy-policy
             text: Privacy Policy
         all_rights_reserved: Greenfield Conference - all rights reserved.
+        button_buy: Buy ticket
     pl:
         contact:
             url: /pl/kontakt
@@ -27,6 +28,7 @@ global:
             url: /pl/polityka-prywatnosci
             text: Polityka prywatności
         all_rights_reserved: Greenfield Conference - wszelkie prawa zastrzeżone.
+        button_buy: Kup bilet
 index:
     en:
         date: 30 May 2020
@@ -53,6 +55,12 @@ index:
         charity_section_price: 21 351.02 PLN
         charity_section_contact_action_text: We're a non-profit organization
         charity_section_contact_action_url: /contact
+
+        tickets_section_subtitle: Wszystkich biletów jest tylko 300
+        tickets_section_title: Kup bilet już teraz!
+        tickets_section_lead1: Dochód z biletów
+        tickets_section_lead2: przeznaczamy na cele charytatywne
+        tickets_section_buy_btn_text: Kupuję!
 
         newsletter_section_title1: Stay in touch!
         newsletter_section_title2: Subscribe to the <br class="d-lg-none" /> newsletter
@@ -84,6 +92,12 @@ index:
         charity_section_contact_action_text: Działamy non-profit
         charity_section_contact_action_url: /pl/kontakt
 
+        tickets_section_subtitle: Wszystkich biletów jest tylko 300
+        tickets_section_title: Kup bilet już teraz!
+        tickets_section_lead1: Dochód z biletów
+        tickets_section_lead2: przeznaczamy na cele charytatywne
+        tickets_section_buy_btn_text: Kupuję!
+     
         newsletter_section_title1: Trzymaj rękę na pulsie
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
         newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.

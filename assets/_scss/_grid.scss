@@ -23,7 +23,7 @@
   flex-wrap: wrap;
 }
 
-[class^="col"] {
+[class*="col-"] {
   position: relative;
   padding: 0 15px;
   width: 100%;

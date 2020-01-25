@@ -23,6 +23,13 @@ header {
       max-width: none;
       padding: 0 30px;
     }
+    .btn.secondary {
+      z-index: 4;
+      font-size: 22px;
+      &::after {
+        height: 15px;
+      }
+    }
   }
   .logo {
     min-width: 190px;

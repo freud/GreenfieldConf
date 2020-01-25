@@ -1,6 +1,11 @@
 section {
   &:first-child {
     position: relative;
+    .rect {
+      @include media-breakpoint-up(lg) {
+        top: -19%;
+      }
+    }
     @include media-breakpoint-down(sm) {
       padding-top: 32px;
     }
@@ -172,19 +177,6 @@ section {
   }
 }
 
-.shown {
-  .content {
-    transition: opacity .3s ease-in;
-    transition-delay: .7s;
-    opacity: 1;
-  }
-  .img-darken {
-    transition: transform .5s ease-out;
-    transition-delay: 1s;
-    transform: translate(0);
-  }
-}
-
 .cfp-speaker {
   @include media-breakpoint-up(lg) {
     p {
@@ -226,5 +218,48 @@ section {
 .btn.btn-signup {
   @include media-breakpoint-down(md) {
     font-size: 13px;
+  }
+}
+
+.box {
+  @include media-breakpoint-up(lg) {
+    opacity: 0;
+  }
+  max-width: 280px;
+  transition: opacity 0.4s ease-out;
+  @for $i from 1 through 4 {
+    &.slide-#{$i} {
+      transition-delay: 0 + 0.1s * $i;
+    }
+  }
+  strong {
+    font-size: 30px;
+  }
+  .price {
+    min-height: 105px;
+    @include media-breakpoint-down(lg) {
+      min-height: 120px;
+    }
+  }
+  .text-smaller {
+    @include media-breakpoint-down(lg) {
+      font-size: 14px !important;
+    }
+  }
+}
+
+.shown {
+  .content {
+    transition: opacity .3s ease-in;
+    transition-delay: .7s;
+    opacity: 1;
+  }
+  .img-darken {
+    transition: transform .5s ease-out;
+    transition-delay: 1s;
+    transform: translate(0);
+  }
+  .box {
+    opacity: 1;
   }
 }

@@ -1,0 +1,82 @@
+pl:
+  - name: 'Blind bird'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+    price: '80 PLN'
+    info: 'Dostępny 1 mar - 30 kwi 2020 lub do wyczerpania zapasów'
+    button: true
+
+  - name: 'Early bird'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+    price: '120 PLN'
+    info: 'Dostępny 1 mar - 30 kwi 2020 lub do wyczerpania zapasów'
+    button: false
+
+  - name: 'Regular'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+    price: '180 PLN'
+    info: 'Dostępny 1 - 29 maj 2020 lub do wyczerpania zapasów'
+    button: false
+
+  - name: 'VIP'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+        - 'Przybajerzona plakietka'
+    price: '300 PLN'
+    info: 'Dostępny 1 sty - 29 maj 2020 lub do wyczerpania zapasów'
+    button: true
+en:
+  - name: 'Blind bird'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+    price: '80 PLN'
+    info: 'Dostępny 1 mar - 30 kwi 2020 lub do wyczerpania zapasów'
+    button: true
+
+  - name: 'Early bird'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+    price: '120 PLN'
+    info: 'Dostępny 1 mar - 30 kwi 2020 lub do wyczerpania zapasów'
+    button: false
+
+  - name: 'Regular'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+    price: '180 PLN'
+    info: 'Dostępny 1 - 29 maj 2020 lub do wyczerpania zapasów'
+    button: false
+
+  - name: 'VIP'
+    features: 
+        - 'Charytatywny cel'
+        - 'Smaczny lunch'
+        - 'Fajny  Welcome pack'
+        - 'Wstęp na After Party'
+        - 'Przybajerzona plakietka'
+    price: '300 PLN'
+    info: 'Dostępny 1 sty - 29 maj 2020 lub do wyczerpania zapasów'
+    button: true

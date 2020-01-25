@@ -1,0 +1,13 @@
+.box {
+    padding: 48px 24px 72px 48px;
+    border: 2px solid $primary;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    @include media-breakpoint-down(lg) {
+        padding: 48px 24px 48px 16px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-left: 32px;
+    }
+}

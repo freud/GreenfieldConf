@@ -1,4 +1,8 @@
 .swiper-container {
+  .swiper-slide {
+    min-height: 100%;
+    height: auto;
+  }
   .swiper-pagination {
     .swiper-pagination-bullet {
       width: 13px;

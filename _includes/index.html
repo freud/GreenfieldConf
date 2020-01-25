@@ -17,9 +17,14 @@
             <p class="mb-32">
                 {{include.t.slogan}}
             </p>
-            <button class="btn primary btn-signup" aria-label="{{include.t.button_subscribe}}">
-                {{include.t.button_subscribe}}
-            </button>
+            <a
+                class="btn primary scroll-trigger" 
+                aria-label="{{include.t.button_buy}}"
+                href="#tickets"
+                data-scroll
+            >
+                 {{ site.data.translations.global[page.lang].button_buy }}
+            </a>
         </div>
         <div class="col-md-6 col-xl-7 offset-md-1 anim-wrapper d-none d-md-block align-self-lg-center align-self-xl-start">
             <div class="img-frame">
@@ -31,11 +36,8 @@
                 </div>
                 <div class="content">
                     <p class="h2 mb-8">{{include.t.date}}</p>
-                    <small class="h4">{{include.t.city}}
-                    </small>
-                    <br /><br /><br />
                     <small class="h4">
-                        {{include.t.tickets_soon}}
+                        {{include.t.city}}
                     </small>
                 </div>
             </div>
@@ -58,7 +60,7 @@
                 <div class="swiper-wrapper">
                     {% for partner in site.data.partners[page.lang] %}
                         <div class="swiper-slide d-flex justify-content-between align-items-center pb-56 pb-md-80">
-                            <span>
+                            <span class="d-table-caption">
                                 {{ partner.type }}:
                             </span>
                             <img 
@@ -77,24 +79,35 @@
     </div>
 </section>
 
-<section class="section container">
-    <dv class="row anim-wrapper">
-        {% for speaker in site.data.speakers %}
-        <div 
-            class="speaker col-md-3 offset-1 frame-after" 
-            data-speaker='{{speaker}}'>
-            <div class="speaker-img">
-                <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
+<section class="section container anim-wrapper">
+    <div class="swiper-container pb-64 px-24" id="swiper-speakers-arrows">
+        <div class="swiper-wrapper">
+            {% for speaker in site.data.speakers %}
+            <div 
+                class="swiper-slide speaker speaker-slide frame-after mt-0" 
+                data-speaker='{{speaker}}'
+            >
+                <div class="speaker-img">
+                    <img 
+                        src="/images/speakers/{{ speaker.img }}" 
+                        alt="{{ speaker.name }}" 
+                        class="img-fluid" 
+                    />
+                </div>
+                <div class="speaker-heading d-table-caption">
+                    {{speaker.name}}
+                </div>
+                <div class="speaker-more">
+                    →
+                </div>
             </div>
-            <div class="speaker-heading d-table-caption">{{speaker.name}}</div>
-            <div class="speaker-more">→</div>
-        </div>
         {% endfor %}
+        </div>
+        <div class="swiper-pagination d-md-none"></div>
     </div>
 </section>
 
-
-<section class="section container">
+<section class="section container pt-48 pt-lg-80">
     <dv class="row section-bounce">
         <div class="col-12 col-md-6 anim-wrapper">
             <p class="fade">
@@ -200,6 +213,64 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="section container anim-wrapper" id="tickets">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center mt-32">
+            <p class="mb-8">
+                {{ include.t.tickets_section_subtitle }}
+            </p>
+            <h2 class="mb-8">
+                {{ include.t.tickets_section_title }}
+            </h2>
+            <p class="mb-0">
+                {{ include.t.tickets_section_lead1 }}
+            </p>
+            <p class="mb-64">
+                {{ include.t.tickets_section_lead2 }}
+            </p>
+        </div>
+    </div>
+
+    <div class="swiper-container" id="swiper-tickets">
+        <div class="swiper-wrapper pb-48 pb-lg-0">
+        {% for ticket in site.data.tickets[page.lang] %}
+            <div class="swiper-slide col-lg-3 d-flex justify-content-center">
+                <div class="box slide-{{ forloop.index }}">
+                    <h4 class="h3">
+                        {{ ticket.name }}
+                    </h4>
+                    {% for feature in ticket.features %}
+                       <span class="text-smaller mb-24">
+                           {{ feature }}
+                       </span> 
+                    {% endfor %}
+                    <strong class="mb-16 mt-auto">
+                        {{ ticket.price }}
+                    </strong>
+
+                    <div class="d-flex flex-column price">
+                        {% if ticket.button %}
+                        <a 
+                            href="#" 
+                            class="btn secondary align-self-start mb-40"
+                        >
+                            {{ include.t.tickets_section_buy_btn_text }}
+                        </a>
+                    {% endif %}
+    
+                    <small class="mt-auto">
+                        {{ ticket.info }}
+                    </small>
+                    </div>
+                </div>
+        </div>
+          
+        {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
 </section>
 

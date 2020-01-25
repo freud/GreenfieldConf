@@ -1,6 +1,6 @@
 const speakerModal = {
     init: () => {
-        const triggers = document.querySelectorAll('.speaker-heading, .speaker-img');
+        const triggers = document.querySelectorAll('.speaker-heading, .speaker-img, .speaker-slide');
         const id = 'speakers-modal';
         triggers.forEach(trigger => {
             trigger.addEventListener('click', e => {
