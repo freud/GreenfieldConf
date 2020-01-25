@@ -94,14 +94,6 @@ section {
       width: 300px;
     }
   }
-  &.frame-center {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 236px;
-    @include media-breakpoint-up(lg) {
-      width: 300px;
-    }
-  }
 }
 
 .img-wrapper {
@@ -128,18 +120,6 @@ section {
 }
 
 .img-frame {
-  position: relative;
-  display: flex;
-  .frame {
-    width: 100%;
-    z-index: 1;
-    svg {
-      transform: translate(5%, 7%);
-      path {
-        stroke-width: 1px;
-      }
-    }
-  }
   .img-darken {
     width: 100%;
     &::after {

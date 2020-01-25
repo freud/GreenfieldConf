@@ -53,30 +53,8 @@ $img-before-duration: .5s;
   }
 }
 
-.frame-over {
-  position: relative;
-  margin-bottom: 10%;
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    box-sizing: border-box;
-  }
-  &::before {
-    border: 1px solid $primary;
-    background: transparent;
-    top: 0;
-    left: 0;
-  }
-}
-
 .frame-under {
   position: relative;
-  margin-bottom: 30%;
   &::before,
   &::after {
     content: '';
@@ -104,6 +82,21 @@ $img-before-duration: .5s;
   }
 }
 
+.img-frame {
+  position: relative;
+  display: inline-flex;
+  .frame {
+    width: 100%;
+    z-index: 1;
+    svg {
+      transform: translate(5%, 7%);
+      path {
+        stroke-width: 1px;
+      }
+    }
+  }
+}
+
 .frame {
   height: 100%;
   position: absolute;
@@ -115,9 +108,7 @@ $img-before-duration: .5s;
       stroke: $primary;
       stroke-width: $frame-border-width;
       transition: none;
-      &:nth-child(even) {
-        stroke-width: $frame-border-width / 2;
-      }
+
       &:first-child {
         transform: scaleY(0);
       }
@@ -132,6 +123,14 @@ $img-before-duration: .5s;
         transform: scaleX(0);
         transform-origin: 100% 50%;
       }
+    }
+  }
+  &.frame-center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 236px;
+    @include media-breakpoint-up(lg) {
+      width: 300px;
     }
   }
 }
@@ -220,12 +219,6 @@ $img-before-duration: .5s;
   .frame-after {
     &::before {
       transform: translate(5%, 5%);
-      transition: transform $img-before-duration ease-out;
-    }
-  }
-  .frame-over {
-    &::before {
-      transform: translate(10%, -10%);
       transition: transform $img-before-duration ease-out;
     }
   }

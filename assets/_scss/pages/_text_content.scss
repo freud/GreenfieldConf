@@ -1,6 +1,27 @@
 .section {
+    .img-frame {
+        &.frame-over {
+            svg {
+              transform: translate(5%, -7%);
+            }
+          }
+    }
+    .img-sticky {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     h1 {
-        line-height: 72px;
+        @include media-breakpoint-down(lg) {
+            font-size: 48px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 40px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 36px;
+        }
     }
     .h3 {
         @include media-breakpoint-down(lg) {
@@ -26,19 +47,6 @@
         position: sticky;
         position: -webkit-sticky;
         top: 254px;
-    }
-    .frame {
-        height: 212px;
-        left: 0;
-        &:first-child {
-            height: 150px;
-            width: 240px;
-        }
-        svg {
-            path {
-                stroke-width: 1px;
-            }
-        }
     }
 }
 
