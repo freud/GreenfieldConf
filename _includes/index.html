@@ -60,14 +60,19 @@
                 <div class="swiper-wrapper">
                     {% for partner in site.data.partners[page.lang] %}
                         <div class="swiper-slide d-flex justify-content-between align-items-center pb-56 pb-md-80">
-                            <span class="d-table-caption">
+                            <span>
                                 {{ partner.type }}:
                             </span>
-                            <img 
-                                src="/images/partners/{{partner.logo}}" 
-                                alt="{{partner.name}} logo" 
-                                class="img-fluid"
-                            />
+                            <a 
+                                href="{{site.data.translations.global[page.lang].partners.url}}/{{ partner.name |downcase|replace: ' ', '-' }}"
+                                class="w-100 ml-40 ml-md-64"
+                            >
+                                <img 
+                                    src="/images/partners/{{partner.logo}}" 
+                                    alt="{{partner.name}} logo" 
+                                    class="img-fluid"
+                                />
+                            </a>
                         </div>
                     {% endfor %}
                 </div>

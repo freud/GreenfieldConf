@@ -10,13 +10,13 @@ window.onload = () => {
 
     new SmoothScroll('.scroll-trigger', {speed: 300});
 
-    // Uncomment if there is more than one partner
-    // createSwiper({
-    //     selector: '#swiper-partners',
-    //     props: {
-    //         spaceBetween: 60
-    //     }
-    // });
+    createSwiper({
+        selector: '#swiper-partners',
+        props: {
+            spaceBetween: 60,
+            autoplay: true
+        }
+    });
     
     createSwiper({
         selector: '#swiper-speakers', 
@@ -80,23 +80,24 @@ window.onload = () => {
         }
 
         function setSwiper() {
-            const { speed, loop, init, slidesPerView, pagination, spaceBetween, breakpoints, slidesPerGroup } = props;
 
+            const { init } = props;
             const newSwiper =  new Swiper(selector, {
-                speed: speed || 400,
-                loop: typeof loop !== 'undefined' ? loop : true,
-                init: typeof init !== 'undefined' ? init : true,
-                spaceBetween: spaceBetween || 0,
-                slidesPerView: slidesPerView || 1,
-                slidesPerGroup: slidesPerGroup || 1,
-                pagination: pagination || {
+                speed: 400,
+                loop: true,
+                init: true,
+                spaceBetween: 0,
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',
                     bulletElement: 'button',
                     clickable: true
                 },
                 breakpointsInverse: true,
-                breakpoints: breakpoints || {}
+                breakpoints: {},
+                ...props
             }); 
             if (init) {
                 return newSwiper;

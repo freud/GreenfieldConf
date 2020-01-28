@@ -1,0 +1,88 @@
+<section class="section container">
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
+            <div class="anim-wrapper">
+                <div class="frame-fill">
+                    <div class="rect"></div>
+                    <h1 class="content d-table-caption mt-8 mt-lg-64 ml-32 ml-lg-16 mb-48">
+                        {{ include.t.metapack.title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-5 col-xl-5 offset-lg-1 d-flex align-items-center">
+            <img 
+                src="/images/partners/metapack.svg" 
+                alt="Metapack logo" 
+                class="img-fluid"
+            />
+        </div>
+    </div>
+    <div class="row justify-content-center mt-32 mt-lg-80">
+        <div class="col-xl-10">
+            <p class="mb-64">
+                {{ include.t.metapack.paragraph11 }}
+            </p>
+
+            <h2 class="h3">
+                {{ include.t.metapack.heading2 }}
+            </h2>
+            <p>
+                {{ include.t.metapack.paragraph21 }}
+            </p>
+            <p class="mb-64">
+                {{ include.t.metapack.paragraph21 }}
+            </p>
+            
+            <h2 class="h3">
+                {{ include.t.metapack.heading3 }}
+            </h2>
+            <p>
+                {{ include.t.metapack.paragraph31 }}
+            </p>
+            
+            <p>
+                {{ include.t.metapack.paragraph32 }}
+            </p>
+            
+            <p>
+                {{ include.t.metapack.paragraph33 }}
+            </p>
+            
+            <p class="mb-64">
+                {{ include.t.metapack.paragraph34 }}
+            </p>
+
+            <h2 class="h3">
+                {{ include.t.metapack.heading4 }}
+            </h2>
+            <p class="mb-64">
+                {{ include.t.metapack.paragraph41 }}
+            </p>
+            
+            <h2 class="h3">
+                {{ include.t.metapack.heading5 }}
+            </h2>
+            <p>
+                {{ include.t.metapack.paragraph51 }}
+            </p>
+            <p>
+                {{ include.t.metapack.paragraph52 }}
+            </p>
+
+            <ul>
+               {% for item in site.data.translations.partners[page.lang].metapack.list %}
+                    <li class="text-smaller mb-16">
+                        {{ item.text }}
+                        <a href="{{ item.link }}" target="_blank" class="link">
+                            {{ item.link }},
+                        </a>
+                    </li>
+               {% endfor %}
+            </ul>
+            <p class="mb-64">
+                {{ include.t.metapack.paragraph53 }}
+            </p>
+        </div>
+    </div>
+</section>

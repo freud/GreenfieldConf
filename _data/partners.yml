@@ -2,7 +2,13 @@ pl:
   - type: "Partner <br/> diamentowy"
     logo: 'metapack.svg'
     name: 'Metapack'
+  - type: "Partner <br/> diamentowy"
+    logo: 'apator-rector.svg'
+    name: 'Apator Rector'
 en:
   - type: "Diamond <br/> partner"
     logo: "metapack.svg"
     name: 'Metapack'
+  - type: "Diamond <br/> partner"
+    logo: 'apator-rector.svg'
+    name: 'Apator Rector'
