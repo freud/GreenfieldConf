@@ -3,8 +3,12 @@ en:
     url: "/cfp"
   - text: "Contact"
     url: "/contact"
+  - text: 'Partners'
+    url: '/partners'
 pl:
   - text: "Call for Papers"
     url: "/pl/cfp"
   - text: "Kontakt"
     url: "/pl/kontakt"
+  - text: 'Partnerzy'
+    url: '/partnerzy'

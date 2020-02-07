@@ -8,7 +8,7 @@
                 <button class="nav-toggler" aria-label="Menu">
                         <span>Menu</span>
                     </button>
-                <div class="wrapper col-md-8 col-lg-7 col-xl-6">
+                <div class="wrapper col-lg-8 col-xl-7">
                     <div class="nav-links d-flex align-items-center">
                         {% for link in site.data.navlinks[page.lang] %}
                         <div class="nav-link">
@@ -19,7 +19,7 @@
                         {% endfor %}
                         <a 
                             href="/#tickets" 
-                            class="btn secondary sm scroll-trigger mb-32 mb-md-0"
+                            class="btn secondary sm scroll-trigger mb-32 mb-lg-0"
                         >
                             {{site.data.translations.global[page.lang].button_buy}}
                         </a>

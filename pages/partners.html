@@ -1,0 +1,10 @@
+---
+permalink: /partners
+layout: default
+lang: en
+style: partners
+translations_id: partners
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include partners.html t=translations %}

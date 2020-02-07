@@ -16,6 +16,8 @@ global:
         button_buy: Buy ticket
         partners: 
             url: /partners
+        apator_url: /partners/apator-rector
+        metapack_url: /partners/metapack
     pl:
         contact:
             url: /pl/kontakt
@@ -33,6 +35,8 @@ global:
         button_buy: Kup bilet
         partners: 
             url: /pl/partnerzy
+        apator_url: /pl/partnerzy/apator-rector
+        metapack_url: /pl/partnerzy/metapack
 index:
     en:
         date: 30 May 2020
@@ -210,6 +214,14 @@ privacy_policy:
 
 partners: 
     pl:
+        subheading: They trusted us
+        heading1: Partners
+        paragraph1: Nasza konferencja jest organizowana charytatywnie, dlatego wielkie podziękowania należą się dla partnerów konferencji, bez których nie byłoby to możliwe
+        title_diamond: Partnerzy diamentowi
+        title_gold: Partnerzy złoci
+        title_honor: Patronat honorowy
+        title_media: Patroni medialni
+        diamond_btn: Poznaj partnera
         apator:
             title: Apator Rector
             paragraph11: Spółka Apator Rector jest obecna na polskim rynku produkcji oprogramowania od 1994 roku. Od początku swojej działalności związana jest nierozerwalnie z technologią GIS. Flagowymi produktami są systemy służące do wspomagania zarządzania majątkiem sieciowym oferowane na rynku utilities, telekomunikacyjnym, administracji publicznej i samorządowej. W 2008 roku 70 proc. udziałów w spółce kupiła spółka Apator S. A., realizując strategię przygotowań do uczestnictwa w rynku Smart Metering. W 2014 r. spółka Apator S. A. kupiła pozostałe 30 % udziałów Apator Rector Sp z o.o. stając się jej jedynym właścicielem. Dzisiaj Apator Rector Sp. z o.o. to firma zatrudniająca 150 pracowników.
@@ -259,6 +271,14 @@ partners:
                 - text: "- naszego profilu na FB:"   
                   link: https://www.facebook.com/metapackpolska/
     en:
+        subheading: They trusted us
+        heading: Partners
+        paragraph: Nasza konferencja jest organizowana charytatywnie, dlatego wielkie podziękowania należą się dla partnerów konferencji, bez których nie byłoby to możliwe
+        title_diamond: Partnerzy diamentowi
+        title_gold: Partnerzy złoci
+        title_honor: Patronat honorowy
+        title_media: Patroni medialni
+        diamond_btn: Poznaj partnera
         apator:
             title: Apator Rector
             paragraph11: Spółka Apator Rector jest obecna na polskim rynku produkcji oprogramowania od 1994 roku. Od początku swojej działalności związana jest nierozerwalnie z technologią GIS. Flagowymi produktami są systemy służące do wspomagania zarządzania majątkiem sieciowym oferowane na rynku utilities, telekomunikacyjnym, administracji publicznej i samorządowej. W 2008 roku 70 proc. udziałów w spółce kupiła spółka Apator S. A., realizując strategię przygotowań do uczestnictwa w rynku Smart Metering. W 2014 r. spółka Apator S. A. kupiła pozostałe 30 % udziałów Apator Rector Sp z o.o. stając się jej jedynym właścicielem. Dzisiaj Apator Rector Sp. z o.o. to firma zatrudniająca 150 pracowników.
