@@ -1,77 +1,142 @@
 <section class="section section-partner container">
     <div class="row">
-        <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
-            <div class="anim-wrapper">
+        <div class="col-lg-7 col-xl-6">
+            <div class="col-12 col-sm-8 col-md-7 col-12 anim-wrapper px-0">
                 <div class="frame-fill">
                     <div class="rect"></div>
-                    <h1 class="content d-table-caption mt-8 mt-lg-24 ml-32 ml-lg-16">
-                        {{ include.t.apator.title }}
-                    </h1>
+                    <div class="ml-24 ml-lg-56 ml-xl-72">
+                        <p class="text-smaller mb-0 pt-lg-16">
+                            Diamentowy partner
+                        </p>
+                        <h1 class="content d-table-caption mb-80">
+                            {{ include.t.apator.title }}
+                        </h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-7 col-lg-6 col-xl-5">
-            <a 
-                href="http://www.apator.com/pl"
-                target="_blank"
-            >
-            <img 
-                src="/images/partners/apator-rector.svg" 
-                alt="Apator Rector logo" 
-                class="img-fluid mb-md-64"
-            />
-            </a>
-        </div>
-    </div>
-    <div class="row justify-content-center mt-32 mt-lg-80">
-        <div class="col-xl-10">
-            <p class="mb-32">
-                {{ include.t.apator.paragraph11 }}
-            </p>
-            <p class="mb-64">
-                {{ include.t.apator.paragraph12 }}
-            </p>
-
-            <h2 class="h3">
-                {{ include.t.apator.heading2 }}
-            </h2>
-            <p>
-                {{ include.t.apator.paragraph21 }}
-            </p>
-            <ul class="ml-md-24 mb-40">
-                {% for listItem in site.data.translations.partners[page.lang].apator.listItems  %}
-                    <li class="mb-16">
-                        - {{ listItem }}
-                    </li>
-                {% endfor %}
-            </ul>
-            <p class="mb-64">
-                {{ include.t.apator.paragraph22 }}
-            </p>
-
-            <h2 class="h3">
-                {{ include.t.apator.heading3 }}
-            </h2>
-
-            <p class="mb-64">
-                {{ include.t.apator.paragraph31 }}
-            </p>
-
-            <h2 class="h3">
-                {{ include.t.apator.heading4 }}
-            </h2>
-
-            <p class="mb-64">
-                {{ include.t.apator.paragraph41 }}
-            </p>
-
-            <a 
-                href="http://www.apator.com/pl"
-                target="_blank"
-                class="btn secondary"
+            <div class="d-inline-flex flex-column d-lg-none mb-64">
+                <a 
+                    href="http://www.apator.com/pl" 
+                    class="link"
+                    target="_blank"
                 >
-                {{ include.t.apator.link }}
-            </a>
+                    <img 
+                        src="/images/partners/apator-rector.svg"
+                        class="img-fluid mb-48" 
+                        alt="Apator Rector logo"
+                    />
+                </a>
+                <div class="d-flex">
+                    <a 
+                        href="http://www.apator.com/pl" 
+                        class="link"
+                        target="_blank"
+                    >
+                        <span class="icon-website h2 mr-40 mb-0"></span>
+                    </a>
+                    <a 
+                        href="https://www.facebook.com/GrupaApator/" 
+                        class="link"
+                        target="_blank"
+                    >
+                    <span class="icon-facebook h2 mr-40 mb-0"></span>
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/company/apator-rector/" 
+                        class="link"
+                        target="_blank"
+                    >
+                        <span class="icon-linkedin h2"></span>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p class="mb-32">
+                    {{ include.t.apator.paragraph11 }}
+                </p>
+                <p class="mb-64">
+                    {{ include.t.apator.paragraph12 }}
+                </p>
+    
+                <h2 class="h3">
+                    {{ include.t.apator.heading2 }}
+                </h2>
+                <p>
+                    {{ include.t.apator.paragraph21 }}
+                </p>
+                <ul class="ml-md-24 mb-40">
+                    {% for listItem in site.data.translations.partners[page.lang].apator.listItems  %}
+                        <li class="mb-16">
+                            - {{ listItem }}
+                        </li>
+                    {% endfor %}
+                </ul>
+                <p class="mb-64">
+                    {{ include.t.apator.paragraph22 }}
+                </p>
+    
+                <h2 class="h3">
+                    {{ include.t.apator.heading3 }}
+                </h2>
+    
+                <p class="mb-64">
+                    {{ include.t.apator.paragraph31 }}
+                </p>
+    
+                <h2 class="h3">
+                    {{ include.t.apator.heading4 }}
+                </h2>
+    
+                <p class="mb-64">
+                    {{ include.t.apator.paragraph41 }}
+                </p>
+    
+                <a 
+                    href="http://www.apator.com/pl"
+                    target="_blank"
+                    class="btn secondary"
+                >
+                    {{ include.t.apator.link }}
+                </a>
+            </div>
+        </div>
+        <div class="offset-lg-1 col-lg-4 col-xl-3 position-relative">
+            <div class="partner-sticky d-none d-lg-block">
+                <a 
+                    href="http://www.apator.com/pl" 
+                    class="link"
+                    target="_blank"
+                >
+                    <img 
+                        src="/images/partners/apator-rector.svg"
+                        class="img-fluid mb-64" 
+                        alt="Apator Rector logo"
+                    />
+                </a>
+                <div class="d-flex justify-content-end">
+                    <a 
+                        href="http://www.apator.com/pl" 
+                        class="link"
+                        target="_blank"
+                    >
+                        <span class="icon-website h4 mr-40 mb-0"></span>
+                    </a>
+                    <a 
+                        href="https://www.facebook.com/GrupaApator/" 
+                        class="link"
+                        target="_blank"
+                    >
+                    <span class="icon-facebook h4 mr-40 mb-0"></span>
+                    </a>
+                    <a 
+                        href="https://www.linkedin.com/company/apator-rector/" 
+                        class="link"
+                        target="_blank"
+                    >
+                        <span class="icon-linkedin h4 mb-0"></span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>

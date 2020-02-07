@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-website:before {
+  content: "\e906";
+}
 .icon-clear:before {
   content: "\e904";
 }

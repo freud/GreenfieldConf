@@ -7,6 +7,11 @@
         li {
             font-size: 14px;
         }
+        .partner-sticky {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 35%;
+        }
     }
     &-main {
         .heading-small {
