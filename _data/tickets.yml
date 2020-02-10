@@ -6,7 +6,6 @@ pl:
         - 'Fajny welcome pack'
         - 'Wstęp na After Party'
     price: '99 PLN'
-    info: 'Wkrótce dostępne'
     button: true
 
   - name: 'Early bird'
@@ -16,7 +15,6 @@ pl:
         - 'Fajny Welcome pack'
         - 'Wstęp na After Party'
     price: '149 PLN'
-    info: 'Wkrótce dostępne'
     button: false
 
   - name: 'Regular'
@@ -26,7 +24,6 @@ pl:
         - 'Fajny Welcome pack'
         - 'Wstęp na After Party'
     price: '199 PLN'
-    info: 'Wkrótce dostępne'
     button: false
 
   - name: 'VIP'
@@ -37,7 +34,6 @@ pl:
         - 'Wstęp na After Party'
         - 'Przybajerzona plakietka'
     price: '299 PLN'
-    info: 'Wkrótce dostępne'
     button: true
 en:
   - name: 'Blind bird'
@@ -47,7 +43,6 @@ en:
         - 'Cool welcome pack'
         - 'Admission to the after party'
     price: '99 PLN'
-    info: 'Available soon'
     button: true
 
   - name: 'Early bird'
@@ -57,7 +52,6 @@ en:
         - 'Cool Welcome Pack'
         - 'Admission to the after party'
     price: '149 PLN'
-    info: 'Available soon'
     button: false
 
   - name: 'Regular'
@@ -67,7 +61,6 @@ en:
         - 'Cool welcome pack'
         - 'Admission to the after party'
     price: '199 PLN'
-    info: 'Available soon'
     button: false
 
   - name: 'VIP'
@@ -78,5 +71,4 @@ en:
         - 'Admission to the after party'
         - 'Funky badge'
     price: '299 PLN'
-    info: 'Available soon'
     button: true
