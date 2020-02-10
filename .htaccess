@@ -7,6 +7,10 @@ RewriteBase /
 #Map /pl to /pl.html
 RewriteRule ^pl/$ /pl.html [L]
 
+#Map /partners to /partners.html
+RewriteRule ^partners/$ /partners.html [L]
+
+
 #Map http://www.example.com/x to /_site/x unless there is a x in the web root.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
