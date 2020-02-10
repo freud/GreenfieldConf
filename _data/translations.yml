@@ -14,7 +14,7 @@ global:
             text: Privacy Policy
         all_rights_reserved: Greenfield Conference - all rights reserved.
         button_buy: Buy ticket
-        partners: 
+        partners:
             url: /partners
         apator_url: /partners/apator-rector
         metapack_url: /partners/metapack
@@ -33,7 +33,7 @@ global:
             text: Polityka prywatności
         all_rights_reserved: Greenfield Conference - wszelkie prawa zastrzeżone.
         button_buy: Kup bilet
-        partners: 
+        partners:
             url: /pl/partnerzy
         apator_url: /pl/partnerzy/apator-rector
         metapack_url: /pl/partnerzy/metapack
@@ -212,73 +212,16 @@ privacy_policy:
         text10: 10. Jeżeli powyższe dziewięć punktów nie rozwiało Twoich wątpliwości związanych z polityką prywatności na tej stronie, skontaktuj się z nami. Z chęcią wyjaśnimy wszystkie wątpliwości.
         questions_text: Masz jakieś wątpliwości? Pisz
 
-partners: 
+partners:
     pl:
         subheading: They trusted us
-        heading1: Partners
-        paragraph1: Nasza konferencja jest organizowana charytatywnie, dlatego wielkie podziękowania należą się dla partnerów konferencji, bez których nie byłoby to możliwe
+        heading: Partners
+        paragraph: Nasza konferencja jest organizowana charytatywnie, dlatego wielkie podziękowania należą się dla partnerów konferencji, bez których nie byłoby to możliwe
         title_diamond: Partnerzy diamentowi
         title_gold: Partnerzy złoci
         title_honor: Patronat honorowy
         title_media: Patroni medialni
         diamond_btn: Poznaj partnera
-        apator:
-            title: Apator Rector
-            paragraph11: Spółka Apator Rector jest obecna na polskim rynku produkcji oprogramowania od 1994 roku. Od początku swojej działalności związana jest nierozerwalnie z technologią GIS. Flagowymi produktami są systemy służące do wspomagania zarządzania majątkiem sieciowym oferowane na rynku utilities, telekomunikacyjnym, administracji publicznej i samorządowej. W 2008 roku 70 proc. udziałów w spółce kupiła spółka Apator S. A., realizując strategię przygotowań do uczestnictwa w rynku Smart Metering. W 2014 r. spółka Apator S. A. kupiła pozostałe 30 % udziałów Apator Rector Sp z o.o. stając się jej jedynym właścicielem. Dzisiaj Apator Rector Sp. z o.o. to firma zatrudniająca 150 pracowników.
-            paragraph12: Firma Apator Rector Sp. z o.o. zrealizowała z sukcesem wdrożenie centralnych systemów dla dwóch kluczowych operatorów systemów dystrybucyjnych energii elektrycznej na rynku krajowym, tj. Energa Operator S. A. oraz Tauron Dystrybucja S.A. W wyniku wdrożenia projektów powstały kompletne i jednolite dla wszystkich oddziałów odzwierciedlenia sieci elektroenergetycznej w systemie klasy GIS. Wypełnione danymi w procesie inwentaryzacji i paszportyzacji oraz wyposażone w narzędzia informatyczne wspierające procesy zarządzania w spółkach dystrybucyjnych. W opinii klientów firma jest sprawdzonym partnerem w realizacji skomplikowanych, zaawansowanych projektów informatycznych.
-            heading2: Oferta
-            paragraph21: "Apator Rector Sp. z o.o. oferuje rozwiązania informatyczne oparte na wieloletnim doświadczeniu oraz analizie procesów biznesowych. Produkty i usługi adresowane są do następujących obszarów działania:"
-            listItems: 
-                - zarządzanie informacją przestrzenną (GIS),
-                - zarządzanie pracami (WMS),
-                - zarządzanie pracami w terenie (MWMS),
-                - zarządzanie awariami (OMS),
-                - analityka, modelowanie i obliczenia inżynierskie sieci (NCS),
-                - zarządzanie informacją pomiarową (MDM),
-                - zarządzanie informacją o Kliencie (CIS),
-                - przyłączenie klienta do sieci dystrybucyjnej (NCC),
-                - zarządzanie obsługą Klienta (CSMS),
-                - utrzymanie dystrybucyjnej sprawności operacyjnej majątku sieciowego (CMMS),
-                - zarządzanie informacją zarządczą (MIS),
-                - zarządzanie przedsiębiorstwem (ERP).
-            paragraph22: "Po dołączeniu do Grupy Apator, firma rozszerzyła działalność na inne obszary rynkowe, w których wykorzystywane są: integracja dotychczasowej wiedzy z zakresu budowy systemu i dostarczania usług IT, z technologią i metodyką pomiarową oferowaną przez pozostałe firmy z Grupy Apator. Nowe obszary zainteresowania dotyczą rozwiązań mobilnych tworzonych w oparciu o technologie Windows i Android, umożliwiające udostępnieniu wielu funkcjonalności jednostkom klientów, pracującym w terenie. W Grupie Apator firma Apator Rector objęła rolę centrum kompetencyjnego ds. budowy i wdrażania systemów informatycznych dla klientów spółek całej Grupy."
-            heading3: Partnerzy
-            paragraph31: Podstawą strategii rozwiązań w firmie Apator Rector jest budowanie relacji z firmami, których sprzęt, oprogramowanie i usługi uzupełnią nasze własne - tworząc w ten sposób wartość dodaną.
-            heading4: Technologia
-            paragraph41: Spółka Apator Rector wykorzystuje oprogramowanie ArcGIS firmy ESRI - światowego lidera wśród dostawców platformy programowej dla systemów GIS. Nasze rozwiązania oparte są na technologii wielowarstwowej, opartej o ASP.NET, protokół SOAP oraz system zarządzania relacyjną lub obiektową bazą danych. Większość naszych aplikacji uruchamiana jest w środowisku przeglądarki stron www – bez konieczności instalowania dodatkowego oprogramowania. Usługa biznesowa (Enterprise Service) to szereg usług typu Web Service opartych na logice biznesowej, które można pobierać i wielokrotnie wykorzystywać do obsługi konkretnego procesu biznesowego. Agregacja usług Web Service w usługi biznesowe na poziomie organizacji zapewnia bardziej stabilną podstawę automatyzacji scenariuszy biznesowych obejmujących całą firmę.
-            link: www.apator.com
-            
-        metapack:
-            title: Metapack
-            paragraph11: "Od 1999 roku w MetaPack Group tworzymy i rozwijamy systemy informatyczne dla rynku eCommerce. Być może to tylko zbieg okoliczności, że w tym samym roku w “Matrixie” rodzeństwa Wachowskich Morfeusz zadał wybrańcowi Neo kluczowe pytanie o to, jaką pigułkę wybiera: czerwoną czy niebieską."
-            heading2: Klient klika „BUY”, a w tle dzieje się Matr..., tzn. MetaPack.
-            paragraph21: Analogia ta nie jest przypadkowa. Tak jak filmowy Matrix działamy w tle, ale efekty tego dalekie są od złowieszczej kinowej wizji. Tworzymy sieć połączeń, której miliony klientów na całym świecie nie widzą, ale każdego dnia doświadczają gwarantowanych przez nią korzyści, takich jak błyskawiczne dostawy, możliwość śledzenia przesyłek, odbioru w dowolnym punkcie czy bezproblemowych zwrotów.
-            paragraph22: Nasza platforma wypełnia miejsce w wirtualnej przestrzeni będące punktem łączącym potentatów rynku eCommerce z systemami setek kurierów na całym świecie. Dzięki temu, zamiast wielokrotnych skomplikowanych integracji na zasadzie “każdy z każdym”, wykonują oni jedną, z nami.
-            heading3: Zapraszamy na krótką lekcję matematyki...
-            paragraph31: W samym 2018 roku rynek eCommerce wygenerował (na podstawie danych statista.com) niemal 3 biliony $ obrotu, a my wspieramy jego największych graczy. Ponieważ rok ma 365 dni, 8760 godzin, 525.600 minut, 31.536.000 sekund, w każdej z nich do klientów na całym świecie trafiają zakupy warte niemal 90 000$.0
-            paragraph32: W MetaPacku zaś pośredniczymy w wysyłce około 600 milionów przesyłek każdego roku. Daje to ponad 1000 transakcji na minutę, dlatego najważniejsze są niezawodność i ciągłość usług. Wychodząc naprzeciw tym wyzwaniom rozwijamy systemy w chmurze, w środowiskach takich jak Amazon AWS.
-            paragraph33: Dla nas chmura to nie tylko alternatywny sposób udostępnienia infrastruktury. To możliwość wdrażania nowoczesnego „software engineering”, w którym programiści, specjaliści od automatyzacji, inżynierowie baz danych, inżynierowie DevOps korzystają z różnorodnych usług i technologii chmurowych. Mogą wówczas tworzyć wysokodostępne i wysokoskalowalne rozwiązania dla rynku eCommerce, który wkrótce zdominuje światowy handel.
-            paragraph34: "Dzięki koncentracji na rozwiązaniach chmurowych, <strong>nowoczesnych technologiach i praktykach takich jak, m.in.: continuous integration, deployment pipelines, distributed monitoring and alerting, serverless, horizontal autoscaling, event driven development, IoT, API gateways, data analytics</strong> staramy się być zawsze o krok przed konkurencją, a naszym inżynierom dajemy możliwość ciągłego rozwoju. Natomiast rozwijane przez nas nowoczesne systemy nie tylko odpowiadają na wymagania zmieniającego się rynku, ale wyznaczają nowe technologiczne trendy."
-            heading4: I geografii...
-            paragraph41: Londyn jest domem Brytyjskiej rodziny królewskiej. W Los Angeles mieszkają wizjonerzy pracujący w fabryce snów. Zielona Góra jest siedzibą czołowych polskich zespołów reprezentujących takie dyscypliny jak żużel czy koszykówka. My zaś w każdym z tych miejsc mamy swoje biura. Dołączając do nas masz większe szanse ujrzeć kiedyś Royal Baby, poczuć zapach metanolu na torze lub porównać swoje dłonie z tymi, które są odciśnięte w alei gwiazd.
-            heading5: The red or blue pill
-            paragraph51: Wybierając niebieską pigułkę, nadal będziecie cieszyć się udanymi zakupami przez Internet. Będziecie sprawiać miłe upominki sobie i swoim bliskim. Bardzo nas to cieszy, gdyż będąc jedną z sił napędowych rozwijającego się rynku eCommerce robimy to też dla Was i Waszej wygody.
-            paragraph52: "Wybierając czerwoną pigułkę, niczym filmowy Neo przebudzicie się i poznacie ukrytą, wirtualną rzeczywistość, która wpływa na realny świat. Gwarantujemy jednak, że wizja ta jest zdecydowanie bardziej radosna niż ta, która zrodziła się w głowach twórców “Matrixa”. Zapraszamy do śledzenia:"
-            paragraph53: przede wszystkim zaś do wizyty na naszym stoisku na Greenfield. Szukamy najlepszych ze świata IT, ale również utalentowanych osób spoza branży, których entuzjazm i nowe pomysły często pozwalają nam złapać dodatkowy wiatr w żagle. Wsiadajcie na pokład. To będzie niezapomniany rejs!
-            list: 
-                - text: "- naszej strony:"
-                  link: http://www.metapack.com/
-                - text: "- naszego profilu na FB:"   
-                  link: https://www.facebook.com/metapackpolska/
-    en:
-        subheading: They trusted us
-        heading: Partners
-        paragraph: Our conference is organized for charity, for that, we need conference partners witch are necessary because without them event would be never possible to organize. Many thanks!
-        title_diamond: Diamond partners
-        title_gold: Gold partners
-        title_honor: Patronat honorowy
-        title_media: Patroni medialni
-        diamond_btn: Read about partner
         apator:
             title: Apator Rector
             paragraph11: Spółka Apator Rector jest obecna na polskim rynku produkcji oprogramowania od 1994 roku. Od początku swojej działalności związana jest nierozerwalnie z technologią GIS. Flagowymi produktami są systemy służące do wspomagania zarządzania majątkiem sieciowym oferowane na rynku utilities, telekomunikacyjnym, administracji publicznej i samorządowej. W 2008 roku 70 proc. udziałów w spółce kupiła spółka Apator S. A., realizując strategię przygotowań do uczestnictwa w rynku Smart Metering. W 2014 r. spółka Apator S. A. kupiła pozostałe 30 % udziałów Apator Rector Sp z o.o. stając się jej jedynym właścicielem. Dzisiaj Apator Rector Sp. z o.o. to firma zatrudniająca 150 pracowników.
@@ -322,9 +265,65 @@ partners:
             paragraph51: Wybierając niebieską pigułkę, nadal będziecie cieszyć się udanymi zakupami przez Internet. Będziecie sprawiać miłe upominki sobie i swoim bliskim. Bardzo nas to cieszy, gdyż będąc jedną z sił napędowych rozwijającego się rynku eCommerce robimy to też dla Was i Waszej wygody.
             paragraph52: "Wybierając czerwoną pigułkę, niczym filmowy Neo przebudzicie się i poznacie ukrytą, wirtualną rzeczywistość, która wpływa na realny świat. Gwarantujemy jednak, że wizja ta jest zdecydowanie bardziej radosna niż ta, która zrodziła się w głowach twórców “Matrixa”. Zapraszamy do śledzenia:"
             paragraph53: przede wszystkim zaś do wizyty na naszym stoisku na Greenfield. Szukamy najlepszych ze świata IT, ale również utalentowanych osób spoza branży, których entuzjazm i nowe pomysły często pozwalają nam złapać dodatkowy wiatr w żagle. Wsiadajcie na pokład. To będzie niezapomniany rejs!
-            list: 
+            list:
                 - text: "- naszej strony:"
                   link: http://www.metapack.com/
-                - text: "- naszego profilu na FB:"   
+                - text: "- naszego profilu na FB:"
                   link: https://www.facebook.com/metapackpolska/
-            
+    en:
+        subheading: They trusted us
+        heading: Partners
+        paragraph: Our conference is organized for charity, for that, we need conference partners witch are necessary because without them event would be never possible to organize. Many thanks!
+        title_diamond: Diamond partners
+        title_gold: Gold partners
+        title_honor: Patronat honorowy
+        title_media: Patroni medialni
+        diamond_btn: Read about partner
+        apator:
+            title: Apator Rector
+            paragraph11: Spółka Apator Rector jest obecna na polskim rynku produkcji oprogramowania od 1994 roku. Od początku swojej działalności związana jest nierozerwalnie z technologią GIS. Flagowymi produktami są systemy służące do wspomagania zarządzania majątkiem sieciowym oferowane na rynku utilities, telekomunikacyjnym, administracji publicznej i samorządowej. W 2008 roku 70 proc. udziałów w spółce kupiła spółka Apator S. A., realizując strategię przygotowań do uczestnictwa w rynku Smart Metering. W 2014 r. spółka Apator S. A. kupiła pozostałe 30 % udziałów Apator Rector Sp z o.o. stając się jej jedynym właścicielem. Dzisiaj Apator Rector Sp. z o.o. to firma zatrudniająca 150 pracowników.
+            paragraph12: Firma Apator Rector Sp. z o.o. zrealizowała z sukcesem wdrożenie centralnych systemów dla dwóch kluczowych operatorów systemów dystrybucyjnych energii elektrycznej na rynku krajowym, tj. Energa Operator S. A. oraz Tauron Dystrybucja S.A. W wyniku wdrożenia projektów powstały kompletne i jednolite dla wszystkich oddziałów odzwierciedlenia sieci elektroenergetycznej w systemie klasy GIS. Wypełnione danymi w procesie inwentaryzacji i paszportyzacji oraz wyposażone w narzędzia informatyczne wspierające procesy zarządzania w spółkach dystrybucyjnych. W opinii klientów firma jest sprawdzonym partnerem w realizacji skomplikowanych, zaawansowanych projektów informatycznych.
+            heading2: Oferta
+            paragraph21: "Apator Rector Sp. z o.o. oferuje rozwiązania informatyczne oparte na wieloletnim doświadczeniu oraz analizie procesów biznesowych. Produkty i usługi adresowane są do następujących obszarów działania:"
+            listItems:
+                - zarządzanie informacją przestrzenną (GIS),
+                - zarządzanie pracami (WMS),
+                - zarządzanie pracami w terenie (MWMS),
+                - zarządzanie awariami (OMS),
+                - analityka, modelowanie i obliczenia inżynierskie sieci (NCS),
+                - zarządzanie informacją pomiarową (MDM),
+                - zarządzanie informacją o Kliencie (CIS),
+                - przyłączenie klienta do sieci dystrybucyjnej (NCC),
+                - zarządzanie obsługą Klienta (CSMS),
+                - utrzymanie dystrybucyjnej sprawności operacyjnej majątku sieciowego (CMMS),
+                - zarządzanie informacją zarządczą (MIS),
+                - zarządzanie przedsiębiorstwem (ERP).
+            paragraph22: "Po dołączeniu do Grupy Apator, firma rozszerzyła działalność na inne obszary rynkowe, w których wykorzystywane są: integracja dotychczasowej wiedzy z zakresu budowy systemu i dostarczania usług IT, z technologią i metodyką pomiarową oferowaną przez pozostałe firmy z Grupy Apator. Nowe obszary zainteresowania dotyczą rozwiązań mobilnych tworzonych w oparciu o technologie Windows i Android, umożliwiające udostępnieniu wielu funkcjonalności jednostkom klientów, pracującym w terenie. W Grupie Apator firma Apator Rector objęła rolę centrum kompetencyjnego ds. budowy i wdrażania systemów informatycznych dla klientów spółek całej Grupy."
+            heading3: Partnerzy
+            paragraph31: Podstawą strategii rozwiązań w firmie Apator Rector jest budowanie relacji z firmami, których sprzęt, oprogramowanie i usługi uzupełnią nasze własne - tworząc w ten sposób wartość dodaną.
+            heading4: Technologia
+            paragraph41: Spółka Apator Rector wykorzystuje oprogramowanie ArcGIS firmy ESRI - światowego lidera wśród dostawców platformy programowej dla systemów GIS. Nasze rozwiązania oparte są na technologii wielowarstwowej, opartej o ASP.NET, protokół SOAP oraz system zarządzania relacyjną lub obiektową bazą danych. Większość naszych aplikacji uruchamiana jest w środowisku przeglądarki stron www – bez konieczności instalowania dodatkowego oprogramowania. Usługa biznesowa (Enterprise Service) to szereg usług typu Web Service opartych na logice biznesowej, które można pobierać i wielokrotnie wykorzystywać do obsługi konkretnego procesu biznesowego. Agregacja usług Web Service w usługi biznesowe na poziomie organizacji zapewnia bardziej stabilną podstawę automatyzacji scenariuszy biznesowych obejmujących całą firmę.
+            link: www.apator.com
+
+        metapack:
+            title: Metapack
+            paragraph11: "Od 1999 roku w MetaPack Group tworzymy i rozwijamy systemy informatyczne dla rynku eCommerce. Być może to tylko zbieg okoliczności, że w tym samym roku w “Matrixie” rodzeństwa Wachowskich Morfeusz zadał wybrańcowi Neo kluczowe pytanie o to, jaką pigułkę wybiera: czerwoną czy niebieską."
+            heading2: Klient klika „BUY”, a w tle dzieje się Matr..., tzn. MetaPack.
+            paragraph21: Analogia ta nie jest przypadkowa. Tak jak filmowy Matrix działamy w tle, ale efekty tego dalekie są od złowieszczej kinowej wizji. Tworzymy sieć połączeń, której miliony klientów na całym świecie nie widzą, ale każdego dnia doświadczają gwarantowanych przez nią korzyści, takich jak błyskawiczne dostawy, możliwość śledzenia przesyłek, odbioru w dowolnym punkcie czy bezproblemowych zwrotów.
+            paragraph22: Nasza platforma wypełnia miejsce w wirtualnej przestrzeni będące punktem łączącym potentatów rynku eCommerce z systemami setek kurierów na całym świecie. Dzięki temu, zamiast wielokrotnych skomplikowanych integracji na zasadzie “każdy z każdym”, wykonują oni jedną, z nami.
+            heading3: Zapraszamy na krótką lekcję matematyki...
+            paragraph31: W samym 2018 roku rynek eCommerce wygenerował (na podstawie danych statista.com) niemal 3 biliony $ obrotu, a my wspieramy jego największych graczy. Ponieważ rok ma 365 dni, 8760 godzin, 525.600 minut, 31.536.000 sekund, w każdej z nich do klientów na całym świecie trafiają zakupy warte niemal 90 000$.0
+            paragraph32: W MetaPacku zaś pośredniczymy w wysyłce około 600 milionów przesyłek każdego roku. Daje to ponad 1000 transakcji na minutę, dlatego najważniejsze są niezawodność i ciągłość usług. Wychodząc naprzeciw tym wyzwaniom rozwijamy systemy w chmurze, w środowiskach takich jak Amazon AWS.
+            paragraph33: Dla nas chmura to nie tylko alternatywny sposób udostępnienia infrastruktury. To możliwość wdrażania nowoczesnego „software engineering”, w którym programiści, specjaliści od automatyzacji, inżynierowie baz danych, inżynierowie DevOps korzystają z różnorodnych usług i technologii chmurowych. Mogą wówczas tworzyć wysokodostępne i wysokoskalowalne rozwiązania dla rynku eCommerce, który wkrótce zdominuje światowy handel.
+            paragraph34: "Dzięki koncentracji na rozwiązaniach chmurowych, <strong>nowoczesnych technologiach i praktykach takich jak, m.in.: continuous integration, deployment pipelines, distributed monitoring and alerting, serverless, horizontal autoscaling, event driven development, IoT, API gateways, data analytics</strong> staramy się być zawsze o krok przed konkurencją, a naszym inżynierom dajemy możliwość ciągłego rozwoju. Natomiast rozwijane przez nas nowoczesne systemy nie tylko odpowiadają na wymagania zmieniającego się rynku, ale wyznaczają nowe technologiczne trendy."
+            heading4: I geografii...
+            paragraph41: Londyn jest domem Brytyjskiej rodziny królewskiej. W Los Angeles mieszkają wizjonerzy pracujący w fabryce snów. Zielona Góra jest siedzibą czołowych polskich zespołów reprezentujących takie dyscypliny jak żużel czy koszykówka. My zaś w każdym z tych miejsc mamy swoje biura. Dołączając do nas masz większe szanse ujrzeć kiedyś Royal Baby, poczuć zapach metanolu na torze lub porównać swoje dłonie z tymi, które są odciśnięte w alei gwiazd.
+            heading5: The red or blue pill
+            paragraph51: Wybierając niebieską pigułkę, nadal będziecie cieszyć się udanymi zakupami przez Internet. Będziecie sprawiać miłe upominki sobie i swoim bliskim. Bardzo nas to cieszy, gdyż będąc jedną z sił napędowych rozwijającego się rynku eCommerce robimy to też dla Was i Waszej wygody.
+            paragraph52: "Wybierając czerwoną pigułkę, niczym filmowy Neo przebudzicie się i poznacie ukrytą, wirtualną rzeczywistość, która wpływa na realny świat. Gwarantujemy jednak, że wizja ta jest zdecydowanie bardziej radosna niż ta, która zrodziła się w głowach twórców “Matrixa”. Zapraszamy do śledzenia:"
+            paragraph53: przede wszystkim zaś do wizyty na naszym stoisku na Greenfield. Szukamy najlepszych ze świata IT, ale również utalentowanych osób spoza branży, których entuzjazm i nowe pomysły często pozwalają nam złapać dodatkowy wiatr w żagle. Wsiadajcie na pokład. To będzie niezapomniany rejs!
+            list:
+                - text: "- naszej strony:"
+                  link: http://www.metapack.com/
+                - text: "- naszego profilu na FB:"
+                  link: https://www.facebook.com/metapackpolska/
