@@ -64,11 +64,11 @@ index:
         charity_section_contact_action_text: We're a non-profit organization
         charity_section_contact_action_url: /contact
 
-        tickets_section_subtitle: Wszystkich biletów jest tylko 300
-        tickets_section_title: Kup bilet już teraz!
-        tickets_section_lead1: Dochód z biletów
-        tickets_section_lead2: przeznaczamy na cele charytatywne
-        tickets_section_buy_btn_text: Kupuję!
+        tickets_section_subtitle: There are only 400 tickets
+        tickets_section_title: Buy ticket!
+        tickets_section_lead1: Ticket fees will be donated to
+        tickets_section_lead2: charity in 50% and other 50% goes to the conference.
+        tickets_section_buy_btn_text: Buy ticket!
 
         newsletter_section_title1: Stay in touch!
         newsletter_section_title2: Subscribe to the <br class="d-lg-none" /> newsletter
@@ -94,18 +94,18 @@ index:
         lastyear_section_youtube_action_text: Prelekcje
 
         charity_section_title1: Dochód z biletów przeznaczamy
-        charity_section_title2: Na cele charytatywne
+        charity_section_title2: w 50% na cele charytatywne, w 50% na konferencję.
         charity_section_text: Działamy non-profit. Kupując bilet decydujesz komu pomóc. Dotychczas uzbieraliśmy
         charity_section_price: 21 351,02 PLN
         charity_section_contact_action_text: Działamy non-profit
         charity_section_contact_action_url: /pl/kontakt
 
-        tickets_section_subtitle: Wszystkich biletów jest tylko 300
+        tickets_section_subtitle: Wszystkich biletów jest tylko 400
         tickets_section_title: Kup bilet już teraz!
         tickets_section_lead1: Dochód z biletów
         tickets_section_lead2: przeznaczamy na cele charytatywne
         tickets_section_buy_btn_text: Kupuję!
-     
+
         newsletter_section_title1: Trzymaj rękę na pulsie
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
         newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
