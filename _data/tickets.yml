@@ -5,7 +5,7 @@ pl:
         - 'Smaczny lunch'
         - 'Fajny  Welcome pack'
         - 'Wstęp na After Party'
-    price: '80 PLN'
+    price: '99 PLN'
     info: 'Dostępny 1 mar - 30 kwi 2020 lub do wyczerpania zapasów'
     button: true
 
@@ -15,7 +15,7 @@ pl:
         - 'Smaczny lunch'
         - 'Fajny  Welcome pack'
         - 'Wstęp na After Party'
-    price: '120 PLN'
+    price: '149 PLN'
     info: 'Dostępny 1 mar - 30 kwi 2020 lub do wyczerpania zapasów'
     button: false
 
@@ -25,7 +25,7 @@ pl:
         - 'Smaczny lunch'
         - 'Fajny  Welcome pack'
         - 'Wstęp na After Party'
-    price: '180 PLN'
+    price: '199 PLN'
     info: 'Dostępny 1 - 29 maj 2020 lub do wyczerpania zapasów'
     button: false
 
@@ -36,7 +36,7 @@ pl:
         - 'Fajny  Welcome pack'
         - 'Wstęp na After Party'
         - 'Przybajerzona plakietka'
-    price: '300 PLN'
+    price: '299 PLN'
     info: 'Dostępny 1 sty - 29 maj 2020 lub do wyczerpania zapasów'
     button: true
 en:
