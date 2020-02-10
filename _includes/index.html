@@ -258,15 +258,26 @@
 
                     <div class="d-flex flex-column price">
                         {% if ticket.button %}
+                            {% if ticket.button_enabled %}
                         <a 
                             href="https://GreenfieldConf.abilet.pl" 
-                            class="btn secondary align-self-start mb-40"
-                            target="_blank"
+                            class="btn secondary align-self-start mb-40"                            
+                            target="_blank"                            
                         >
                             {{ include.t.tickets_section_buy_btn_text }}
                         </a>
+                            {% else %}
+                            <a 
+                            style="pointer-events: none;"
+                            class="btn secondary align-self-start mb-40">
+                                {{ include.t.tickets_section_buy_btn_text }}
+                            </a>
+                            {% endif %}
                     {% endif %}
                     </div>
+                    {% if ticket.button == true and ticket.button_enabled != true %}
+                        {{ ticket.additional_info }}
+                    {% endif %}
                 </div>
         </div>
         {% endfor %}

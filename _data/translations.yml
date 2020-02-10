@@ -14,6 +14,7 @@ global:
             text: Privacy Policy
         all_rights_reserved: Greenfield Conference - all rights reserved.
         button_buy: Buy ticket
+        buy_tickets: /#tickets
         partners:
             url: /partners
         apator_url: /partners/apator-rector
@@ -33,6 +34,7 @@ global:
             text: Polityka prywatności
         all_rights_reserved: Greenfield Conference - wszelkie prawa zastrzeżone.
         button_buy: Kup bilet
+        buy_tickets: /pl/#tickets
         partners:
             url: /pl/partnerzy
         apator_url: /pl/partnerzy/apator-rector

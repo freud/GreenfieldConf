@@ -7,6 +7,8 @@ pl:
         - 'Wstęp na After Party'
     price: '99 PLN'
     button: true
+    button_enabled : false
+    additional_info: Dostępne wkrótce
 
   - name: 'Early bird'
     features: 
@@ -16,6 +18,8 @@ pl:
         - 'Wstęp na After Party'
     price: '149 PLN'
     button: false
+    button_enabled : false
+    additional_info: Dostępne wkrótce
 
   - name: 'Regular'
     features: 
@@ -25,6 +29,8 @@ pl:
         - 'Wstęp na After Party'
     price: '199 PLN'
     button: false
+    button_enabled : false
+    additional_info: Dostępne wkrótce
 
   - name: 'VIP'
     features: 
@@ -35,6 +41,9 @@ pl:
         - 'Przybajerzona plakietka'
     price: '299 PLN'
     button: true
+    button_enabled : false
+    additional_info: Dostępne wkrótce
+
 en:
   - name: 'Blind bird'
     features: 
@@ -44,6 +53,8 @@ en:
         - 'Admission to the after party'
     price: '99 PLN'
     button: true
+    button_enabled : false
+    additional_info: Available soon
 
   - name: 'Early bird'
     features: 
@@ -53,6 +64,8 @@ en:
         - 'Admission to the after party'
     price: '149 PLN'
     button: false
+    button_enabled : false
+    additional_info: Available soon
 
   - name: 'Regular'
     features: 
@@ -62,6 +75,8 @@ en:
         - 'Admission to the after party'
     price: '199 PLN'
     button: false
+    button_enabled : false
+    additional_info: Available soon
 
   - name: 'VIP'
     features: 
@@ -72,3 +87,6 @@ en:
         - 'Funky badge'
     price: '299 PLN'
     button: true
+    button_enabled : false
+    additional_info: Available soon
+    
