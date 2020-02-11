@@ -20,7 +20,7 @@ RewriteRule ^(.*)$ /$1.html
 # Add trailing slash to directories within jekyll
 # This does not expose the internal URL.
 RewriteCond %{SCRIPT_FILENAME} -d
-RewriteRule ^/(.*[^/])$ http://2020.greenfieldconf.pl/$1/ [R=301]
+RewriteRule ^/(.*[^/])$ https://greenfieldconf.pl/$1/ [R=301]
 </IfModule>
 # END Jekyll redirect
 
