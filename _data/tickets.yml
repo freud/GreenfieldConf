@@ -7,7 +7,7 @@ pl:
         - 'Wstęp na After Party'
     price: '99 PLN'
     button: true
-    button_enabled : false
+    button_enabled : true
     additional_info: Dostępne wkrótce
 
   - name: 'Early bird'
@@ -41,7 +41,7 @@ pl:
         - 'Przybajerzona plakietka'
     price: '299 PLN'
     button: true
-    button_enabled : false
+    button_enabled : true
     additional_info: Dostępne wkrótce
 
 en:
@@ -53,7 +53,7 @@ en:
         - 'Admission to the after party'
     price: '99 PLN'
     button: true
-    button_enabled : false
+    button_enabled : true
     additional_info: Available soon
 
   - name: 'Early bird'
@@ -87,6 +87,6 @@ en:
         - 'Funky badge'
     price: '299 PLN'
     button: true
-    button_enabled : false
+    button_enabled : true
     additional_info: Available soon
     
