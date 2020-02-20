@@ -275,8 +275,12 @@
                             {% endif %}
                     {% endif %}
                     </div>
-                    {% if ticket.button == true and ticket.button_enabled != true %}
-                        {{ ticket.additional_info }}
+                    {% if ticket.sold_out == true %}
+                        <p class="sold-out-notice">
+                            {{ include.t.tickets_sold_out }}
+                        </p>
+                    {% elsif ticket.button == false %}
+                        <p>{{ ticket.additional_info }}</p>
                     {% endif %}
                 </div>
         </div>

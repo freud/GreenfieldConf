@@ -71,6 +71,7 @@ index:
         tickets_section_lead1: Ticket fees will be donated to
         tickets_section_lead2: charity in 50% and other 50% goes to the conference.
         tickets_section_buy_btn_text: Buy ticket!
+        tickets_sold_out: Sold out!
 
         newsletter_section_title1: Stay in touch!
         newsletter_section_title2: Subscribe to the <br class="d-lg-none" /> newsletter
@@ -107,6 +108,7 @@ index:
         tickets_section_lead1: Dochód z biletów
         tickets_section_lead2: przeznaczamy na cele charytatywne
         tickets_section_buy_btn_text: Kupuję!
+        tickets_sold_out: Wyprzedane!
 
         newsletter_section_title1: Trzymaj rękę na pulsie
         newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera

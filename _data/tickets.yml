@@ -6,8 +6,9 @@ pl:
         - 'Fajny welcome pack'
         - 'Wstęp na After Party'
     price: '99 PLN'
-    button: true
-    button_enabled : true
+    button: false
+    button_enabled : false
+    sold_out: true
     additional_info: Dostępne wkrótce
 
   - name: 'Early bird'
@@ -19,6 +20,7 @@ pl:
     price: '149 PLN'
     button: false
     button_enabled : false
+    sold_out: false
     additional_info: Dostępne wkrótce
 
   - name: 'Regular'
@@ -30,6 +32,7 @@ pl:
     price: '199 PLN'
     button: false
     button_enabled : false
+    sold_out: false
     additional_info: Dostępne wkrótce
 
   - name: 'VIP'
@@ -42,6 +45,7 @@ pl:
     price: '299 PLN'
     button: true
     button_enabled : true
+    sold_out: false
     additional_info: Dostępne wkrótce
 
 en:
@@ -52,8 +56,9 @@ en:
         - 'Cool welcome pack'
         - 'Admission to the after party'
     price: '99 PLN'
-    button: true
-    button_enabled : true
+    button: false
+    button_enabled : false
+    sold_out: true
     additional_info: Available soon
 
   - name: 'Early bird'
@@ -65,6 +70,7 @@ en:
     price: '149 PLN'
     button: false
     button_enabled : false
+    sold_out: false
     additional_info: Available soon
 
   - name: 'Regular'
@@ -76,6 +82,7 @@ en:
     price: '199 PLN'
     button: false
     button_enabled : false
+    sold_out: false
     additional_info: Available soon
 
   - name: 'VIP'
@@ -88,5 +95,6 @@ en:
     price: '299 PLN'
     button: true
     button_enabled : true
+    sold_out: false
     additional_info: Available soon
     
