@@ -18,8 +18,8 @@ pl:
         - 'Fajny Welcome pack'
         - 'Wstęp na After Party'
     price: '149 PLN'
-    button: false
-    button_enabled : false
+    button: true
+    button_enabled : true
     sold_out: false
     additional_info: Dostępne wkrótce
 
@@ -68,8 +68,8 @@ en:
         - 'Cool Welcome Pack'
         - 'Admission to the after party'
     price: '149 PLN'
-    button: false
-    button_enabled : false
+    button: true
+    button_enabled : true
     sold_out: false
     additional_info: Available soon
 
