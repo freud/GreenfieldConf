@@ -7,7 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -24,10 +23,10 @@ jobs:
           name: site
           path: ./_deploy
 
-      - name: Copy over FTP
+      - name: Copy to FTP
         uses: sebastianpopp/git-ftp-action@releases/v2
         with: 
-          url: "ftp://ftp.greenfieldconf.pl"
+          url: "ftp://s1.hostpark.pl:21"
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PWD }}
           syncroot: ./_deploy
