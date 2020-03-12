@@ -1,4 +1,4 @@
-name: Publish to prod
+name: Deploy to prod
 
 on:
   push:
@@ -17,6 +17,12 @@ jobs:
         with:
           source: ./
           destination: ./_deploy
+          
+      - name: Upload math result for job 2
+        uses: actions/upload-artifact@v1
+        with:
+          name: site
+          path: ./_deploy
 
       - name: Copy over FTP
         uses: sebastianpopp/git-ftp-action@releases/v2
