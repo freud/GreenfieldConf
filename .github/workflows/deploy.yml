@@ -1,0 +1,33 @@
+name: Deploy to prod
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+
+      - name: Build site
+        uses: gha-utilities/jekyll-build@v0.0.2
+        with:
+          source: ./
+          destination: ./_deploy
+          
+      - name: Upload math result for job 2
+        uses: actions/upload-artifact@v1
+        with:
+          name: site
+          path: ./_deploy
+
+      - name: Copy over FTP
+        uses: sebastianpopp/git-ftp-action@releases/v2
+        with: 
+          url: "ftp://ftp.greenfieldconf.pl"
+          user: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PWD }}
+          syncroot: ./_deploy
