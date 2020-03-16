@@ -17,27 +17,19 @@ jobs:
           source: .
           destination: ./deploy
           
-      - name: Path
-        run: |
-          ls -lR
-          
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
           name: site
           path: ./deploy
 
-      - name: Path
-        run: |
-          ls -lR
-
       - name: Copy to FTP
-        uses: sebastianpopp/git-ftp-action@releases/v2
+        uses: sebastianpopp/git-ftp-action@releases/v3
         with: 
           url: "ftp://s1.hostpark.pl:21/greenfieldconf.pl-new"
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PWD }}
-          syncroot: deploy
+          syncroot: ./deploy
           
       - name: Purge CloudFlare cache
         uses: jakejarvis/cloudflare-purge-action@master
