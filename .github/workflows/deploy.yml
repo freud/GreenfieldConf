@@ -30,7 +30,7 @@ jobs:
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PWD }}
           localDir: ./deploy
-          remoteDir: greenfieldconf.pl-new 
+          remoteDir: greenfieldconf.pl/public_html
           
       - name: Purge CloudFlare cache
         uses: jakejarvis/cloudflare-purge-action@master
