@@ -24,12 +24,13 @@ jobs:
           path: ./deploy
 
       - name: Copy to FTP
-        uses: sebastianpopp/git-ftp-action@releases/v3
+        uses: sebastianpopp/ftp-action@releases/v2
         with: 
-          url: "ftp://s1.hostpark.pl:21/greenfieldconf.pl-new"
+          host: "ftp://s1.hostpark.pl:21"
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PWD }}
-          syncroot: ./deploy
+          localDir: ./deploy
+          remoteDir: greenfieldconf.pl-new 
           
       - name: Purge CloudFlare cache
         uses: jakejarvis/cloudflare-purge-action@master
