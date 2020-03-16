@@ -14,19 +14,24 @@ jobs:
       - name: Build site
         uses: gha-utilities/jekyll-build@v0.0.2
         with:
-          source: ./
-          destination: ./_deploy
+          source: .
+          destination: .
           
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
           name: site
-          path: ./_deploy
+          path: .
 
       - name: Copy to FTP
         uses: sebastianpopp/git-ftp-action@releases/v2
         with: 
-          url: "ftp://s1.hostpark.pl:21"
+          url: "ftp://s1.hostpark.pl:21/greenfieldconf.pl-new"
           user: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PWD }}
-          syncroot: ./_deploy
+          
+      - name: Purge CloudFlare cache
+        uses: jakejarvis/cloudflare-purge-action@master
+        env:
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
