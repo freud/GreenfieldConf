@@ -39,7 +39,7 @@ jobs:
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
           
           
-      - name: Slack Notification
+      - name: Send Slack notification
         uses: rtCamp/action-slack-notify@v2.0.0
         env:
           SLACK_MESSAGE: 'Greenfieldconf www deployed :rocket:'
