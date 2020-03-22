@@ -41,6 +41,10 @@ global:
         metapack_url: /pl/partnerzy/metapack
 index:
     en:
+        button_covid19_info: Read about covid
+        covid19_alert: This year's edition is <span class="important">cancelled</span> due to the coronavirus alert
+        stayathome_tag: '#stayathome'
+        
         date: 30 May 2020
         city: Zielona Góra
         tickets_soon: Tickets soon
@@ -78,6 +82,10 @@ index:
         newsletter_section_text: Tickets sold out instantaneously in recent years. Don't hesitate!
         newsletter_section_action_text: Subscribe
     pl:
+        button_covid19_info: Przeczytaj o covid
+        covid19_alert: Tegoroczna edycja została <span class="important">odwołana</span> z uwagi na ostrzeżenie dotyczące coronavirusa
+        stayathome_tag: '#zostanwdomu'
+
         date: 30 maj 2020
         city: Zielona Góra
         tickets_soon: Bilety już wkrótce
