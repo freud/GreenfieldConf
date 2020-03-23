@@ -19,8 +19,8 @@
             </p>
             <a
                 class="btn primary scroll-trigger" 
-                aria-label="{{include.t.button_buy}}"
-                href="/covid"
+                aria-label="{{include.t.button_covid19_info}}"
+                href="/covid-19"
                 data-scroll
             >
                  {{ include.t.button_covid19_info }}
@@ -287,24 +287,4 @@
     </div>
 </section>
 
-<section class="section section-frame container px-16 anim-wrapper mt-0 mt-md-64">
-    <div class="frame frame-center">
-        {% include frame.html %}
-    </div>
-    <div class="row justify-content-center">
-        <div class="col col-md-8 col-lg-7 col-xl-6 text-center">
-            <p class="mb-8">
-                {{include.t.newsletter_section_title1}}
-            </p>
-            <h3 class="h2">
-                {{include.t.newsletter_section_title2}}
-            </h3>
-            <p class="mb-40">
-                {{include.t.newsletter_section_text}}
-            </p>
-            <button class="btn primary btn-signup" aria-label="Subskrybuj">
-                {{include.t.newsletter_section_action_text}}
-            </button>
-        </div>
-    </div>
-</section>
+{% include newsletter.html %}

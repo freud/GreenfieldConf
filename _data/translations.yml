@@ -19,6 +19,12 @@ global:
             url: /partners
         apator_url: /partners/apator-rector
         metapack_url: /partners/metapack
+
+        newsletter_section_title1: Stay in touch!
+        newsletter_section_title2: Subscribe to the <br class="d-lg-none" /> newsletter
+        newsletter_section_text: Tickets sold out instantaneously in recent years. Don't hesitate!
+        newsletter_section_action_text: Subscribe
+
     pl:
         contact:
             url: /pl/kontakt
@@ -39,9 +45,15 @@ global:
             url: /pl/partnerzy
         apator_url: /pl/partnerzy/apator-rector
         metapack_url: /pl/partnerzy/metapack
+
+        newsletter_section_title1: Trzymaj rękę na pulsie
+        newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
+        newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
+        newsletter_section_action_text: Subskrybuj
+
 index:
     en:
-        button_covid19_info: Read about covid
+        button_covid19_info: Read about COVID-19
         covid19_alert: This year's edition is <span class="important">cancelled</span> due to the coronavirus alert
         stayathome_tag: '#stayathome'
         
@@ -77,12 +89,8 @@ index:
         tickets_section_buy_btn_text: Buy ticket!
         tickets_sold_out: Sold out!
 
-        newsletter_section_title1: Stay in touch!
-        newsletter_section_title2: Subscribe to the <br class="d-lg-none" /> newsletter
-        newsletter_section_text: Tickets sold out instantaneously in recent years. Don't hesitate!
-        newsletter_section_action_text: Subscribe
     pl:
-        button_covid19_info: Przeczytaj o covid
+        button_covid19_info: Przeczytaj o COVID-19
         covid19_alert: Tegoroczna edycja została <span class="important">odwołana</span> z uwagi na ostrzeżenie dotyczące coronavirusa
         stayathome_tag: '#zostanwdomu'
 
@@ -118,10 +126,6 @@ index:
         tickets_section_buy_btn_text: Kupuję!
         tickets_sold_out: Wyprzedane!
 
-        newsletter_section_title1: Trzymaj rękę na pulsie
-        newsletter_section_title2: Zapisz się do <br class="d-lg-none" /> newslettera
-        newsletter_section_text: Bilety na zeszłoroczne konferencje wyprzedały się błyskawicznie. Nie daj się zaskoczyć! Nie spamujemy - w każdej chwili możesz się wypisać.
-        newsletter_section_action_text: Subskrybuj
 contact:
     en:
         intouch: In Touch!
@@ -341,3 +345,25 @@ partners:
                   link: http://www.metapack.com/
                 - text: "- naszego profilu na FB:"
                   link: https://www.facebook.com/metapackpolska/
+covid-19:
+    en:
+        stayathome_tag: '#stayathome'
+        covid19_alert: Coronavirus alert
+        covid19_alert_desc: This year's edition is <span class="important">cancelled</span> due to the coronavirus alert
+
+        content_covid19_pt_1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tempor mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        content_covid19_pt_2: Praesent elementum sollicitudin tincidunt. Ut non nisl consectetur, maximus mi nec, rutrum sem. Fusce fringilla commodo enim, a cursus massa ullamcorper vel.
+        content_covid19_pt_3: Proin in tincidunt ex. In cursus, massa sed auctor venenatis, nunc neque tristique elit, a posuere lacus erat sed tortor. Donec vel semper purus, id efficitur sem.
+        content_covid19_pt_4: Curabitur vel ullamcorper nunc. Fusce consectetur vel nisi sed dignissim. Sed vitae lobortis justo. Ut porttitor pellentesque libero, sit amet eleifend magna convallis pharetra.
+        content_covid19_pt_5: Proin vel dignissim leo. Morbi sollicitudin varius tellus eu tempor. Vivamus at erat scelerisque, tincidunt turpis nec, dignissim tellus. 
+
+    pl:
+        stayathome_tag: '#zostanwdomu'
+        covid19_alert: Ostrzeżenie dot. Coronavirusa
+        covid19_alert_desc: Tegoroczna edycja została <span class="important">odwołana</span> z uwagi na ostrzeżenie dotyczące coronavirusa
+
+        content_covid19_pt_1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tempor mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        content_covid19_pt_2: Praesent elementum sollicitudin tincidunt. Ut non nisl consectetur, maximus mi nec, rutrum sem. Fusce fringilla commodo enim, a cursus massa ullamcorper vel.
+        content_covid19_pt_3: Proin in tincidunt ex. In cursus, massa sed auctor venenatis, nunc neque tristique elit, a posuere lacus erat sed tortor. Donec vel semper purus, id efficitur sem.
+        content_covid19_pt_4: Curabitur vel ullamcorper nunc. Fusce consectetur vel nisi sed dignissim. Sed vitae lobortis justo. Ut porttitor pellentesque libero, sit amet eleifend magna convallis pharetra.
+        content_covid19_pt_5: Proin vel dignissim leo. Morbi sollicitudin varius tellus eu tempor. Vivamus at erat scelerisque, tincidunt turpis nec, dignissim tellus. 
