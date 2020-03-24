@@ -356,21 +356,21 @@ covid-19:
         covid19_alert_desc: This year's edition is <span class="important">cancelled</span> due to the coronavirus alert
 
         content_covid19_line1: Hi
-        content_covid19_line2: W związku z pandemią choroby COVID-19 <b>odwołujemy tegoroczną edycję konferencji.</b>
-        content_covid19_line3: To była trudna decyzja i mamy nadzieję, że rozumiesz dlaczego musieliśmy tak postąpić. Wiele osób w jednym miejscu stwarza zagrożenie dla wszystkich uczestników, jak również osób, z którymi mają kontakt po konferencji. Bezpieczeństwo jest najważniejsze.
-        content_covid19_line4: Przepraszamy za zaistniałą sytuację i mamy nadzieję, że pomimo tego spotkamy się za rok.
-        content_covid19_line5: Szczególne podziękowania należą się wszystkim partnerom, którzy podjęli decyzję o wzięciu udziału w tegorocznej edycji. Wnoszą wiele dobrego do środowiska IT i w dużej mierze to właśnie dzięki nim tak duże wydarzenie jest możliwe.
-        content_covid19_line6: 'Serdecznie dziękujemy <b>Partnerom Diamentowym:</b>'
+        content_covid19_line2: Due to the COVID-19 disease pandemic, we <b>cancelled this year's conference.</b>
+        content_covid19_line3: It was a difficult decision and we hope you understand why we had to do it. Many people in one place pose a threat to all participants, as well as people with whom they have contact after the conference. Safety is the most important thing.
+        content_covid19_line4: We apologize for the situation and hope that we will meet again next year.
+        content_covid19_line5: Special thanks go to all partners who have decided to take part in this year's edition. They bring a lot of good to the IT environment and it is thanks to them that such a large event is possible.
+        content_covid19_line6: 'Thank you <b>Diamond Partners:</b>'
         content_covid19_pt_1: Metapack,
         content_covid19_pt_2: Apator Rector,
         content_covid19_pt_3: Ekoenergetyka,
-        content_covid19_line7: 'jak również Partnerom Złotym: firmie abilet.pl, expondo.pl, GlobalLogic, oraz wszystkim partnerom medialnym, dzięki którym było o nas głośno i mogliśmy liczyć na gości nie tylko z Zielonej Góry.'
-        content_covid19_line8: Równie mocno chcielibyśmy podziękować prelegentom, którzy mieli u nas wystąpić (znajdziecie ich na https://greenfieldconf.pl/), oraz tym, którzy wysłali swoje zgłoszenia w ramach Call For Papers.
-        content_covid19_line9: To jednak nie jest koniec konferencji, a jedynie dłuższa przerwa, która ma przyczynić się do stabilizacji sytuacji na całym świecie i dlatego...
-        content_covid19_line10: 'Śledźcie nas na naszych social mediach:'
+        content_covid19_line7: 'as well as Gold Partners: abilet.pl, expondo.pl, GlobalLogic, and all media partners, thanks to whom we were loud and we could count on guests not only from Zielona Góra.'
+        content_covid19_line8: We would also like to thank the speakers who were supposed to come to us (you will find them at <a href="/">https://greenfieldconf.pl</a>), and those who sent their applications as part of Call For Papers.
+        content_covid19_line9: However, this is not the end of the conference, but only a longer break, which is to contribute to stabilizing the situation around the world, and therefore ...
+        content_covid19_line10: 'Follow us on our social media:'
         content_covid19_fb: Facebook
         content_covid19_twitter: Twitter
-        content_covid19_line11: Tymczasem do zobaczenia na kolejnej edycji konferencji Greenfield 2021!
+        content_covid19_line11: In the meantime, see you at the next Greenfield 2021 conference!
         content_covid19_line12: Best Regards,<br>Greenfield Team
 
     pl:
@@ -388,7 +388,7 @@ covid-19:
         content_covid19_pt_2: Apator Rector,
         content_covid19_pt_3: Ekoenergetyka,
         content_covid19_line7: 'jak również Partnerom Złotym: firmie abilet.pl, expondo.pl, GlobalLogic, oraz wszystkim partnerom medialnym, dzięki którym było o nas głośno i mogliśmy liczyć na gości nie tylko z Zielonej Góry.'
-        content_covid19_line8: Równie mocno chcielibyśmy podziękować prelegentom, którzy mieli u nas wystąpić (znajdziecie ich na https://greenfieldconf.pl/), oraz tym, którzy wysłali swoje zgłoszenia w ramach Call For Papers.
+        content_covid19_line8: Równie mocno chcielibyśmy podziękować prelegentom, którzy mieli u nas wystąpić (znajdziecie ich na <a href="/">https://greenfieldconf.pl</a>), oraz tym, którzy wysłali swoje zgłoszenia w ramach Call For Papers.
         content_covid19_line9: To jednak nie jest koniec konferencji, a jedynie dłuższa przerwa, która ma przyczynić się do stabilizacji sytuacji na całym świecie i dlatego...
         content_covid19_line10: 'Śledźcie nas na naszych social mediach:'
         content_covid19_fb: Facebook
