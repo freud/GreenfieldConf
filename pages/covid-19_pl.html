@@ -1,0 +1,11 @@
+---
+permalink: /pl/covid-19
+layout: default
+style: covid-19
+lang: pl
+translations_id: covid-19
+scripts: ['modals/newsletter']
+---
+
+{% assign translations=site.data.translations[page.translations_id][page.lang] %}
+{% include covid-19.html t=translations %}
