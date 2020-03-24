@@ -12,6 +12,8 @@ global:
         privacy_policy:
             url: /privacy-policy
             text: Privacy Policy
+        covid19:
+            url: /covid-19
         all_rights_reserved: Greenfield Conference - all rights reserved.
         button_buy: Buy ticket
         buy_tickets: /#tickets
@@ -38,6 +40,8 @@ global:
         privacy_policy:
             url: /pl/polityka-prywatnosci
             text: Polityka prywatności
+        covid19:
+            url: /pl/covid-19
         all_rights_reserved: Greenfield Conference - wszelkie prawa zastrzeżone.
         button_buy: Kup bilet
         buy_tickets: /pl/#tickets
@@ -351,19 +355,44 @@ covid-19:
         covid19_alert: Coronavirus alert
         covid19_alert_desc: This year's edition is <span class="important">cancelled</span> due to the coronavirus alert
 
-        content_covid19_pt_1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tempor mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        content_covid19_pt_2: Praesent elementum sollicitudin tincidunt. Ut non nisl consectetur, maximus mi nec, rutrum sem. Fusce fringilla commodo enim, a cursus massa ullamcorper vel.
-        content_covid19_pt_3: Proin in tincidunt ex. In cursus, massa sed auctor venenatis, nunc neque tristique elit, a posuere lacus erat sed tortor. Donec vel semper purus, id efficitur sem.
-        content_covid19_pt_4: Curabitur vel ullamcorper nunc. Fusce consectetur vel nisi sed dignissim. Sed vitae lobortis justo. Ut porttitor pellentesque libero, sit amet eleifend magna convallis pharetra.
-        content_covid19_pt_5: Proin vel dignissim leo. Morbi sollicitudin varius tellus eu tempor. Vivamus at erat scelerisque, tincidunt turpis nec, dignissim tellus. 
+        content_covid19_line1: Hi
+        content_covid19_line2: W związku z pandemią choroby COVID-19 <b>odwołujemy tegoroczną edycję konferencji.</b>
+        content_covid19_line3: To była trudna decyzja i mamy nadzieję, że rozumiesz dlaczego musieliśmy tak postąpić. Wiele osób w jednym miejscu stwarza zagrożenie dla wszystkich uczestników, jak również osób, z którymi mają kontakt po konferencji. Bezpieczeństwo jest najważniejsze.
+        content_covid19_line4: Przepraszamy za zaistniałą sytuację i mamy nadzieję, że pomimo tego spotkamy się za rok.
+        content_covid19_line5: Szczególne podziękowania należą się wszystkim partnerom, którzy podjęli decyzję o wzięciu udziału w tegorocznej edycji. Wnoszą wiele dobrego do środowiska IT i w dużej mierze to właśnie dzięki nim tak duże wydarzenie jest możliwe.
+        content_covid19_line6: 'Serdecznie dziękujemy <b>Partnerom Diamentowym:</b>'
+        content_covid19_pt_1: Metapack,
+        content_covid19_pt_2: Apator Rector,
+        content_covid19_pt_3: Ekoenergetyka,
+        content_covid19_line7: 'jak również Partnerom Złotym: firmie abilet.pl, expondo.pl, GlobalLogic, oraz wszystkim partnerom medialnym, dzięki którym było o nas głośno i mogliśmy liczyć na gości nie tylko z Zielonej Góry.'
+        content_covid19_line8: Równie mocno chcielibyśmy podziękować prelegentom, którzy mieli u nas wystąpić (znajdziecie ich na https://greenfieldconf.pl/), oraz tym, którzy wysłali swoje zgłoszenia w ramach Call For Papers.
+        content_covid19_line9: To jednak nie jest koniec konferencji, a jedynie dłuższa przerwa, która ma przyczynić się do stabilizacji sytuacji na całym świecie i dlatego...
+        content_covid19_line10: 'Śledźcie nas na naszych social mediach:'
+        content_covid19_fb: Facebook
+        content_covid19_twitter: Twitter
+        content_covid19_line11: Tymczasem do zobaczenia na kolejnej edycji konferencji Greenfield 2021!
+        content_covid19_line12: Best Regards,<br>Greenfield Team
 
     pl:
         stayathome_tag: '#zostanwdomu'
         covid19_alert: Ostrzeżenie dot. Coronavirusa
         covid19_alert_desc: Tegoroczna edycja została <span class="important">odwołana</span> z uwagi na ostrzeżenie dotyczące coronavirusa
 
-        content_covid19_pt_1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget tempor mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        content_covid19_pt_2: Praesent elementum sollicitudin tincidunt. Ut non nisl consectetur, maximus mi nec, rutrum sem. Fusce fringilla commodo enim, a cursus massa ullamcorper vel.
-        content_covid19_pt_3: Proin in tincidunt ex. In cursus, massa sed auctor venenatis, nunc neque tristique elit, a posuere lacus erat sed tortor. Donec vel semper purus, id efficitur sem.
-        content_covid19_pt_4: Curabitur vel ullamcorper nunc. Fusce consectetur vel nisi sed dignissim. Sed vitae lobortis justo. Ut porttitor pellentesque libero, sit amet eleifend magna convallis pharetra.
-        content_covid19_pt_5: Proin vel dignissim leo. Morbi sollicitudin varius tellus eu tempor. Vivamus at erat scelerisque, tincidunt turpis nec, dignissim tellus. 
+        content_covid19_line1: Cześć
+        content_covid19_line2: W związku z pandemią choroby COVID-19 <b>odwołujemy tegoroczną edycję konferencji.</b>
+        content_covid19_line3: To była trudna decyzja i mamy nadzieję, że rozumiesz dlaczego musieliśmy tak postąpić. Wiele osób w jednym miejscu stwarza zagrożenie dla wszystkich uczestników, jak również osób, z którymi mają kontakt po konferencji. Bezpieczeństwo jest najważniejsze.
+        content_covid19_line4: Przepraszamy za zaistniałą sytuację i mamy nadzieję, że pomimo tego spotkamy się za rok.
+        content_covid19_line5: Szczególne podziękowania należą się wszystkim partnerom, którzy podjęli decyzję o wzięciu udziału w tegorocznej edycji. Wnoszą wiele dobrego do środowiska IT i w dużej mierze to właśnie dzięki nim tak duże wydarzenie jest możliwe.
+        content_covid19_line6: 'Serdecznie dziękujemy <b>Partnerom Diamentowym:</b>'
+        content_covid19_pt_1: Metapack,
+        content_covid19_pt_2: Apator Rector,
+        content_covid19_pt_3: Ekoenergetyka,
+        content_covid19_line7: 'jak również Partnerom Złotym: firmie abilet.pl, expondo.pl, GlobalLogic, oraz wszystkim partnerom medialnym, dzięki którym było o nas głośno i mogliśmy liczyć na gości nie tylko z Zielonej Góry.'
+        content_covid19_line8: Równie mocno chcielibyśmy podziękować prelegentom, którzy mieli u nas wystąpić (znajdziecie ich na https://greenfieldconf.pl/), oraz tym, którzy wysłali swoje zgłoszenia w ramach Call For Papers.
+        content_covid19_line9: To jednak nie jest koniec konferencji, a jedynie dłuższa przerwa, która ma przyczynić się do stabilizacji sytuacji na całym świecie i dlatego...
+        content_covid19_line10: 'Śledźcie nas na naszych social mediach:'
+        content_covid19_fb: Facebook
+        content_covid19_twitter: Twitter
+        content_covid19_line11: Tymczasem do zobaczenia na kolejnej edycji konferencji Greenfield 2021!
+        content_covid19_line12: Pozdrawiamy,<br>Zespół Greenfield
+
