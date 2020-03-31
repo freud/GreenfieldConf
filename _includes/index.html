@@ -4,7 +4,7 @@
             <div class="anim-wrapper">
                 <div class="frame-fill">
                     <div class="rect"></div>
-                    <h1 class="content d-table-caption">Greenfield conference 2020</h1>
+                    <h1 class="content d-table-caption">Greenfield conference <span class="cancelled">2020</span></h1>
                 </div>
             </div>
             <p class="mb-16 d-md-none">
@@ -15,15 +15,15 @@
                 <strong class="h4 nb-0">{{include.t.tickets_soon}}</strong>
             </p>
             <p class="mb-32">
-                {{include.t.slogan}}
+                {{include.t.covid19_alert}}
             </p>
             <a
                 class="btn primary scroll-trigger" 
-                aria-label="{{include.t.button_buy}}"
-                href="#tickets"
+                aria-label="{{include.t.button_covid19_info}}"
+                href="{{site.data.translations.global[page.lang].covid19.url}}"
                 data-scroll
             >
-                 {{ site.data.translations.global[page.lang].button_buy }}
+                 {{ include.t.button_covid19_info }}
             </a>
         </div>
         <div class="col-md-6 col-xl-7 offset-md-1 anim-wrapper d-none d-md-block align-self-lg-center align-self-xl-start">
@@ -35,10 +35,7 @@
                     <img src="/images/comming_soon.png" alt="Greenfield Conference 2019" class="img-fluid" />
                 </div>
                 <div class="content">
-                    <p class="h2 mb-8">{{include.t.date}}</p>
-                    <small class="h4">
-                        {{include.t.city}}
-                    </small>
+                    <p class="h2 mb-8">{{include.t.stayathome_tag}}</p>
                 </div>
             </div>
         </div>
@@ -290,24 +287,4 @@
     </div>
 </section>
 
-<section class="section section-frame container px-16 anim-wrapper mt-0 mt-md-64">
-    <div class="frame frame-center">
-        {% include frame.html %}
-    </div>
-    <div class="row justify-content-center">
-        <div class="col col-md-8 col-lg-7 col-xl-6 text-center">
-            <p class="mb-8">
-                {{include.t.newsletter_section_title1}}
-            </p>
-            <h3 class="h2">
-                {{include.t.newsletter_section_title2}}
-            </h3>
-            <p class="mb-40">
-                {{include.t.newsletter_section_text}}
-            </p>
-            <button class="btn primary btn-signup" aria-label="Subskrybuj">
-                {{include.t.newsletter_section_action_text}}
-            </button>
-        </div>
-    </div>
-</section>
+{% include newsletter.html %}

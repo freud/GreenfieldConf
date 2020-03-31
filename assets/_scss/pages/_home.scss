@@ -246,3 +246,13 @@ section {
     opacity: 1;
   }
 }
+
+.cancelled {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 6px;
+}
+
+.important {
+  color: red;
+}

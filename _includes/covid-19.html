@@ -1,0 +1,95 @@
+<section class="section section-frame container my-0 pb-72">
+    <div class="row">
+        <div class="col-md-6 px-0">
+            <div class="row flex-column">
+                <div class="col-md-12 d-flex flex-column anim-wrapper">
+                    <div class="frame-fill">
+                        <div class="rect"></div>
+                        <small class="header-text">
+                            {{include.t.stayathome_tag}}
+                        </small>
+                        <h1 class="content mb-24 mb-lg-40">
+                            {{include.t.covid19_alert}}
+                        </h1>
+                        <p class="mb-48 mb-md-80">
+                            {{include.t.covid19_alert_desc}}
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section content-text pb-0 pt-0">
+                    <div class="feature" data-index="2">
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line1}}
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line2}}
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line3}}
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line4}}
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line5}}
+                        </p>
+                        <p class="mb-0">
+                            {{include.t.content_covid19_line6}}
+                            <ul>
+                                <li>{{include.t.content_covid19_pt_1}}</li>
+                                <li>{{include.t.content_covid19_pt_2}}</li>
+                                <li>{{include.t.content_covid19_pt_3}}</li>
+                            </ul>
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line7}}
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line8}}
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line9}}
+                        </p>
+                        <p class="mb-0">
+                            {{include.t.content_covid19_line10}}
+                            <ul>
+                                <li>{{include.t.content_covid19_fb}}</li>
+                                <li>{{include.t.content_covid19_twitter}}</li>
+                            </ul>
+                        </p>
+                        <p class="mb-32">
+                            <b>{{include.t.content_covid19_line11}}</b>
+                        </p>
+                        <p class="mb-32">
+                            {{include.t.content_covid19_line12}}
+                        </p>
+                    </div>
+                </div>
+                <div class="section pt-0"></div>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-1 d-none d-md-block frame-container anim-wrapper">
+            <div class="img-frame frame-over img-sticky">
+                <div class="frame">
+                    {% include frame.html %}
+                </div>
+                <div class="img-darken img-scale">
+                    <img 
+                        src="/images/comming_soon.png" 
+                        alt="GreenfieldConf" 
+                        class="img-fluid"
+                        id="img-sticky"
+                    />
+                </div>
+                <div class="content">
+                    <p class="h2 mb-8">{{include.t.stayathome_tag}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include newsletter.html %}
+
+<div class="section"></div>
