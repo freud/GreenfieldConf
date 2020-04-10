@@ -109,56 +109,6 @@
     </div>
 </section>
 
-<section class="section container pt-48 pt-lg-80">
-    <dv class="row section-bounce">
-        <div class="col-12 col-md-6 anim-wrapper">
-            <p class="fade">
-                {{include.t.cfp_section_title1}}
-            </p>
-            <h2 class="bounce-left">
-                {{include.t.cfp_section_title2}}
-            </h2>
-            <p class="bounce-right mb-24">
-                {{include.t.cfp_section_text}}
-            </p>
-            <a href="{{include.t.cfp_section_action_url}}" class="btn secondary sm mb-40 mb-md-0 fade">
-                {{include.t.cfp_section_action_text}}
-            </a>
-        </div>
-        <div 
-            class="swiper-container col-12 col-md-5 offset-md-1 anim-wrapper pb-80 pb-md-0 pb-xl-64"
-            id="swiper-speakers"
-        >
-            <div class="swiper-wrapper">
-                {% for speaker in site.data.speakers %}
-                    <div 
-                        class="swiper-slide d-flex align-items-center"
-                        data-speaker='{{speaker}}'
-                    >
-                        <div class="speaker-img img-before col-6 offset-1 align-self-center px-0 mr-32">
-                            <img src="/images/speakers/{{ speaker.img }}" alt="{{ speaker.name }}" class="img-fluid" />
-                        </div>
-                        <div class="cfp-speaker mb-16">
-                            <p class="speaker-heading d-table-caption mb-8">
-                                {{ speaker.name }}
-                            </p>
-                            <a href="{{speaker.twitter}}" target="blank">
-                                <span class="icon-twitter mr-8"></span>
-                            </a>
-                            <a href="{{speaker.linkedin}}" target="blank">
-                                <span class="icon-linkedin"></span>
-                            </a>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            {% if site.data.speakers.size > 1 %}
-                <div class="swiper-pagination"></div>
-            {% endif %}
-        </div>
-    </div>
-</section>
-
 <section class="section container mb-32 mb-lg-80">
     <div class="row section-bounce mb-16">
         <div class="col-11 col-sm-12 col-md-6 anim-wrapper">
@@ -215,75 +165,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="section container anim-wrapper" id="tickets">
-    <div class="row justify-content-center">
-        <div class="col-12 text-center mt-32">
-            <p class="mb-8">
-                {{ include.t.tickets_section_subtitle }}
-            </p>
-            <h2 class="mb-8">
-                {{ include.t.tickets_section_title }}
-            </h2>
-            <p class="mb-0">
-                {{ include.t.tickets_section_lead1 }}
-            </p>
-            <p class="mb-64">
-                {{ include.t.tickets_section_lead2 }}
-            </p>
-        </div>
-    </div>
-
-    <div class="swiper-container" id="swiper-tickets">
-        <div class="swiper-wrapper pb-48 pb-lg-0">
-        {% for ticket in site.data.tickets[page.lang] %}
-            <div class="swiper-slide col-lg-3 d-flex justify-content-center">
-                <div class="box slide-{{ forloop.index }}">
-                    <h4 class="h3">
-                        {{ ticket.name }}
-                    </h4>
-                    {% for feature in ticket.features %}
-                       <span class="text-smaller mb-24">
-                           {{ feature }}
-                       </span> 
-                    {% endfor %}
-                    <strong class="mb-16 mt-2">
-                        {{ ticket.price }}
-                    </strong>
-
-                    <div class="d-flex flex-column price">
-                        {% if ticket.button %}
-                            {% if ticket.button_enabled %}
-                        <a 
-                            href="https://GreenfieldConf.abilet.pl" 
-                            class="btn secondary align-self-start mb-40"                            
-                            target="_blank"                            
-                        >
-                            {{ include.t.tickets_section_buy_btn_text }}
-                        </a>
-                            {% else %}
-                            <a 
-                            style="pointer-events: none;"
-                            class="btn secondary align-self-start mb-40">
-                                {{ include.t.tickets_section_buy_btn_text }}
-                            </a>
-                            {% endif %}
-                    {% endif %}
-                    </div>
-                    {% if ticket.sold_out == true %}
-                        <p class="sold-out-notice">
-                            {{ include.t.tickets_sold_out }}
-                        </p>
-                    {% elsif ticket.button == false %}
-                        <p>{{ ticket.additional_info }}</p>
-                    {% endif %}
-                </div>
-        </div>
-        {% endfor %}
-        </div>
-        <div class="swiper-pagination"></div>
     </div>
 </section>
 
