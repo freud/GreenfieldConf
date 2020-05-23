@@ -19,17 +19,6 @@ window.onload = () => {
     });
     
     createSwiper({
-        selector: '#swiper-speakers', 
-        props: { 
-            init: false,
-            spaceBetween: 30
-         },
-        initFunc: () => {
-            speakerModal.init();
-        }
-    });
-
-    createSwiper({
         selector: '#swiper-speakers-arrows', 
         props: { 
             spaceBetween: 80,
