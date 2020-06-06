@@ -359,6 +359,7 @@ covid-19:
         content_covid19_line2: Due to the COVID-19 disease pandemic, we <b>cancelled this year's conference.</b>
         content_covid19_line3: It was a difficult decision and we hope you understand why we had to do it. Many people in one place pose a threat to all participants, as well as people with whom they have contact after the conference. Safety is the most important thing.
         content_covid19_line4: We apologize for the situation and hope that we will meet again next year.
+        content_covid19_if_you_boutght_a_ticket: If you've bought a ticket, you should get your refund information by e-mail. Don't you have such an e-mail? Write directly to <a href="mailto:pomoc@abilet.pl">pomoc@abilet.pl</a>
         content_covid19_line5: Special thanks go to all partners who have decided to take part in this year's edition. They bring a lot of good to the IT environment and it is thanks to them that such a large event is possible.
         content_covid19_line6: 'Thank you <b>Diamond Partners:</b>'
         content_covid19_pt_1: Metapack,
@@ -382,6 +383,7 @@ covid-19:
         content_covid19_line2: W związku z pandemią choroby COVID-19 <b>odwołujemy tegoroczną edycję konferencji.</b>
         content_covid19_line3: To była trudna decyzja i mamy nadzieję, że rozumiesz dlaczego musieliśmy tak postąpić. Wiele osób w jednym miejscu stwarza zagrożenie dla wszystkich uczestników, jak również osób, z którymi mają kontakt po konferencji. Bezpieczeństwo jest najważniejsze.
         content_covid19_line4: Przepraszamy za zaistniałą sytuację i mamy nadzieję, że pomimo tego spotkamy się za rok.
+        content_covid19_if_you_boutght_a_ticket: Jeżeli kupiłeś/aś bilet - informację na temat zwrotu powinieneś dostać mailem z abilet. Nie masz takiego maila? Pisz bezpośrednio na <a href="mailto:pomoc@abilet.pl">pomoc@abilet.pl</a>
         content_covid19_line5: Szczególne podziękowania należą się wszystkim partnerom, którzy podjęli decyzję o wzięciu udziału w tegorocznej edycji. Wnoszą wiele dobrego do środowiska IT i w dużej mierze to właśnie dzięki nim tak duże wydarzenie jest możliwe.
         content_covid19_line6: 'Serdecznie dziękujemy <b>Partnerom Diamentowym:</b>'
         content_covid19_pt_1: Metapack,
