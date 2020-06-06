@@ -6,3 +6,9 @@
 
 @import 'pages/home';
 @import 'pages/text_content';
+
+p.modal-box {
+    background-color: rgba($color: #0D0D0D, $alpha: 0.1);
+    padding: 32px;
+    color: #0D0D0D;
+}
