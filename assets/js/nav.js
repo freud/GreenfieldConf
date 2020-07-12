@@ -36,12 +36,14 @@
         });
     });
 
-    scrollBtn.addEventListener('click', () => {
-        if(isOpen) {
-            menu.style = '';
-            toggleMenu();
-        }
-    });
+    if (scrollBtn) {
+        scrollBtn.addEventListener('click', () => {
+            if(isOpen) {
+                menu.style = '';
+                toggleMenu();
+            }
+        });
+    }
 
     function addNavShadow() {
         const active = nav.classList.contains('navbar-shadow')
