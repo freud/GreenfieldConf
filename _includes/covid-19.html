@@ -1,20 +1,18 @@
 <section class="section container">
     <div class="row justify-content-center">
         <div class="col-10 col-sm-12 col-md-5 col-xl-4">
-            <div class="row flex-column">
-                <div class="col-md-12 d-flex flex-column anim-wrapper">
-                    <div class="frame-fill">
-                        <div class="rect"></div>
-                        <small class="header-text">
-                            {{include.t.stayathome_tag}}
-                        </small>
-                        <h1 class="content mb-24 mb-lg-40">
-                            {{include.t.covid19_alert}}
-                        </h1>
-                        <p class="mb-48 mb-md-80">
-                            {{include.t.covid19_alert_desc}}
-                        </p>
-                    </div>
+            <div class="anim-wrapper">
+                <div class="frame-fill">
+                    <div class="rect"></div>
+                    <small class="header-text">
+                        {{include.t.stayathome_tag}}
+                    </small>
+                    <h1 class="content d-table-caption">
+                        {{include.t.covid19_alert}}
+                    </h1>
+                    <p class="mb-48 mb-md-80">
+                        {{include.t.covid19_alert_desc}}
+                    </p>
                 </div>
             </div>
             <div class="section content-text pb-0 pt-0">
@@ -71,18 +69,13 @@
             </div>
             <div class="section pt-0"></div>
         </div>
-        <div class="col-md-5 offset-md-1 d-none d-md-block frame-container anim-wrapper">
-            <div class="img-frame frame-over img-sticky">
-                <div class="frame">
-                    {% include frame.html %}
-                </div>
+        <div class="col-md-6 col-xl-7 offset-md-1 anim-wrapper d-none d-md-block frame-container">
+            <div class="img-frame img-sticky">
+                   <div class="frame">
+                        {% include frame.html %}
+                   </div>
                 <div class="img-darken img-scale">
-                    <img 
-                        src="/images/comming_soon.png" 
-                        alt="GreenfieldConf" 
-                        class="img-fluid"
-                        id="img-sticky"
-                    />
+                    <img src="/images/comming_soon.png" alt="Greenfield Conference 2019" class="img-fluid" />
                 </div>
                 <div class="content">
                     <p class="h2 mb-8">{{include.t.stayathome_tag}}</p>
